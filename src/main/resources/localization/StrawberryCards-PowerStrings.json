@@ -1,0 +1,141 @@
+{
+  "strawberryCards:AnotherWinter": {
+    "NAME": "Another Winter",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yChannel #b",
+      " #yFrost."
+    ]
+  },
+  "strawberryCards:BiBeamBolt": {
+    "NAME": "Bi-Beam Bolt",
+    "DESCRIPTIONS": [
+      "#yEvoked #yLightning strikes #b",
+      " additional time this turn.",
+	  " additional times this turn."
+    ]
+  },
+  "strawberryCards:BreederCore": {
+    "NAME": "Breeder Core",
+    "DESCRIPTIONS": [
+      "#yChannel #b",
+	  " random #yOrbs next turn."
+    ]
+  },
+  "strawberryCards:Conflagrate": {
+    "NAME": "Conflagrate",
+    "DESCRIPTIONS": [
+      "Whenever you draw a #yBurn, gain ",
+	  "[R] ",
+	  "."
+    ]
+  },
+  "strawberryCards:DebrisPile": {
+    "NAME": "Debris Pile",
+    "DESCRIPTIONS": [
+      "At the end of this turn, gain #b",
+	  " #yBlock for each card in your hand."
+    ]
+  },
+  "strawberryCards:ExtraUtilities": {
+    "NAME": "Extra Utilities",
+    "DESCRIPTIONS": [
+      "#yUpgrade all cards in your hand for the rest of combat next turn.",
+	  "#yUpgrade all cards in your hand for the rest of combat for #b",
+	  " turns."
+    ]
+  },
+  "strawberryCards:FootworkForm": {
+    "NAME": "Footwork Form",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b",
+	  " #yDexterity."
+    ]
+  },
+  "strawberryCards:Harvest": {
+    "NAME": "Harvest",
+    "DESCRIPTIONS": [
+      "The next #yAttack you play heals HP equal to 50% of unblocked damage.",
+	  "The next #b",
+	  " #yAttacks you play heal HP equal to 50% of unblocked damage."
+    ]
+  },
+  "strawberryCards:Hellbender": {
+    "NAME": "Hellbender",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yExhaust #b",
+	  " card and add #b",
+	  " cards and add #b",
+	  " random card into your hand.",
+	  " random cards into your hand."
+    ]
+  },
+  "strawberryCards:HotShot": {
+    "NAME": "Hot Shot",
+    "DESCRIPTIONS": [
+      "Whenever you draw a #yShiv, #yShivs deal #b",
+	  " additional damage."
+    ]
+  },
+  "strawberryCards:KnifeParty": {
+    "NAME": "Knife Party",
+    "DESCRIPTIONS": [
+      "Whenever you play a #yShiv, draw #b",
+	  " card.",
+	  " cards."
+    ]
+  },
+  "strawberryCards:LockstepOffBeat": {
+    "NAME": "Lockstep: Off-Beat",
+    "DESCRIPTIONS": [
+      "#yAttacks deal half damage this turn. #yAttacks deal double damage next turn."
+    ]
+  },
+  "strawberryCards:LockstepOnBeat": {
+    "NAME": "Lockstep: On-Beat",
+    "DESCRIPTIONS": [
+      "#yAttacks deal double damage this turn. #yAttacks deal half damage next turn."
+    ]
+  },
+  "strawberryCards:Momentum": {
+    "NAME": "Momentum",
+    "DESCRIPTIONS": [
+      "Whenever you play a #ySkill, gain #b",
+	  " #yDexterity and lose #b",
+	  " #yDexterity at the end of this turn."
+    ]
+  },
+  "strawberryCards:Neurons": {
+    "NAME": "Neurons",
+    "DESCRIPTIONS": [
+      "At the start of your turn, reduce the cost of all cards in your hand to 1 this combat."
+    ]
+  },
+  "strawberryCards:Package": {
+    "NAME": "Package",
+    "DESCRIPTIONS": [
+      "Add ",
+	  "and ",
+      " into your hand next turn."
+    ]
+  },
+  "strawberryCards:Plunged": {
+    "NAME": "Plunged",
+    "DESCRIPTIONS": [
+      "Receives double damage from the your next #yAttack."
+    ]
+  },
+  "strawberryCards:Refactor": {
+    "NAME": "Refactor",
+    "DESCRIPTIONS": [
+      "At the end of this turn, gain #b",
+	  " #yFocus."
+    ]
+  },
+  "strawberryCards:TypeOrDie": {
+    "NAME": "Type or Die",
+    "DESCRIPTIONS": [
+      "At the end of this turn, lose #b",
+	  " #yFocus."
+    ]
+  }
+}

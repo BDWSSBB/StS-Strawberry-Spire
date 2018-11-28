@@ -1,0 +1,260 @@
+{
+  "strawberryCards:Aggression": {
+    "NAME": "Aggression",
+    "DESCRIPTION": "Draw cards until you have !M! Attacks in your hand."
+  },
+  "strawberryCards:Beatdown": {
+    "NAME": "Beatdown",
+    "DESCRIPTION": "Deal !D! damage 2X times. NL Exhaust."
+  },
+  "strawberryCards:Conflagrate": {
+    "NAME": "Conflagrate",
+    "DESCRIPTION": "Shuffle !M! Burns into your draw pile. NL Whenever you draw a Burn, gain [R].",
+    "UPGRADE_DESCRIPTION": "Shuffle !M! Burns into your draw pile. NL Whenever you draw a Burn, gain [R] [R].",
+	"EXTENDED_DESCRIPTION": [
+	  "This is Fine"
+	]
+  },
+  "strawberryCards:CrashLanding": {
+    "NAME": "Crash Landing",
+    "DESCRIPTION": "Innate. NL Deal !D! damage. NL Deal !D! damage again to ALL enemies. NL Exhaust."
+  },
+  "strawberryCards:DebrisPile": {
+    "NAME": "Debris Pile",
+    "DESCRIPTION": "At the end of this turn, gain !M! Block for each card in your hand."
+  },
+  "strawberryCards:DraftPunk": {
+    "NAME": "Draft Punk",
+    "DESCRIPTION": "Exhaust !M! random cards in your hand. NL Add !M! random cards into your hand."
+  },
+  "strawberryCards:Endurance": {
+    "NAME": "Endurance",
+    "DESCRIPTION": "Add a Wound into your hand. NL Gain [R].",
+    "UPGRADE_DESCRIPTION": "Add a Wound into your hand. NL Gain [R] [R]."
+  },
+  "strawberryCards:FortFortyFour": {
+    "NAME": "Fort Forty-Four",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block. NL Exhaust."
+  },
+  "strawberryCards:Harvest": {
+    "NAME": "Harvest",
+    "DESCRIPTION": "The next Attack you play heals HP equal to 50% of unblocked damage. NL Exhaust."
+  },
+  "strawberryCards:Hellbender": {
+    "NAME": "Hellbender",
+    "DESCRIPTION": "At the start of your turn, Exhaust !M! card and add !M! random card into your hand."
+  },
+  "strawberryCards:Incursion": {
+    "NAME": "Incursion",
+    "DESCRIPTION": "Can only be played if you have played no Skills this turn. NL Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      "I have played a Skill."
+    ]
+  },
+  "strawberryCards:Overwork": {
+    "NAME": "Overwork",
+    "DESCRIPTION": "Gain !M! Weak. NL Gain !M! Frail. NL Gain [R] [R] [R]. NL Draw 1 card. NL Exhaust."
+  },
+  "strawberryCards:PowerStomp": {
+    "NAME": "Power Stomp",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Vulnerable, it loses !M! Strength this turn."
+  },
+  "strawberryCards:PumpUp": {
+    "NAME": "Pump Up",
+    "DESCRIPTION": "Exhaust !M! card. NL Gain Strength equal to its cost.",
+    "UPGRADE_DESCRIPTION": "Exhaust up to !M! cards in your hand. NL Gain Strength equal to their costs."
+  },
+  "strawberryCards:Spite": {
+    "NAME": "Spite",
+    "DESCRIPTION": "Deal !D! damage. NL Deal !D! damage again for each debuff you have."
+  },
+  "strawberryCards:DeltaFlow": {
+    "NAME": "Delta Flow",
+    "DESCRIPTION": "Draw 2 cards. NL Next turn, draw !M! additional card.",
+    "UPGRADE_DESCRIPTION": "Draw 2 cards. NL Next turn, draw !M! additional cards."
+  },
+  "strawberryCards:FootworkForm": {
+    "NAME": "Footwork Form",
+    "DESCRIPTION": "Ethereal. NL At the start of your turn, gain !M! Dexterity.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, gain !M! Dexterity."
+  },
+  "strawberryCards:Grapple": {
+    "NAME": "Grapple",
+    "DESCRIPTION": "Deal !D! damage. NL Enemy loses !M! Strength this turn."
+  },
+  "strawberryCards:HopSkipAndJump": {
+    "NAME": "Hop Skip and Jump",
+    "DESCRIPTION": "Gain !B! Block for each enemy in combat that intends to attack."
+  },
+  "strawberryCards:HotShot": {
+    "NAME": "Hot Shot",
+    "DESCRIPTION": "Whenever you draw a Shiv, Shivs deal !M! additional damage.",
+	"EXTENDED_DESCRIPTION": [
+	  "Ace's Hand"
+	]
+  },
+  "strawberryCards:KnifeParty": {
+    "NAME": "Knife Party",
+    "DESCRIPTION": "Whenever you play a Shiv, draw !M! card."
+  },
+  "strawberryCards:Lockstep": {
+    "NAME": "Lockstep",
+    "DESCRIPTION": "Every 2 turns, your Attacks deal double damage. NL This turn and every other turn, your Attacks deal half damage.",
+    "UPGRADE_DESCRIPTION": "This turn and every 2 turns, your Attacks deal double damage. NL Every other turn, your Attacks deal half damage."
+  },
+  "strawberryCards:Momentum": {
+    "NAME": "Momentum",
+    "DESCRIPTION": "Whenever you play a Skill, gain !M! Dexterity and lose !M! Dexterity at the end of this turn."
+  },
+  "strawberryCards:Plunge": {
+    "NAME": "Plunge",
+    "DESCRIPTION": "Deal !D! damage. NL Enemy receives double damage from your next Attack."
+  },
+  "strawberryCards:Rummage": {
+    "NAME": "Rummage",
+    "DESCRIPTION": "Draw !M! cards. NL Discard !M! cards. NL Add 1 Shiv into your hand for each Attack discarded."
+  },
+  "strawberryCards:SideSwipe": {
+    "NAME": "Side Swipe",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL Discard !M! card.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Discard !M! cards."
+  },
+  "strawberryCards:Slide": {
+    "NAME": "Slide",
+    "DESCRIPTION": "Gain !B! Block. NL Put a cost 0 card from your draw pile into your hand."
+  },
+  "strawberryCards:SpinKick": {
+    "NAME": "Spin Kick",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Weak, gain !B! Block."
+  },
+  "strawberryCards:Swampstar": {
+    "NAME": "Swampstar",
+    "DESCRIPTION": "Add 2 Slimed into your hand. NL Apply !M! Poison.",
+	"EXTENDED_DESCRIPTION": [
+	  "Dankhole"
+	]
+  },
+  "strawberryCards:Trickbox": {
+    "NAME": "Trickbox",
+    "DESCRIPTION": "Innate. NL Apply !M! Poison to ALL enemies. NL Exhaust.",
+	"EXTENDED_DESCRIPTION": [
+	  "Sickbox"
+	]
+  },
+  "strawberryCards:Urgency": {
+    "NAME": "Urgency",
+    "DESCRIPTION": "If the enemy intends to attack, draw !M! cards."
+  },
+  "strawberryCards:Adapter": {
+    "NAME": "Adapter",
+    "DESCRIPTION": "Discard a card. NL If you discard a Skill, Channel !M! Frost. NL Otherwise, Channel !M! Lightning.",
+    "UPGRADE_DESCRIPTION": "Choose a card. NL If you choose a Skill, Channel !M! Frost. NL Otherwise, Channel !M! Lightning."
+  },
+  "strawberryCards:AnotherWinter": {
+    "NAME": "Another Winter",
+    "DESCRIPTION": "At the start of your turn, Channel !M! Frost."
+  },
+  "strawberryCards:BiBeamBolt": {
+    "NAME": "Bi-Beam Bolt",
+    "DESCRIPTION": "This turn, Evoked Lightning strikes !M! additional time.",
+    "UPGRADE_DESCRIPTION": "This turn, Evoked Lightning strikes !M! additional times.",
+    "EXTENDED_DESCRIPTION": [
+	  "Tri-Thunder Taze"
+	]
+  },
+  "strawberryCards:BreederCore": {
+    "NAME": "Breeder Core",
+    "DESCRIPTION": "Gain !M! Vulnerable. NL Next turn, Channel 2X random Orbs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Vulnerable. NL Next turn, Channel 2X+2 random Orbs. NL Exhaust."
+  },
+  "strawberryCards:Compressor": {
+    "NAME": "Compressor",
+    "DESCRIPTION": "Gain !M! Orb slot. NL Increase this card's cost by 1 this combat.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Orb slot. NL Draw 1 card. NL Increase this card's cost by 1 this combat."
+  },
+  "strawberryCards:DataDump": {
+    "NAME": "Data Dump",
+    "DESCRIPTION": "Deal !D! damage. NL Put !M! card from your draw pile into your discard pile.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Put !M! cards from your draw pile into your discard pile."
+  },
+  "strawberryCards:FocalLaser": {
+    "NAME": "Focal Laser",
+    "DESCRIPTION": "Deal !D! damage. NL Increase this card's damage by !M! X times this combat."
+  },
+  "strawberryCards:Gammacceleration": {
+    "NAME": "Gammacceleration",
+    "DESCRIPTION": "Gain X [B]. NL Draw X-1 cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain X [B]. NL Draw X cards. NL Exhaust.",
+	"EXTENDED_DESCRIPTION": [
+	  "Omegacceleration"
+	]
+  },
+  "strawberryCards:GearCrunch": {
+    "NAME": "Gear Crunch",
+    "DESCRIPTION": "Gain 1 Frail. NL Draw !M! cards."
+  },
+  "strawberryCards:NeonFlight": {
+    "NAME": "Neon Flight",
+    "DESCRIPTION": "Gain !B! Block for each unique Orb you have."
+  },
+  "strawberryCards:Package": {
+    "NAME": "Package",
+    "DESCRIPTION": "Remove up to !M! cards in your draw pile. NL Next turn, add a copy of each card removed into your hand. NL Exhaust."
+  },
+  "strawberryCards:Refactor": {
+    "NAME": "Refactor",
+    "DESCRIPTION": "Lose !M! Focus this turn. NL Gain 1 Focus."
+  },
+  "strawberryCards:Salvo": {
+    "NAME": "Salvo",
+    "DESCRIPTION": "Evoke all your orbs twice. NL Exhaust."
+  },
+  "strawberryCards:THEL": {
+    "NAME": "THEL",
+    "DESCRIPTION": "Costs 1 less [B] for each [B] at the end of your turn this combat. Deal !D! damage. Set this card's cost to 4 this combat."
+  },
+  "strawberryCards:TypeOrDie": {
+    "NAME": "Type or Die",
+    "DESCRIPTION": "Gain !M! Focus. NL At the end of this turn, lose !M! Focus. NL Exhaust."
+  },
+  "strawberryCards:Disreguard": {
+    "NAME": "Disreguard",
+    "DESCRIPTION": "Gain !B! Block. NL Lose all Frail. NL Lose all Vulnerable.",
+	"EXTENDED_DESCRIPTION": [
+	  "Disreguardian"
+	]
+  },
+  "strawberryCards:Dropbox": {
+    "NAME": "Dropbox",
+    "DESCRIPTION": "Deal !D! damage. NL Obtain !M! random potion. NL Heal 6 HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Obtain !M! random potions. NL Heal 6 HP. NL Exhaust."
+  },
+  "strawberryCards:ExtraUtilities": {
+    "NAME": "Extra Utilities",
+    "DESCRIPTION": "Next turn, Upgrade all cards in your hand for the rest of combat.",
+    "UPGRADE_DESCRIPTION": "Retain your hand this turn. NL Next turn, Upgrade all cards in your hand for the rest of combat."
+  },
+  "strawberryCards:Fade": {
+    "NAME": "Fade",
+    "DESCRIPTION": "Gain !M! Intangible. NL Add a Decay Curse into your deck. NL Exhaust."
+  },
+  "strawberryCards:NeglectedBlade": {
+    "NAME": "Neglected Blade",
+    "DESCRIPTION": "Innate. NL Ethereal. NL Deal !D! damage. NL Permanently reduce this card's damage by !M!."
+  },
+  "strawberryCards:Neurons": {
+    "NAME": "Neurons",
+    "DESCRIPTION": "At the start of your turn, reduce the cost of all cards in your hand to 1 this combat. NL Become Confused.",
+	"EXTENDED_DESCRIPTION": [
+	  "Newrons"
+	]
+  },
+  "strawberryCards:AscendersBanana": {
+    "NAME": "Ascender's Banana",
+    "DESCRIPTION": "Unplayable. NL Whenever you draw this card, Exhaust it and gain !M! Vulnerable."
+  },
+  "strawberryCards:Teyered": {
+    "NAME": "Teyered",
+    "DESCRIPTION": "Unplayable. NL Whenever you draw this card, you cannot draw additional cards this turn."
+  }
+}
