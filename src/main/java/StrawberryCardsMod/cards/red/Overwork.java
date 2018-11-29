@@ -20,7 +20,7 @@ public class Overwork extends AbstractStrawberryCardsCard {
     private static final int COST = 0;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int MAGIC_NUMBER = 2;
-    private static final int UPGRADE_PLUS_MAGIC_NUMBER = -1;
+    private static final int UPGRADE_PLUS_MAGIC_NUMBER = 1;
 
     public Overwork() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.RED, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.NONE);
@@ -29,10 +29,10 @@ public class Overwork extends AbstractStrawberryCardsCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new WeakPower(p, 1, false), 1));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FrailPower(p, 1, false), 1));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new WeakPower(p, 2, false), 1));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FrailPower(p, 2, false), 1));
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(3));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 1));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
     }
 
     public AbstractCard makeCopy() {
