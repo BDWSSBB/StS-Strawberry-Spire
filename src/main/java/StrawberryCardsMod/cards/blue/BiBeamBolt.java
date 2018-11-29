@@ -22,6 +22,7 @@ public class BiBeamBolt extends AbstractStrawberryCardsCard {
     public static final String UPGRADE_DESCRIPTION = CARD_STRINGS.UPGRADE_DESCRIPTION;
     private static final int MAGIC_NUMBER = 1;
     private static final int UPGRADE_PLUS_MAGIC_NUMBER = 1;
+    // Hello world
 
     public BiBeamBolt() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF);
