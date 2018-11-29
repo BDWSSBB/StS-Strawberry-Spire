@@ -20,6 +20,7 @@ public class Adapter extends AbstractStrawberryCardsCard {
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = CARD_STRINGS.UPGRADE_DESCRIPTION;
     private static final int MAGIC_NUMBER = 2;
+    // I'm trying to say hi from here
 
     public Adapter() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.NONE);
