@@ -53,7 +53,7 @@
   },
   "strawberryCards:Overwork": {
     "NAME": "Overwork",
-    "DESCRIPTION": "Gain !M! Weak. NL Gain !M! Frail. NL Gain [R] [R] [R]. NL Draw 1 card. NL Exhaust."
+    "DESCRIPTION": "Gain 2 Weak. NL Gain 2 Frail. NL Gain [R] [R]. NL Draw !M! cards. NL Exhaust."
   },
   "strawberryCards:PowerStomp": {
     "NAME": "Power Stomp",
