@@ -20,7 +20,7 @@ public class HopSkipAndJumpAction extends AbstractGameAction {
 
     public void update() {
         for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
-            if (m.intent == AbstractMonster.Intent.ATTACK || m.intent == AbstractMonster.Intent.ATTACK_BUFF || m.intent == AbstractMonster.Intent.ATTACK_DEBUFF || m.intent == AbstractMonster.Intent.ATTACK_DEFEND) {
+            if (!(m.isDead || m.isDying) && (m.intent == AbstractMonster.Intent.ATTACK || m.intent == AbstractMonster.Intent.ATTACK_BUFF || m.intent == AbstractMonster.Intent.ATTACK_DEBUFF || m.intent == AbstractMonster.Intent.ATTACK_DEFEND)) {
                 AbstractDungeon.actionManager.addToTop(new GainBlockAction(this.player, this.player, this.blockAmount));
             }
         }

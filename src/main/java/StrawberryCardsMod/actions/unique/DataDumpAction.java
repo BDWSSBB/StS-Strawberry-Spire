@@ -43,11 +43,17 @@ public class DataDumpAction extends AbstractGameAction {
                 }
             }
             else {
+                CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+                for (AbstractCard c : this.player.drawPile.group) {
+                    temp.addToTop(c);
+                }
+                temp.sortAlphabetically(true);
+                temp.sortByRarityPlusStatusCardType(false);
                 if (numberOfCards == 1) {
-                    AbstractDungeon.gridSelectScreen.open(this.player.drawPile, numberOfCards, false, TEXT[0]);
+                    AbstractDungeon.gridSelectScreen.open(temp, numberOfCards, false, TEXT[0]);
                 }
                 else {
-                    AbstractDungeon.gridSelectScreen.open(this.player.drawPile, numberOfCards, false, TEXT[1] + numberOfCards + TEXT[2]);
+                    AbstractDungeon.gridSelectScreen.open(temp, numberOfCards, false, TEXT[1] + numberOfCards + TEXT[2]);
                 }
                 tickDuration();
                 return;
