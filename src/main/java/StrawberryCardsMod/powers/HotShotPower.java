@@ -8,7 +8,9 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class HotShotPower extends AbstractPower {
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.*;
+
+public class HotShotPower extends AbstractPower implements OnCardDrawPower {
 
     public static final String POWER_ID = "strawberryCards:HotShot";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

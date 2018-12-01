@@ -8,7 +8,9 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class ConflagratePower extends AbstractPower {
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.*;
+
+public class ConflagratePower extends AbstractPower implements OnCardDrawPower{
 
     public static final String POWER_ID = "strawberryCards:Conflagrate";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

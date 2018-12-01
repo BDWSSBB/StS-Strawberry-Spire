@@ -4,9 +4,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.cards.green.*;
-import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
-import com.megacrit.cardcrawl.powers.*;
 
 import StrawberryCardsMod.cards.blue.*;
 import StrawberryCardsMod.cards.blue.Package;
@@ -14,13 +12,12 @@ import StrawberryCardsMod.cards.colorless.*;
 import StrawberryCardsMod.cards.curses.*;
 import StrawberryCardsMod.cards.green.*;
 import StrawberryCardsMod.cards.red.*;
-import StrawberryCardsMod.powers.*;
 
 import basemod.*;
 import basemod.interfaces.*;
 
 @SpireInitializer
-public class StrawberryCards implements EditCardsSubscriber, EditStringsSubscriber, PostDrawSubscriber {
+public class StrawberryCards implements EditCardsSubscriber, EditStringsSubscriber {
 
     public StrawberryCards() {
         BaseMod.subscribe(this);
@@ -102,16 +99,5 @@ public class StrawberryCards implements EditCardsSubscriber, EditStringsSubscrib
     public void receiveEditStrings() {
         BaseMod.loadCustomStringsFile(CardStrings.class, "localization/StrawberryCards-CardStrings.json");
         BaseMod.loadCustomStringsFile(PowerStrings.class, "localization/StrawberryCards-PowerStrings.json");
-    }
-
-    public void receivePostDraw(AbstractCard card) {
-        for (AbstractPower p : AbstractDungeon.player.powers) {
-            if (p instanceof HotShotPower) {
-                ((HotShotPower)p).onCardDraw(card);
-            }
-            if (p instanceof ConflagratePower) {
-                ((ConflagratePower)p).onCardDraw(card);
-            }
-        }
     }
 }
