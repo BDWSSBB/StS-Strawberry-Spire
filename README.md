@@ -20,6 +20,6 @@ This mod requires BaseMod and StSLib to work.
 3. I will not create crossover content (yet). Remember, I'm stupid. I don't want to be overwhelmed with that. This mod isn't really meant for crossover content anyway.
 
 ## Extra Important Note (Please Read This)
-Strawberry Cards is the first mod I've made for StS (and the first mod in my life). This mod is the first of the Strawberry Spire series, the next mod in line being Strawberry Relics. Strawberry Relics will be merged into Strawberry Cards, so once I'm done with that mod, I'll rename the mod and other chaotic stuff. I'll try not to break too many things, but no promises.
+Strawberry Cards is the first mod I've made for StS (and the first mod in my life). This mod is the first of the Strawberry Spire series, the next mod in line being Strawberry Relics. Strawberry Relics will be merged into Strawberry Cards, so once I'm done with that mod, I'll rename the mod and other chaotic stuff. Basically this means IDs, file names, and stuff may change. I'll try not to break too many things, but no promises.
 
 Okay, you're done reading this. Have fun with the mod, and see if you can find any references within the card name and images, because some of them are indeed references.
