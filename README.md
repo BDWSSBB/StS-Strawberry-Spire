@@ -11,6 +11,9 @@ This mod only requires Basemod to work. It may require StSlib later (which you s
 2. You'll notice some of the cards have special upgrade names. This is solely cosmetic and for fun. I'll eventually add a config to toggle upgrade names.
 3. If you find a bug or want to give feedback or something, ping me in the StS Discord Server in #unsupported-modding. If uni life isn't killing me at the moment, I'll get to you.
 
+## Known Issues
+* Hot Shot doesn't update shivs in the draw and discard pile. Technically this has always existed with the Accuracy power and is not my fault, but I can do something about it for sure.
+
 ## Other Notes
 1. I do not own any of the images, clearly. All I did was use Google Images and crop stuff. Hopefully you don't mind my awful selection of art.
 2. I'm really stupid, so please don't use my mod as a model. Doing that will probably screw your mod up or something bad like that. Go look at other mods for that.
