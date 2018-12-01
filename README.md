@@ -4,10 +4,10 @@ Slay the Spire mod that adds new cards.
 ## Overview
 Strawberry Cards is a mod that adds new cards for the vanilla characters, plus a few colorless cards and curses. There are about 15 cards for each character, a rather sizable amount. These cards reuse basic concepts and a bit more, hence the name Strawberry Cards. Nothing is too deviant from the base game, so understanding this mod should be easy.
 
-This mod only requires Basemod to work. It may require StSlib later (which you should totally download anyway).
+This mod requires BaseMod and StSLib to work.
 
 ## Gameplay Notes
-1. This mod also removes Prepared from Silent's card pool in place of Side Swipe. Side Swipe is an Attack that is basically Prepared, but it also deals 4 damage. I did this because I think Prepared sucks as is, so this is basically a buff.
+1. This mod also removes Prepared from Silent's card pool in place of Side Swipe. Side Swipe is an Attack that is basically Prepared, but it also deals 4 damage. I did this because I think Prepared sucks as it is, so this is basically a buff.
 2. You'll notice some of the cards have special upgrade names. This is solely cosmetic and for fun. I'll eventually add a config to toggle upgrade names.
 3. If you find a bug or want to give feedback or something, ping me in the StS Discord Server in #unsupported-modding. If uni life isn't killing me at the moment, I'll get to you.
 
