@@ -126,7 +126,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addRelic(new StillNotAdequateHouse(), RelicType.SHARED);
         BaseMod.addRelic(new Treaders(), RelicType.SHARED);
         BaseMod.addRelic(new ThornyGelberry(), RelicType.SHARED);
-        BaseMod.addRelic(new WoahramAlpha(), RelicType.BLUE);
+        BaseMod.addRelic(new WhoaramAlpha(), RelicType.BLUE);
         BaseMod.addRelic(new WyrmJar(), RelicType.RED);
 
         // Event relics

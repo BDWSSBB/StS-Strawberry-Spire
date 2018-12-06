@@ -13,14 +13,14 @@ import basemod.abstracts.*;
 
 import com.evacipated.cardcrawl.mod.stslib.relics.*;
 
-public class WoahramAlpha extends CustomRelic implements OnChannelRelic {
+public class WhoaramAlpha extends CustomRelic implements OnChannelRelic {
 
-    public static final String ID = "strawberrySpire:WoahramAlpha";
+    public static final String ID = "strawberrySpire:WhoaramAlpha";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
     private static final int CHANNEL_AMOUNT = 2;
     private static final int FOCUS_AMOUNT = 1;
 
-    public WoahramAlpha() {
+    public WhoaramAlpha() {
         super(ID, IMAGE_PATH, RelicTier.RARE, LandingSound.FLAT);
     }
 
@@ -48,6 +48,6 @@ public class WoahramAlpha extends CustomRelic implements OnChannelRelic {
     }
 
     public AbstractRelic makeCopy() {
-        return new WoahramAlpha();
+        return new WhoaramAlpha();
     }
 }

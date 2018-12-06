@@ -7,5 +7,5 @@
   "sts_version": "11-15-2018",
   "mts_version": "3.6.2",
   "dependencies": ["basemod"],
-  "update_json": "https://api.github.com/repos/BDWSSBB/StS-Strawberry-Spire/releases"
+  "update_json": "https://api.github.com/repos/BDWSSBB/StS-Strawberry-Spire/releases/latest"
 }
