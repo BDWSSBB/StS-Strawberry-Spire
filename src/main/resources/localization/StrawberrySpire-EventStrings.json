@@ -1,0 +1,90 @@
+{
+  "strawberrySpire:BlandfruitBush": {
+    "NAME": "Blandfruit Bush",
+    "DESCRIPTIONS": [
+      "You wander through a former nature trail, now only populated by weeds, but a familiar bush stands in front of you. You've heard about this somewhere, but you can't quite remember where. This blandfruit bush yields a tasteless produce, but it can be infused with alchemy. NL NL You never expected this to survive the #pSpireblight. Might as well help yourself, but what would you do with it?",
+      "You've never actually touched blandfruit before in your life. As you return from the detour, you #r@trip@ on a seed pod and spill its seeds all over the floor. After recovering from your #r~clumsiness,~ you remember these seeds are the key ingredient to infusing blandfruit. You should take one, or else the harvest would be a waste.",
+      "Now with a blandfruit and a seed, all you need is a place to mix the two together. Perhaps the next time you stop to rest, you can.",
+      "With you #pcauldron, you mix the blandfruit and seed together in warm water. After the blandfruit soaks up the seed's nutrients, you take it out and help yourself. NL NL It tastes #y~delicious~!"
+    ],
+    "OPTIONS": [
+      "[Harvest] #gObtain #gBlandfruit. #rBecome #rCursed #r- #rClumsy.",
+      "[Leave]",
+      "[",
+      "] #gBrew #g",
+      " #glater.",
+      ".",
+      "Blindweed",
+      "Dreamfoil",
+      "Earthroot",
+      "Fadeleaf",
+      "Firebloom",
+      "Icecap",
+      "Rotberry",
+      "Sorrowmoss",
+      "Starflower",
+      "Stormvine",
+      "Sungrass",
+      "Swiftthistle"
+    ]
+  },
+  "strawberrySpire:MirrorTunnel": {
+    "NAME": "Mirror Tunnel",
+    "DESCRIPTIONS": [
+      "You travel through a gleaming tunnel, the walls made of pristine glass. Thousands of your own reflection appear on the many surfaces. NL NL Something grabs your attention as you traverse further. Cards grow out of the glass, not just from the crevices, but even straight out of them! NL NL As you are about to take one for yourself, you start to have a #p~headache...~",
+      "You leave the cards well alone and reach the end of the tunnel. The sensation has finally stopped.",
+      "Strange, all of these cards look just like yours. You could do with them, but there is a #r@painful@ #r@throbbing@ in your head. NL NL Do you take another?",
+      "The more cards you take, the worse the #r@throbbing@ becomes. You want all these cards, but you just can't bear to take another. NL NL ~Or~ ~can~ ~you?~",
+      "Just as you reach for another, you feel as if your head had imploded and ~fall~ ~unconscious.~ NL NL ... NL NL Minutes later, you wake up, but you can barely see properly. You want to throw up from all ~the~ ~blur,~ #rthe #gcolor #bflashing, @the@ @rotation.@ You eventually stumble out, but still nauseous. NL NL Never again.",
+      "#r~Psychokinesis~ #g~and~ #b~you.~ NL NL #p~You~ #p~and~ #p~the~ #p~world.~ NL NL The cards fly out to you with barely any mental effort, but it becomes overwhelming. Eventually, you collapse on the ground, littered with many copies of your cards. You're a little #r~sore~ from the experience, but at least you got what you wanted, right?"
+    ],
+    "OPTIONS": [
+      "[Take] #gDuplicate #ga #gcard. #rLose #r",
+      " #rHP.",
+      "[Leave]",
+      "[Stop]",
+      "[One More] #gDuplicate #ga #gcard. #rBecome #rConfused.",
+      "[Hoard] Triplicate ALL cards.",
+      "Select a Card to Duplicate."
+    ]
+  },
+  "strawberrySpire:TheByrdhouse": {
+    "NAME": "The Byrdhouse",
+    "DESCRIPTIONS": [
+      "Out in the middle of the streets lies a little cottage, a sign hanging out reading \"BYRD AND BEAKFAST\". You feel exhausted from your journey up the Spire, so you check out what's inside. A bell #y@rings@ as you open the door.",
+      "#r@\"CAW@ #r@CAAAW!\"@ the innkeeper shouts. \"You look weary, you should stay to rest!\" It turns out a flock of #pcultists run the place! Ornate decorations worshipping the #p~Awakened~ #p~One~ hang on the walls. They don't seem hostile, but why not? NL NL ",
+      "You're not sure if you trust these cultists, but the price they're offering for a good night's rest is a pretty good deal to you. Breakfast is included, or whatever is left from the #pSpireblight.",
+      "The \"room\" you rented doesn't feel like one of an inn, but more of a full-fledged bedroom. The cultists seem to have renovated the cottage into an inn. Perhaps it's family-run? Nonetheless, the night was surprisingly restful. NL NL ",
+      "Breakfast is a little peculiar. The main course is #pmushrooms and something that resembles carrot sticks, but are #g@green@ #g@and@ #g@rough@. It tastes a little funny, but the chars dilutes it.",
+      "One of the cultists seems to be looking for something through the drawers. \"We were also thinking of gifting you a little something! I remember we had ",
+      "somewhere... We're unloading some of the stuff we #rpillaged in our old lives. Do you mind if you stay a while?\"",
+      "#r~some~ #r~nice~ #r~gloves~ ",
+      "#g~an~ #g~elegant~ #g~cloak~ ",
+      "#b~a~ #b~warm~ #b~scarf~ ",
+      "\"I swear ",
+      "in one of these boxes... No, not here either...\" NL NL ",
+      "they were ",
+      "it was ",
+      "It's already been an hour. The wait feels like forever, but you stay. All this sitting around doesn't do you any good; you feel as if you had #r~forgotten~ #r~something...~",
+      "\"Oh, here ",
+      "Out of all boxes, the last one I check!\" The ex-cultist hands you the ",
+      "good quality too, but you don't want to know how they #r\"pillaged\" these either. You say goodbye and continue on your journey.",
+      "they are! ",
+      "it is! ",
+      "#r~gloves.~ They're ",
+      "#g~cloak.~ It's ",
+      "#b~scarf.~ It's "
+    ],
+    "OPTIONS": [
+      "[Enter]",
+      "[Rest] #rLose #r",
+      " #rGold. #gHeal #g",
+      " #gHP.",
+      "[Leave]",
+      "[Continue]",
+      "[Wait] #rLose #r",
+      ". #gObtain #ga #gspecial #gRelic.",
+      "[Locked] Requires: Card."
+    ]
+  }
+}

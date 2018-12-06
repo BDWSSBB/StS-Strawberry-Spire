@@ -1,0 +1,317 @@
+{
+  "strawberrySpire:AztechBall": {
+    "NAME": "Aztech Ball",
+    "FLAVOR": "These balls explode whenever 3 of the same color are put together.",
+    "DESCRIPTIONS": [
+      "Whenever you have #b3 of the same Orb in a row, #yEvoke them and #yChannel #b",
+      " random Orbs."
+    ]
+  },
+  "strawberrySpire:BonfireDress": {
+    "NAME": "Bonfire Dress",
+    "FLAVOR": "Dondo [YELLOW]panpa panpa [WHITE]dondo [YELLOW]pan panpa pa!",
+    "DESCRIPTIONS": [
+      "If you do not play the same type of card twice in a row this turn, gain #b",
+      " #yDexterity at the end of you turn."
+    ]
+  },
+  "strawberrySpire:BrokenPrinter": {
+    "NAME": "Broken Printer",
+    "FLAVOR": "\"It's not broken! Stop hitting the print button!\"",
+    "DESCRIPTIONS": [
+      "Upon pickup, obtain #b",
+      " copies of a card in your deck.",
+      "Choose a Card to Duplicate."
+    ]
+  },
+  "strawberrySpire:BrokenVision": {
+    "NAME": "Broken Vision",
+    "FLAVOR": "Sickness bag required.",
+    "DESCRIPTIONS": [
+      "Start each combat #yConfused."
+    ]
+  },
+  "strawberrySpire:CapacitorDischarge": {
+    "NAME": "Capacitor Discharge",
+    "FLAVOR": "\"I'm going to guess that this is just meant to occupy your attention, because otherwise this is some shoddy electronics work.\"",
+    "DESCRIPTIONS": [
+      "Start each combat with #b",
+      " #yFocus and #b",
+      " less Orb slots."
+    ]
+  },
+  "strawberrySpire:Dictionifier": {
+    "NAME": "Dictionifier",
+    "FLAVOR": "\"What do you mean a blue Strike isn't the same as a red Strike?!\".",
+    "DESCRIPTIONS": [
+      "Upon pickup, reduce the cost of all copies of a card in your deck to #b0.",
+      "Choose a Card for ",
+      "."
+    ]
+  },
+  "strawberrySpire:DirtyLipstick": {
+    "NAME": "Dirty Lipstick",
+    "FLAVOR": "Covered in mud and slop. Looks like some swine got its hooves on it.",
+    "DESCRIPTIONS": [
+      "Upon pickup, permanently increase the damage and #yBlock of all Basic cards by #b",
+      "."
+    ]
+  },
+  "strawberrySpire:ElectricRodnt": {
+    "NAME": "Electric Rodn't",
+    "FLAVOR": "Not to be confused with its mammal counterpart, the pookachimp.",
+    "DESCRIPTIONS": [
+      "Every time you play #b",
+      " cards, #yChannel #b1 #yLightning."
+    ]
+  },
+  "strawberrySpire:ElefentMask": {
+    "NAME": "Elefent Mask",
+    "FLAVOR": "So come find me... [RED]I'M IN YOUR SOUL.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, the enemy with the most HP loses #b",
+      " #yStrength this turn."
+    ]
+  },
+  "strawberrySpire:GlyphStone": {
+    "NAME": "Glyph Stone",
+    "FLAVOR": "Not quite about simplicity or elegance, but rather both it seems.",
+    "DESCRIPTIONS": [
+      "Upon pickup, #yTransform #b",
+      " random Strike or Defend cards, then #yUpgrade them."
+    ]
+  },
+  "strawberrySpire:HandKnitScarf": {
+    "NAME": "Hand-Knit Scarf",
+    "FLAVOR": "It gives you the warm fuzzies inside!",
+    "DESCRIPTIONS": [
+      "Whenever you #yChannel an Orb, gain #b",
+      " #yBlock."
+    ]
+  },
+  "strawberrySpire:InflatableHammer": {
+    "NAME": "InflatableHammer",
+    "FLAVOR": "Squeak squeak!",
+    "DESCRIPTIONS": [
+      "Start each combat with #b",
+      " #yStrength. Whenever you play an #yAttack, lose #b",
+      " #yStrength this turn."
+    ]
+  },
+  "strawberrySpire:IronFlakes": {
+    "NAME": "Iron Flakes",
+    "FLAVOR": "Unfortunately, someone already ate them all. All that's left is a few scraps.",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP in combat, heal #b",
+      " HP."
+    ]
+  },
+  "strawberrySpire:KineticCharger": {
+    "NAME": "Kinetic Charger",
+    "FLAVOR": "Less of a charger, more of a way to reuse energy.",
+    "DESCRIPTIONS": [
+      "Whenever you play a card that costs at least [E] [E] [E] , gain [E] ."
+    ]
+  },
+  "strawberrySpire:MawJerky": {
+    "NAME": "Maw Jerky",
+    "FLAVOR": "Classic salt and heat makes for a delicious snack on the go.",
+    "DESCRIPTIONS": [
+      "At the end of Elite combats, raise your Max HP by #b",
+      "."
+    ]
+  },
+  "strawberrySpire:PoopsieRoll": {
+    "NAME": "Poopsie Roll",
+    "FLAVOR": "Do you really want to eat this?",
+    "DESCRIPTIONS": [
+      "At the start of each combat, deal damage equal to #b",
+      "% of your missing HP to ALL enemies."
+    ]
+  },
+  "strawberrySpire:RottenAvocado": {
+    "NAME": "Rotten Avocado",
+    "FLAVOR": "It's got fungi growing out of it. Gross.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. Whenever you climb a floor, lose #b",
+      " Max HP."
+    ]
+  },
+  "strawberrySpire:SilkGarment": {
+    "NAME": "Silk Garment",
+    "FLAVOR": "You feel loose and limber in your new cloak!",
+    "DESCRIPTIONS": [
+      "The first time you discard a card each turn, draw #b",
+      " card."
+    ]
+  },
+  "strawberrySpire:SolarisEssence": {
+    "NAME": "Solaris Essence",
+    "FLAVOR": "Pretty much everywhere, it's gonna be hot.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. At the start of each combat, add #b",
+      " #yBurns into your hand."
+    ]
+  },
+  "strawberrySpire:StillNotAdequateHouse": {
+    "NAME": "Still-Not-Adequate House",
+    "FLAVOR": "\"It's still not adequate.\" -The Architect",
+    "DESCRIPTIONS": [
+      "Upon pickup, gain #b",
+      " #yGold. NL Raise your Max HP by #b",
+      ". NL #yUpgrade #b",
+      " random #yAttack. NL #yUpgrade #b",
+      " random #ySkill. NL #yUpgrade #b",
+      " random #yPower card."
+    ]
+  },
+  "strawberrySpire:TannedGloves": {
+    "NAME": "Tanned Gloves",
+    "FLAVOR": "You feel steady with your blade and ready for battle!",
+    "DESCRIPTIONS": [
+      "Every time you #yExhaust #b",
+      " cards, gain [E] ."
+    ]
+  },
+  "strawberrySpire:ThornyGelberry": {
+    "NAME": "Thorny Gelberry",
+    "FLAVOR": "This gelatinous fruit has a spiked layer to protect itself from anyone smashing it open.",
+    "DESCRIPTIONS": [
+      "Whenever you are attacked, gain #b",
+      " #yThorns."
+    ]
+  },
+  "strawberrySpire:Treaders": {
+    "NAME": "Treaders",
+    "FLAVOR": "Thick boots to keep you on your feet.",
+    "DESCRIPTIONS": [
+      "The first time you draw a #yStatus card or #rCurse each combat, #yExhaust it and draw #b",
+      " card."
+    ]
+  },
+  "strawberrySpire:WoahramAlpha": {
+    "NAME": "Woahram Alpha",
+    "FLAVOR": "exe: \"d/dx ex = e xd\"",
+    "DESCRIPTIONS": [
+      "Every time you #yChannel #b",
+      " Orbs in a single turn, gain #b",
+      " #yFocus and lose #b",
+      " #yFocus at the end of this turn."
+    ]
+  },
+  "strawberrySpire:WyrmJar": {
+    "NAME": "Wyrm Jar",
+    "FLAVOR": "These special wyrms decompose waste and \"produce\" a powerful muscle nutrient.",
+    "DESCRIPTIONS": [
+      "Every time you #yExhaust #b",
+      " cards in a single combat, gain #b",
+      " #yStrength."
+    ]
+  },
+  "strawberrySpire:Blandfruit": {
+    "NAME": "Blandfruit",
+    "FLAVOR": "It tastes like caked dust.",
+    "DESCRIPTIONS": [
+      "Perhaps it could be cooked.",
+      "Infuse this at a rest site to obtain #y",
+      "."
+    ]
+  },
+  "strawberrySpire:Blindfruit": {
+    "NAME": "Blindfruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "Start each combat with #b",
+      " #yIntangible."
+    ]
+  },
+  "strawberrySpire:Dreamfruit": {
+    "NAME": "Dreamfruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "Whenever you use a potion, remove all of your debuffs."
+    ]
+  },
+  "strawberrySpire:Earthfruit": {
+    "NAME": "Earthfruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "Reduce attack damage taken by #b",
+      "."
+    ]
+  },
+  "strawberrySpire:Fadefruit": {
+    "NAME": "Fadefruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "At the start of each combat, put #b",
+      " card from your draw pile into your hand."
+    ]
+  },
+  "strawberrySpire:Firefruit": {
+    "NAME": "Firefruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "At the start of each combat, deal #b",
+      " damage to ALL enemies."
+    ]
+  },
+  "strawberrySpire:Icefruit": {
+    "NAME": "Icefruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "Whenever you deal at least #b",
+      " unblocked attack damage, the enemy loses #b",
+      " #yStrength this turn."
+    ]
+  },
+  "strawberrySpire:Rotfruit": {
+    "NAME": "Rotfruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b",
+      " #yStrength."
+    ]
+  },
+  "strawberrySpire:Sorrowfruit": {
+    "NAME": "Sorrowfruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "Whenever you shuffle your discard pile, apply #b",
+      " #yPoison to ALL enemies."
+    ]
+  },
+  "strawberrySpire:Starfruit": {
+    "NAME": "Starfruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "Upon pickup, raise your Max HP by #b",
+      ". This and future Max HP gains are #b",
+      "% more effective."
+    ]
+  },
+  "strawberrySpire:Stormfruit": {
+    "NAME": "Stormfruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "Whenever you #yChannel a #yLightning, draw #b",
+      " card."
+    ]
+  },
+  "strawberrySpire:Sunfruit": {
+    "NAME": "Sunfruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "Whenever you climb a floor, heal #b",
+      " HP."
+    ]
+  },
+  "strawberrySpire:Swiftfruit": {
+    "NAME": "Swiftfruit",
+    "FLAVOR": "It looks ready to be eaten!",
+    "DESCRIPTIONS": [
+      "Start each combat with #b",
+      " #yDexterity."
+    ]
+  }
+}

@@ -2,12 +2,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- I'm dumb and I dunno how to use this thing without blowing stuff up. -->
-    <groupId>strawberycards</groupId>
-    <artifactId>StrawberryCards</artifactId>
-    <version>v0.1.3</version>
+    <groupId>strawberyspire</groupId>
+    <artifactId>StrawberrySpire</artifactId>
+    <version>v0.2.0</version>
     <packaging>jar</packaging>
-    <name>StrawberryCards</name>
-    <description>54 new cards to add to the vanilla experience.</description>
+    <name>StrawberrySpire</name>
+    <description>More content. More fun. No strawberries included.</description>
 
     <dependencies>
         <dependency>
@@ -41,7 +41,7 @@
     </dependencies>
 
     <build>
-        <finalName>StrawberryCards</finalName>
+        <finalName>StrawberrySpire</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -61,7 +61,7 @@
                         <phase>package</phase>
                         <configuration>
                             <target>
-                                <copy file="target/StrawberryCards.jar" tofile="../lib/StrawberryCards.jar"/>
+                                <copy file="target/StrawberrySpire.jar" tofile="../lib/StrawberrySpire.jar"/>
                             </target>
                         </configuration>
                         <goals>
