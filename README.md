@@ -2,7 +2,7 @@
 Slay the Spire mod that adds new content.
 
 ## Overview
-Strawberry Cards is a mod that adds new cards for the vanilla characters, plus a few colorless cards and curses. There are about 15 cards for each character, a rather sizable amount. These cards reuse basic concepts and a bit more, hence the name Strawberry Cards. Nothing is too deviant from the base game, so understanding this mod should be easy.
+Strawberry Spire is a mod that adds new content for the vanilla characters, plus a few things for everyone. Everything reuses basic concepts and a bit more, hence the name Strawberry Cards. Nothing is too deviant from the base game, so understanding this mod should be easy.
 
 This mod requires BaseMod and StSLib to work.
 
@@ -22,4 +22,4 @@ This mod requires BaseMod and StSLib to work.
 ## Not-As-Important-As-Before Note (Please Read This Still)
 So relics are done, hooray! Well, actually, I think I have more to make, and I might as well make a few more cards. I originally had a quota of 15 cards per character (met that) and 28 relics (If you exclude the event relics, I didn't exactly meet that, but the events should compensate for content). Next up should be enemies, but don't expect an update for a while (unless it's fixing something game-crashing or something awful). Finals suck, man.
 
-Also, you'll quickly notice everything relic's a rock. I don't think I can use Google Images to cheese this, so I need your help with suggestions on how to get, well, at least sub-par art. And please, report bugs!
+Also, you'll quickly notice every relic's a rock. I don't think I can use Google Images to cheese this, so I need your help with suggestions on how to get, well, at least sub-par art. And please, report bugs!
