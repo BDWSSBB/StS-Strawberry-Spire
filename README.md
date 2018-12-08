@@ -13,6 +13,7 @@ This mod requires BaseMod and StSLib to work.
 
 ## Known Issues
 * The Infuse button is in an awkward place. That spot is just temporary; I'll have better logic for knowing where the button should be.
+* Bad things happen sometimes since the rock textures are missing outline files.
 
 ## Other Notes
 1. I do not own any of the images, clearly. All I did was use Google Images and crop stuff. Hopefully you don't mind my awful selection of art.
