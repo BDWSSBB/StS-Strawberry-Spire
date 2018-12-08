@@ -2,7 +2,7 @@
 Slay the Spire mod that adds new content.
 
 ## Overview
-Strawberry Spire is a mod that adds new content for the vanilla characters, plus a few things for everyone. Everything reuses basic concepts and a bit more, hence the name Strawberry Cards. Nothing is too deviant from the base game, so understanding this mod should be easy.
+Strawberry Spire is a mod that adds new content for the vanilla characters, plus a few things for everyone. Everything reuses basic concepts and a bit more, hence the name Strawberry Spire. Nothing is too deviant from the base game, so understanding this mod should be easy.
 
 This mod requires BaseMod and StSLib to work.
 
