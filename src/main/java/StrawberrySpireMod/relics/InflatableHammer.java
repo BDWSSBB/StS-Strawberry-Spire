@@ -14,11 +14,12 @@ public class InflatableHammer extends CustomRelic {
 
     public static final String ID = "strawberrySpire:InflatableHammer";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int STRENGTH_AMOUNT = 3;
     private static final int STRENGTH_LOSS_AMOUNT = 1;
 
     public InflatableHammer() {
-        super(ID, IMAGE_PATH, RelicTier.SHOP, LandingSound.HEAVY);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SHOP, LandingSound.HEAVY);
     }
 
     public String getUpdatedDescription() {

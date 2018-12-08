@@ -10,11 +10,12 @@ public class Blandfruit extends CustomRelic implements CustomSavable<String>{
 
     public static final String ID = "strawberrySpire:Blandfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     public AbstractRelic chosenFruit;
     private AbstractRelic tempFruit;
 
     public Blandfruit() {
-        super(ID, IMAGE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
         this.chosenFruit = null;
         this.tempFruit = null;
     }

@@ -13,10 +13,11 @@ public class ElefentMask extends CustomRelic {
 
     public static final String ID = "strawberrySpire:ElefentMask";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int STRENGTH_LOSS_AMOUNT = 8;
 
     public ElefentMask() {
-        super(ID, IMAGE_PATH, RelicTier.COMMON, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.COMMON, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {

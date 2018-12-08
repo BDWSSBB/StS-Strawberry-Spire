@@ -12,11 +12,12 @@ public class Treaders extends CustomRelic {
 
     public static final String ID = "strawberrySpire:Treaders";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int DRAW_AMOUNT = 1;
     private boolean hasDrawnCardThisCombat = false;
 
     public Treaders() {
-        super(ID, IMAGE_PATH, RelicTier.COMMON, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.COMMON, LandingSound.FLAT);
         this.pulse = false;
     }
 

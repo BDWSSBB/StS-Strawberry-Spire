@@ -11,10 +11,11 @@ public class RottenAvocado extends CustomRelic {
 
     public static final String ID = "strawberrySpire:RottenAvocado";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int MAX_HP_LOSE_AMOUNT = 1;
 
     public RottenAvocado() {
-        super(ID, IMAGE_PATH, RelicTier.BOSS, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.BOSS, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {

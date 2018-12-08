@@ -11,10 +11,11 @@ public class MawJerky extends CustomRelic {
 
     public static final String ID = "strawberrySpire:MawJerky";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int MAX_HP_AMOUNT = 4;
 
     public MawJerky() {
-        super(ID, IMAGE_PATH, RelicTier.COMMON, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.COMMON, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {

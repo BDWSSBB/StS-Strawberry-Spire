@@ -13,19 +13,20 @@ public class Earthfruit extends CustomRelic {
 
     public static final String ID = "strawberrySpire:Earthfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
-    private static final int REDUCE_DAMAGE_AMOUNT = 1;
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
+    private static final int BARKSKIN_AMOUNT = 4;
 
     public Earthfruit() {
-        super(ID, IMAGE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + REDUCE_DAMAGE_AMOUNT + DESCRIPTIONS[1];
+        return DESCRIPTIONS[0] + BARKSKIN_AMOUNT + DESCRIPTIONS[1];
     }
 
     public void atBattleStart() {
         flash();
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BarkskinPower(AbstractDungeon.player, REDUCE_DAMAGE_AMOUNT), REDUCE_DAMAGE_AMOUNT));
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BarkskinPower(AbstractDungeon.player, BARKSKIN_AMOUNT), BARKSKIN_AMOUNT));
         AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 

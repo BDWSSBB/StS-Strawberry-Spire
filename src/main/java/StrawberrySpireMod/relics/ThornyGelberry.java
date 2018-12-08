@@ -13,10 +13,11 @@ public class ThornyGelberry extends CustomRelic {
 
     public static final String ID = "strawberrySpire:ThornyGelberry";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int THORNS_AMOUNT = 1;
 
     public ThornyGelberry() {
-        super(ID, IMAGE_PATH, RelicTier.RARE, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.RARE, LandingSound.FLAT);
         this.pulse = false;
     }
 

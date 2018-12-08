@@ -1,7 +1,9 @@
 package StrawberrySpireMod.powers;
 
+import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.core.*;
+import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
@@ -25,6 +27,10 @@ public class BarkskinPower extends AbstractPower {
 
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+    }
+
+    public void atEndOfRound() {
+        AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
     }
 
     public float atDamageReceive(float damage, DamageInfo.DamageType type) {

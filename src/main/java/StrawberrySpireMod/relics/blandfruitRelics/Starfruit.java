@@ -10,11 +10,12 @@ public class Starfruit extends CustomRelic { // The Future Max HP benefits are p
 
     public static final String ID = "strawberrySpire:Starfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int MAX_HP_AMOUNT = 8;
     private static final int FUTURE_MAX_HP_PERCENT_INCREASE_AMOUNT = 50;
 
     public Starfruit() {
-        super(ID, IMAGE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {

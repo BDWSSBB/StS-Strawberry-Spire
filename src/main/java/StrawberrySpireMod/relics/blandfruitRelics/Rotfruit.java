@@ -12,10 +12,11 @@ public class Rotfruit extends CustomRelic {
 
     public static final String ID = "strawberrySpire:Rotfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int STRENGTH_AMOUNT = 1;
 
     public Rotfruit() {
-        super(ID, IMAGE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {

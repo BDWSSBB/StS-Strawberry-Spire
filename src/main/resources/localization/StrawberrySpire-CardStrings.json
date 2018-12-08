@@ -38,7 +38,7 @@
   },
   "strawberrySpire:Harvest": {
     "NAME": "Harvest",
-    "DESCRIPTION": "The next Attack you play heals HP equal to 50% of unblocked damage. NL Exhaust."
+    "DESCRIPTION": "The next Attack you play heals HP equal to 60% of unblocked damage. NL Exhaust."
   },
   "strawberrySpire:Hellbender": {
     "NAME": "Hellbender",
@@ -68,15 +68,37 @@
     "NAME": "Spite",
     "DESCRIPTION": "Deal !D! damage. NL Deal !D! damage again for each debuff you have."
   },
+  "strawberrySpire:Taunt": {
+    "NAME": "Taunt",
+    "DESCRIPTION": "Apply !M! Weak. NL Apply !M! Vulnerable.",
+    "EXTENDED_DESCRIPTION": [
+      "You call that a weapon?",
+      "Come at me!",
+      "Do your worst! NL @HAHAHA!@",
+      "Have a free shot! NL Futile weakling!",
+      "Well played. NL Well played. NL Well played."
+    ]
+  },
+  "strawberrySpire:ZonePlayer": {
+    "NAME": "Zone Player",
+    "DESCRIPTION": "Deal !D! damage. NL Retain your hand this turn."
+  },
   "strawberrySpire:DeltaFlow": {
     "NAME": "Delta Flow",
     "DESCRIPTION": "Draw 2 cards. NL Next turn, draw !M! additional card.",
     "UPGRADE_DESCRIPTION": "Draw 2 cards. NL Next turn, draw !M! additional cards."
   },
+  "strawberrySpire:Fastroyer": {
+    "NAME": "Fastroyer",
+    "DESCRIPTION": "Can only be played if you have played no cards this turn. NL Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      "Facestroyer",
+      "This must be my first card."
+    ]
+  },
   "strawberrySpire:FootworkForm": {
     "NAME": "Footwork Form",
-    "DESCRIPTION": "Ethereal. NL At the start of your turn, gain !M! Dexterity.",
-    "UPGRADE_DESCRIPTION": "At the start of your turn, gain !M! Dexterity."
+    "DESCRIPTION": "Ethereal. NL At the start of your turn, gain !M! Dexterity."
   },
   "strawberrySpire:Grapple": {
     "NAME": "Grapple",
@@ -101,6 +123,13 @@
     "NAME": "Lockstep",
     "DESCRIPTION": "Every 2 turns, your Attacks deal double damage. NL This turn and every other turn, your Attacks deal half damage.",
     "UPGRADE_DESCRIPTION": "This turn and every 2 turns, your Attacks deal double damage. NL Every other turn, your Attacks deal half damage."
+  },
+  "strawberrySpire:Marathoner": {
+    "NAME": "Marathoner",
+    "DESCRIPTION": "Lose !M! Strength this turn. NL Lose !M! Dexterity this turn. NL Gain [E] [E].",
+    "EXTENDED_DESCRIPTION": [
+      "Everlasting"
+    ]
   },
   "strawberrySpire:Momentum": {
     "NAME": "Momentum",
@@ -162,6 +191,10 @@
 	  "Tri-Thunder Taze"
 	]
   },
+  "strawberrySpire:BlasterWyrm": {
+    "NAME": "Blaster Wyrm",
+    "DESCRIPTION": "Enemy lose 3 Strength. NL Apply !M! Weak. NL Exhaust."
+  },
   "strawberrySpire:BreederCore": {
     "NAME": "Breeder Core",
     "DESCRIPTION": "Gain !M! Vulnerable. NL Next turn, Channel 2X random Orbs. NL Exhaust.",
@@ -176,6 +209,10 @@
     "NAME": "Data Dump",
     "DESCRIPTION": "Deal !D! damage. NL Put !M! card from your draw pile into your discard pile.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Put !M! cards from your draw pile into your discard pile."
+  },
+  "strawberrySpire:Disconnect": {
+    "NAME": "Disconnect",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Weak to ALL enemies."
   },
   "strawberrySpire:FocalLaser": {
     "NAME": "Focal Laser",
@@ -211,7 +248,7 @@
   },
   "strawberrySpire:THEL": {
     "NAME": "THEL",
-    "DESCRIPTION": "Costs 1 less [E] for each [E] at the end of your turn this combat. Deal !D! damage. Set this card's cost to 4 this combat."
+    "DESCRIPTION": "Costs 1 less [E] for each [E] at the end of your turn. Deal !D! damage. Set this card's cost to 4 this combat."
   },
   "strawberrySpire:TypeOrDie": {
     "NAME": "Type or Die",
@@ -237,6 +274,18 @@
   "strawberrySpire:Fade": {
     "NAME": "Fade",
     "DESCRIPTION": "Gain !M! Intangible. NL Add a Decay Curse into your deck. NL Exhaust."
+  },
+  "strawberrySpire:Flashback": {
+    "NAME": "Flashback",
+    "DESCRIPTION": "Gain !B! Block. NL Can be upgraded 3 more times.",
+    "EXTENDED_DESCRIPTION": [
+      "Invert",
+      "At the end of your turn, gain !M! Block. NL Can be upgraded 2 more times.",
+      "Duality",
+      "Whenever you play a card, gain !M! Block. NL Can be upgrade 1 more times.",
+      "Monochrome",
+      "Add all 3 unupgraded copies of this card into your hand."
+    ]
   },
   "strawberrySpire:NeglectedBlade": {
     "NAME": "Neglected Blade",

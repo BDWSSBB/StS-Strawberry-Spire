@@ -13,12 +13,13 @@ public class Dictionifier extends CustomRelic implements CustomSavable<ArrayList
 
     public static final String ID = "strawberrySpire:Dictionifier";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private boolean cardSelected = false;
     private AbstractCard cardToReduce = null;
     private ArrayList<AbstractCard> reducedCardsList = new ArrayList<>();
 
     public Dictionifier() {
-        super(ID, IMAGE_PATH, RelicTier.BOSS, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.BOSS, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {
@@ -73,8 +74,7 @@ public class Dictionifier extends CustomRelic implements CustomSavable<ArrayList
         }
     }
 
-    public ArrayList<Integer> onSave()
-    {
+    public ArrayList<Integer> onSave() {
         ArrayList<Integer> cardIndices = new ArrayList<>();
         for (AbstractCard c1 : AbstractDungeon.player.masterDeck.group) {
             for (AbstractCard c2: this.reducedCardsList) {

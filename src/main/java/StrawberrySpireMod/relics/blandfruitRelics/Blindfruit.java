@@ -12,10 +12,11 @@ public class Blindfruit extends CustomRelic {
 
     public static final String ID = "strawberrySpire:Blindfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int INTANGIBLE_AMOUNT = 1;
 
     public Blindfruit() {
-        super(ID, IMAGE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {

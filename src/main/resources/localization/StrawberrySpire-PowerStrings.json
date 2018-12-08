@@ -10,7 +10,7 @@
     "NAME": "Barkskin",
     "DESCRIPTIONS": [
       "Reduce attack damage taken by #b",
-      "."
+      ". At the end of everyone's turn, reduce #yBarkskin by #b1."
     ]
   },
   "strawberrySpire:BiBeamBolt": {
@@ -58,20 +58,19 @@
 	  " #yDexterity."
     ]
   },
-  "strawberrySpire:FrostTouch": {
-    "NAME": "Frost Touch",
+  "strawberrySpire:GainDexterity": {
+    "NAME": "Gain Dexterity",
     "DESCRIPTIONS": [
-      "Whenever you deal at least #b",
-      " unblocked attack damage, the enemy loses #b",
-      " #yStrength."
+      "At the end of this turn, gain #b",
+      " #yDexterity."
     ]
   },
   "strawberrySpire:Harvest": {
     "NAME": "Harvest",
     "DESCRIPTIONS": [
-      "The next #yAttack you play heals HP equal to 50% of unblocked damage.",
+      "The next #yAttack you play heals HP equal to 60% of unblocked damage.",
 	  "The next #b",
-	  " #yAttacks you play heal HP equal to 50% of unblocked damage."
+	  " #yAttacks you play heal HP equal to 60% of unblocked damage."
     ]
   },
   "strawberrySpire:Hellbender": {
@@ -128,8 +127,10 @@
   "strawberrySpire:Package": {
     "NAME": "Package",
     "DESCRIPTIONS": [
-      "Add ",
-	  "and ",
+      "Add #y",
+	  ", #y",
+	  ", and #y",
+	  " and #y",
       " into your hand next turn."
     ]
   },

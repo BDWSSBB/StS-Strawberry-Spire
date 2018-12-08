@@ -14,10 +14,11 @@ public class HandKnitScarf extends CustomRelic implements OnChannelRelic {
 
     public static final String ID = "strawberrySpire:HandKnitScarf";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int BLOCK_AMOUNT = 1;
 
     public HandKnitScarf() {
-        super(ID, IMAGE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {

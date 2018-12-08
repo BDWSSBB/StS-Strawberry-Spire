@@ -12,10 +12,11 @@ public class SolarisEssence extends CustomRelic {
 
     public static final String ID = "strawberrySpire:SolarisEssence";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int BURN_AMOUNT = 2;
 
     public SolarisEssence() {
-        super(ID, IMAGE_PATH, RelicTier.BOSS, LandingSound.MAGICAL);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.BOSS, LandingSound.MAGICAL);
     }
 
     public String getUpdatedDescription() {

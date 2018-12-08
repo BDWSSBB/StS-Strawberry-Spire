@@ -11,11 +11,12 @@ public class SilkGarment extends CustomRelic {
 
     public static final String ID = "strawberrySpire:SilkGarment";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int DRAW_AMOUNT = 1;
     private boolean hasDiscardedThisTurn = false;
 
     public SilkGarment() {
-        super(ID, IMAGE_PATH, RelicTier.SPECIAL, LandingSound.MAGICAL);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.MAGICAL);
         this.pulse = false;
     }
 

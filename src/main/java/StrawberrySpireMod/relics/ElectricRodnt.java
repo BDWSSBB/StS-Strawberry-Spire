@@ -15,10 +15,11 @@ public class ElectricRodnt extends CustomRelic {
 
     public static final String ID = "strawberrySpire:ElectricRodnt";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int CARD_AMOUNT = 7;
 
     public ElectricRodnt() {
-        super(ID, IMAGE_PATH, RelicTier.UNCOMMON, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.UNCOMMON, LandingSound.FLAT);
         this.counter = 0;
     }
 

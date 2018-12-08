@@ -19,7 +19,5 @@ This mod requires BaseMod and StSLib to work.
 2. I'm really stupid, so please don't use my mod as a model. Doing that will probably screw your mod up or something bad like that. Go look at other mods for that.
 3. I will not create crossover content (yet). Remember, I'm stupid. I don't want to be overwhelmed with that.
 
-## Not-As-Important-As-Before Note (Please Read This Still)
-So relics are done, hooray! Well, actually, I think I have more to make, and I might as well make a few more cards. I originally had a quota of 15 cards per character (met that) and 28 relics (If you exclude the event relics, I didn't exactly meet that, but the events should compensate for content). Next up should be enemies, but don't expect an update for a while (unless it's fixing something game-crashing or something awful). Finals suck, man.
-
-Also, you'll quickly notice every relic's a rock. I don't think I can use Google Images to cheese this, so I need your help with suggestions on how to get, well, at least sub-par art. And please, report bugs!
+## Kinda-An-Important-Note (This one's small, I promise)
+I may be doing some refactoring with some of the stuff here. Shouldn't break too much, just a warning though in case something does blow up. I still need a good method for replacing those rock relics.

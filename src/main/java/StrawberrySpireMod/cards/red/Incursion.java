@@ -39,11 +39,11 @@ public class Incursion extends AbstractStrawberrySpireCard {
         }
         for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisTurn) {
             if (c.type == AbstractCard.CardType.SKILL) {
-                this.cantUseMessage = "I have played a Skill.";
+                this.cantUseMessage = CARD_STRINGS.EXTENDED_DESCRIPTION[0];
                 return false;
             }
         }
-        return canUse;
+        return true;
     }
 
     public AbstractCard makeCopy() {

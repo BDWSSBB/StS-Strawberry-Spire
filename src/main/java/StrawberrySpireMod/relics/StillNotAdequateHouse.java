@@ -16,6 +16,7 @@ public class StillNotAdequateHouse extends CustomRelic {
 
     public static final String ID = "strawberrySpire:StillNotAdequateHouse";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int GOLD_AMOUNT = 90;
     private static final int MAX_HP_AMOUNT = 6;
     private static final int ATTACK_CARD_AMOUNT = 1;
@@ -23,7 +24,7 @@ public class StillNotAdequateHouse extends CustomRelic {
     private static final int POWER_CARD_AMOUNT = 1;
 
     public StillNotAdequateHouse() {
-        super(ID, IMAGE_PATH, RelicTier.RARE, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.RARE, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {

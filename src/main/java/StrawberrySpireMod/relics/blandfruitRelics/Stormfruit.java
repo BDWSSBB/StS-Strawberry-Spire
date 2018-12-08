@@ -14,10 +14,11 @@ public class Stormfruit extends CustomRelic implements OnChannelRelic {
 
     public static final String ID = "strawberrySpire:Stormfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int DRAW_AMOUNT = 1;
 
     public Stormfruit() {
-        super(ID, IMAGE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {

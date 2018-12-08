@@ -17,10 +17,10 @@ public class FootworkForm extends AbstractStrawberrySpireCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
     public static final String IMAGE_PATH = "cards/green/footworkForm.png";
-    private static final int COST = 3;
+    private static final int COST = 2;
+    private static final int UPGRADE_COST = 1;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = CARD_STRINGS.UPGRADE_DESCRIPTION;
-    private static final int MAGIC_NUMBER = 2;
+    private static final int MAGIC_NUMBER = 1;
 
     public FootworkForm() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.POWER, AbstractCard.CardColor.GREEN, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.SELF);
@@ -39,10 +39,8 @@ public class FootworkForm extends AbstractStrawberrySpireCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.rawDescription = UPGRADE_DESCRIPTION;
-            initializeDescription();
 
-            this.isEthereal = false;
+            this.upgradeBaseCost(UPGRADE_COST);
         }
     }
 }

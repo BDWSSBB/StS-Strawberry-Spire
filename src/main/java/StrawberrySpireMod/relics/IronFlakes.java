@@ -11,10 +11,11 @@ public class IronFlakes extends CustomRelic {
 
     public static final String ID = "strawberrySpire:IronFlakes";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int HEAL_AMOUNT = 1;
 
     public IronFlakes() {
-        super(ID, IMAGE_PATH, RelicTier.RARE, LandingSound.HEAVY);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.RARE, LandingSound.HEAVY);
         this.counter = 0;
     }
 

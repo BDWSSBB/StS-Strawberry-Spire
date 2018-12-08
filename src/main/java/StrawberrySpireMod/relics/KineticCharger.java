@@ -13,10 +13,11 @@ public class KineticCharger extends CustomRelic {
 
     public static final String ID = "strawberrySpire:KineticCharger";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int MINIMUM_ENERGY_COST_AMOUNT = 3;
 
     public KineticCharger() {
-        super(ID, IMAGE_PATH, RelicTier.COMMON, LandingSound.HEAVY);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.COMMON, LandingSound.HEAVY);
     }
 
     public String getUpdatedDescription() {

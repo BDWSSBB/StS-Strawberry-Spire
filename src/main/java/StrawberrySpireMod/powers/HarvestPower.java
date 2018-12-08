@@ -50,13 +50,13 @@ public class HarvestPower extends AbstractPower {
     public void onAttack(final DamageInfo info, final int damageAmount, final AbstractCreature target) {
         if (damageAmount > 0 && target != this.owner && info.type == DamageInfo.DamageType.NORMAL) {
             if (AbstractDungeon.player.hasRelic(Boot.ID) && damageAmount < 5) { // Is there a better way to do this? Doesn't seem so.
-                this.owner.heal(5 / 2);
+                this.owner.heal(5 * 3 / 5);
             }
             else if (damageAmount > target.currentHealth) {
-                this.owner.heal(target.currentHealth / 2);
+                this.owner.heal(target.currentHealth * 3 / 5);
             }
             else {
-                this.owner.heal(damageAmount / 2);
+                this.owner.heal(damageAmount * 3 / 5);
             }
             if (removePowerLater) {
                 removePowerLater = false;

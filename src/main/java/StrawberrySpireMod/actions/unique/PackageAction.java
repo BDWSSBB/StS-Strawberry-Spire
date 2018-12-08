@@ -55,7 +55,9 @@ public class PackageAction extends AbstractGameAction {
                 cardList.add(c);
                 this.player.drawPile.removeCard(c);
             }
-            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(this.player, this.player, new PackagePower(this.player, cardList)));
+            if (!cardList.isEmpty()) {
+                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(this.player, this.player, new PackagePower(this.player, cardList)));
+            }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
             AbstractDungeon.player.hand.refreshHandLayout();
         }

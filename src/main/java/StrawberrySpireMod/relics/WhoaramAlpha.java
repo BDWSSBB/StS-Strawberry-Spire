@@ -17,11 +17,12 @@ public class WhoaramAlpha extends CustomRelic implements OnChannelRelic {
 
     public static final String ID = "strawberrySpire:WhoaramAlpha";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int CHANNEL_AMOUNT = 2;
     private static final int FOCUS_AMOUNT = 1;
 
     public WhoaramAlpha() {
-        super(ID, IMAGE_PATH, RelicTier.RARE, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.RARE, LandingSound.HEAVY);
     }
 
     public String getUpdatedDescription() {

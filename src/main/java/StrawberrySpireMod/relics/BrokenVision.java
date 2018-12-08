@@ -12,9 +12,10 @@ public class BrokenVision extends CustomRelic {
 
     public static final String ID = "strawberrySpire:BrokenVision";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
 
     public BrokenVision() {
-        super(ID, IMAGE_PATH, RelicTier.SPECIAL, LandingSound.MAGICAL);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.MAGICAL);
     }
 
     public String getUpdatedDescription() {

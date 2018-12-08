@@ -13,11 +13,12 @@ public class WyrmJar extends CustomRelic {
 
     public static final String ID = "strawberrySpire:WyrmJar";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int EXHAUST_AMOUNT = 3;
     private static final int STRENGTH_AMOUNT = 1;
 
     public WyrmJar() {
-        super(ID, IMAGE_PATH, RelicTier.UNCOMMON, LandingSound.CLINK);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.UNCOMMON, LandingSound.CLINK);
     }
 
     public String getUpdatedDescription() {

@@ -8,10 +8,13 @@ CARDS
     Overwork: I had "Karoshi" in mind when I was getting the picture, which means "Death from overwork". Karoshi is also a game.
     Power Stomp: Picture is the foot from Monty Python.
     Spite: Picture is the Grumpy Cat meme.
+    Taunt: Reference to The Champ. Small chance to BM like you would in Hearthstone.
     Footwork Form: I used to joke about Footwork Form existing since Demon Form exists. Well, it's a real card now.
     Knife Party: The name of a music publisher. I hate dubstep though.
     Lockstep: The name of a minigame in Rhythm Heaven.
     Another Winter: The name of a soundtrack from Anamanaguchi.
+    Blaster Wyrm: Reference to the Blaster Worm computer worm.
+    Disconnect: Picture is the dinosaur from Chrome's no-connection game.
     THEL: The name of a building in The Space Game (Which stands for Tactical High-Energy Laser).
     Type or Die: Some quote from BAIKOH. Picture is a more refined Keyboard Cat meme.
     Dropbox: The name of a file sharing website.
@@ -48,6 +51,7 @@ SOMETHING SPECIAL THAT YOU WOULDN'T HAVE EVER UNDERSTOOD
         Incursion
         Power Stomp
         Delta (Flow)
+        Fastroyer
         Hot Shot/Ace's Hand
         Swampstar/Dankhole
         Trickbox
@@ -55,6 +59,7 @@ SOMETHING SPECIAL THAT YOU WOULDN'T HAVE EVER UNDERSTOOD
         Gammacceleration/Omegacceleration
         Neon Flight
         Disreguard/Disreguardian
+        Flashback/Invert/Duality/Monochrome
         Neurons/Newrons
         Teyered
 

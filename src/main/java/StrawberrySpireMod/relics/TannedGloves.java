@@ -12,10 +12,11 @@ public class TannedGloves extends CustomRelic {
 
     public static final String ID = "strawberrySpire:TannedGloves";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int EXHAUST_AMOUNT = 6;
 
     public TannedGloves() {
-        super(ID, IMAGE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
         this.counter = 0;
     }
 

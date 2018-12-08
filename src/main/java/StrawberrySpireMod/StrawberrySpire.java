@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 
 import StrawberrySpireMod.cards.blue.*;
-import StrawberrySpireMod.cards.blue.Package;
+import StrawberrySpireMod.cards.blue.Package; // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 import StrawberrySpireMod.cards.colorless.*;
 import StrawberrySpireMod.cards.curses.*;
 import StrawberrySpireMod.cards.green.*;
@@ -53,16 +53,20 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addCard(new PowerStomp());
         BaseMod.addCard(new PumpUp());
         BaseMod.addCard(new Spite());
+        BaseMod.addCard(new Taunt());
+        BaseMod.addCard(new ZonePlayer());
 
         // Green cards
         BaseMod.removeCard(Prepared.ID, AbstractCard.CardColor.GREEN); // Side Swipe makes this card obsolete, and it sucks anyway.
         BaseMod.addCard(new DeltaFlow());
+        BaseMod.addCard(new Fastroyer());
         BaseMod.addCard(new FootworkForm());
         BaseMod.addCard(new Grapple());
         BaseMod.addCard(new HopSkipAndJump());
         BaseMod.addCard(new HotShot());
         BaseMod.addCard(new KnifeParty());
         BaseMod.addCard(new Lockstep());
+        BaseMod.addCard(new Marathoner());
         BaseMod.addCard(new Momentum());
         BaseMod.addCard(new Plunge());
         BaseMod.addCard(new Rummage());
@@ -77,9 +81,11 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addCard(new Adapter());
         BaseMod.addCard(new AnotherWinter());
         BaseMod.addCard(new BiBeamBolt());
+        BaseMod.addCard(new BlasterWyrm());
         BaseMod.addCard(new BreederCore());
         BaseMod.addCard(new Compressor());
         BaseMod.addCard(new DataDump());
+        BaseMod.addCard(new Disconnect());
         BaseMod.addCard(new FocalLaser());
         BaseMod.addCard(new Gammacceleration());
         BaseMod.addCard(new GearCrunch());
@@ -95,6 +101,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addCard(new Dropbox());
         BaseMod.addCard(new ExtraUtilities());
         BaseMod.addCard(new Fade());
+        BaseMod.addCard(new Flashback());
         BaseMod.addCard(new NeglectedBlade());
         BaseMod.addCard(new Neurons());
 

@@ -21,10 +21,11 @@ public class GlyphStone extends CustomRelic {
 
     public static final String ID = "strawberrySpire:GlyphStone";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int TRANSFORM_AMOUNT = 2;
 
     public GlyphStone() {
-        super(ID, IMAGE_PATH, RelicTier.SHOP, LandingSound.SOLID);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SHOP, LandingSound.SOLID);
         this.removeStrikeTip();
     }
 

@@ -37,22 +37,22 @@ public class PackagePower extends AbstractPower {
 
     public void updateDescription() {
         if (this.cardList.size() == 1) {
-            this.description = DESCRIPTIONS[0] + FontHelper.colorString(this.cardList.get(0).name, "y") + DESCRIPTIONS[1];
+            this.description = DESCRIPTIONS[0] + this.cardList.get(0).name + DESCRIPTIONS[4];
         }
         else if (this.cardList.size() == 2) {
-            this.description = DESCRIPTIONS[0] + FontHelper.colorString(this.cardList.get(0).name, "y") + " and " + FontHelper.colorString(this.cardList.get(1).name, "y") + DESCRIPTIONS[2];
+            this.description = DESCRIPTIONS[0] + this.cardList.get(0).name + DESCRIPTIONS[3] + this.cardList.get(1).name + DESCRIPTIONS[4];
         }
         else {
             String temp = "";
             for (int i = 0; i < this.cardList.size(); i++) {
                 if (i == this.cardList.size() - 1) {
-                    temp += DESCRIPTIONS[1] + FontHelper.colorString(this.cardList.get(i).name, "y");
+                    temp += DESCRIPTIONS[2] + this.cardList.get(i).name;
                 }
                 else {
-                    temp += FontHelper.colorString(this.cardList.get(i).name, "y") + ", ";
+                    temp += DESCRIPTIONS[1] + this.cardList.get(i).name;
                 }
             }
-            this.description = DESCRIPTIONS[0] + temp + DESCRIPTIONS[2];
+            this.description = DESCRIPTIONS[0] + temp + DESCRIPTIONS[4];
         }
     }
 

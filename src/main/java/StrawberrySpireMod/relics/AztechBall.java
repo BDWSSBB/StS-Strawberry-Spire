@@ -17,10 +17,11 @@ public class AztechBall extends CustomRelic implements OnChannelRelic {
 
     public static final String ID = "strawberrySpire:AztechBall";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int CHANNEL_AMOUNT = 2;
 
     public AztechBall() {
-        super(ID, IMAGE_PATH, RelicTier.SHOP, LandingSound.SOLID);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SHOP, LandingSound.SOLID);
     }
 
     public String getUpdatedDescription() {

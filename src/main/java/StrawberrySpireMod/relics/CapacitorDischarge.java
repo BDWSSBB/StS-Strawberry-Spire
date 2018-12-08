@@ -13,11 +13,12 @@ public class CapacitorDischarge extends CustomRelic {
 
     public static final String ID = "strawberrySpire:CapacitorDischarge";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int FOCUS_AMOUNT = 3;
     private static final int DECREASE_ORBS_AMOUNT = 2;
 
     public CapacitorDischarge() {
-        super(ID, IMAGE_PATH, RelicTier.BOSS, LandingSound.HEAVY);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.BOSS, LandingSound.HEAVY);
     }
 
     public String getUpdatedDescription() {

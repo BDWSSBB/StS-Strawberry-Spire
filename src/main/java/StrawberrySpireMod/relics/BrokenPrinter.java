@@ -14,11 +14,12 @@ public class BrokenPrinter extends CustomRelic {
 
     public static final String ID = "strawberrySpire:BrokenPrinter";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int CARD_AMOUNT = 5;
     private boolean cardSelected = false;
 
     public BrokenPrinter() {
-        super(ID, IMAGE_PATH, RelicTier.SHOP, LandingSound.HEAVY);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SHOP, LandingSound.HEAVY);
     }
 
     public String getUpdatedDescription() {

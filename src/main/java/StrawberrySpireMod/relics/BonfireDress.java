@@ -14,13 +14,14 @@ public class BonfireDress extends CustomRelic {
 
     public static final String ID = "strawberrySpire:BonfireDress";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int DEXTERITY_AMOUNT = 1;
     private boolean isFirstTurn = false;
     private AbstractCard.CardType lastCardType = null;
     private boolean hasBrokenAlternation = false;
 
     public BonfireDress() {
-        super(ID, IMAGE_PATH, RelicTier.RARE, LandingSound.FLAT);
+        super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.RARE, LandingSound.FLAT);
         this.pulse = false;
     }
 

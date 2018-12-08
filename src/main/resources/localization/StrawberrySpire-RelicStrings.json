@@ -90,7 +90,7 @@
     ]
   },
   "strawberrySpire:InflatableHammer": {
-    "NAME": "InflatableHammer",
+    "NAME": "Inflatable Hammer",
     "FLAVOR": "Squeak squeak!",
     "DESCRIPTIONS": [
       "Start each combat with #b",
@@ -229,15 +229,15 @@
     "NAME": "Dreamfruit",
     "FLAVOR": "It looks ready to be eaten!",
     "DESCRIPTIONS": [
-      "Whenever you use a potion, remove all of your debuffs."
+      "All debuffs you have last up to #b1 turn."
     ]
   },
   "strawberrySpire:Earthfruit": {
     "NAME": "Earthfruit",
     "FLAVOR": "It looks ready to be eaten!",
     "DESCRIPTIONS": [
-      "Reduce attack damage taken by #b",
-      "."
+      "Start each combat with #b",
+      " #yBarkskin."
     ]
   },
   "strawberrySpire:Fadefruit": {
@@ -260,9 +260,9 @@
     "NAME": "Icefruit",
     "FLAVOR": "It looks ready to be eaten!",
     "DESCRIPTIONS": [
-      "Whenever you deal at least #b",
-      " unblocked attack damage, the enemy loses #b",
-      " #yStrength this turn."
+      "At the start of your first #b",
+      " turns, ALL enemies lose #b",
+      " Strength."
     ]
   },
   "strawberrySpire:Rotfruit": {
