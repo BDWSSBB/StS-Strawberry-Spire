@@ -181,6 +181,14 @@
       " #yThorns."
     ]
   },
+  "strawberrySpire:TinySteamboat": {
+    "NAME": "Tiny Steamboat",
+    "FLAVOR": "Many people mistaken this steamboat as a tea set! Can you believe that?",
+    "DESCRIPTIONS": [
+      "Whenever you enter a #yRest #ySite, put #b",
+      " cards from your draw pile into your hand at the start of next combat."
+    ]
+  },
   "strawberrySpire:Treaders": {
     "NAME": "Treaders",
     "FLAVOR": "Thick boots to keep you on your feet.",

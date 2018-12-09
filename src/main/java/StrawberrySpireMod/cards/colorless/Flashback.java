@@ -62,10 +62,10 @@ public class Flashback extends AbstractStrawberrySpireCard {
 
     public void upgrade() {
         if (this.canUpgrade()) {
-            this.upgradeName();
             if (this.timesUpgraded == 0) {
                 this.name = CARD_STRINGS.EXTENDED_DESCRIPTION[0];
                 this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[1];
+                this.loadCardImage(INVERT_IMAGE_PATH);
                 this.textureImg = INVERT_IMAGE_PATH;
                 this.baseBlock = this.block = 0;
                 this.magicNumber = this.baseMagicNumber = INVERT_MAGIC_NUMBER;
@@ -73,6 +73,7 @@ public class Flashback extends AbstractStrawberrySpireCard {
             else if (this.timesUpgraded == 1) {
                 this.name = CARD_STRINGS.EXTENDED_DESCRIPTION[2];
                 this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[3];
+                this.loadCardImage(DUALITY_IMAGE_PATH);
                 this.textureImg = DUALITY_IMAGE_PATH;
                 this.baseBlock = this.block = 0;
                 this.magicNumber = this.baseMagicNumber = DUALITY_MAGIC_NUMBER;
@@ -80,6 +81,7 @@ public class Flashback extends AbstractStrawberrySpireCard {
             else {
                 this.name = CARD_STRINGS.EXTENDED_DESCRIPTION[4];
                 this.rawDescription = CARD_STRINGS.EXTENDED_DESCRIPTION[5];
+                this.loadCardImage(MONOCHROME_IMAGE_PATH);
                 this.textureImg = MONOCHROME_IMAGE_PATH;
                 this.baseBlock = this.block = 0;
                 this.magicNumber = this.baseMagicNumber = 0;

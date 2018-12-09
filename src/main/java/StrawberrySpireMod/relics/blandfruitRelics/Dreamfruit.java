@@ -43,7 +43,7 @@ public class Dreamfruit extends CustomRelic {
 
     public void onPlayerEndTurn() {
         for (AbstractPower p : AbstractDungeon.player.powers) {
-            if (p.type == AbstractPower.PowerType.DEBUFF && this.powersToRemove.contains(p.ID)) {
+            if (p.type == AbstractPower.PowerType.DEBUFF && !this.powersToRemove.contains(p.ID)) {
                 this.powersToRemove.add(p.ID);
             }
         }
