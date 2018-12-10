@@ -21,7 +21,7 @@ public class BreederCorePower extends AbstractPower {
         this.type = AbstractPower.PowerType.BUFF;
         this.owner = owner;
         this.amount = amount;
-        this.updateDescription();
+        updateDescription();
         loadRegion("cExplosion");
     }
 

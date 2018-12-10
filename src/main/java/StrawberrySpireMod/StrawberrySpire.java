@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 
 import StrawberrySpireMod.cards.blue.*;
-import StrawberrySpireMod.cards.blue.Package; // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+import StrawberrySpireMod.cards.blue.Package; // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 import StrawberrySpireMod.cards.colorless.*;
 import StrawberrySpireMod.cards.curses.*;
 import StrawberrySpireMod.cards.green.*;
@@ -45,7 +45,9 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addCard(new DebrisPile());
         BaseMod.addCard(new DraftPunk());
         BaseMod.addCard(new Endurance());
+        BaseMod.addCard(new FireDrill());
         BaseMod.addCard(new FortFortyFour());
+        BaseMod.addCard(new GettingOverIt());
         BaseMod.addCard(new Harvest());
         BaseMod.addCard(new Hellbender());
         BaseMod.addCard(new Incursion());
@@ -79,6 +81,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
 
         // Blue cards
         BaseMod.addCard(new Adapter());
+        BaseMod.addCard(new AngeryBot());
         BaseMod.addCard(new AnotherWinter());
         BaseMod.addCard(new BiBeamBolt());
         BaseMod.addCard(new BlasterWyrm());
@@ -92,6 +95,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addCard(new NeonFlight());
         BaseMod.addCard(new Package());
         BaseMod.addCard(new Refactor());
+        BaseMod.addCard(new ReturnNull());
         BaseMod.addCard(new Salvo());
         BaseMod.addCard(new THEL());
         BaseMod.addCard(new TypeOrDie());
@@ -117,20 +121,24 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addRelic(new AztechBall(), RelicType.BLUE);
         BaseMod.addRelic(new BonfireDress(), RelicType.SHARED);
         BaseMod.addRelic(new BrokenPrinter(), RelicType.SHARED);
+        BaseMod.addRelic(new ByrdBeak(), RelicType.GREEN);
         BaseMod.addRelic(new CapacitorDischarge(), RelicType.BLUE);
         BaseMod.addRelic(new Dictionifier(), RelicType.SHARED);
         BaseMod.addRelic(new DirtyLipstick(), RelicType.SHARED);
         BaseMod.addRelic(new ElectricRodnt(), RelicType.BLUE);
         BaseMod.addRelic(new ElefentMask(), RelicType.SHARED);
+        BaseMod.addRelic(new Flakhammer(), RelicType.SHARED);
         BaseMod.addRelic(new GlyphStone(), RelicType.SHARED);
         BaseMod.addRelic(new InflatableHammer(), RelicType.SHARED);
         BaseMod.addRelic(new IronFlakes(), RelicType.RED);
+        BaseMod.addRelic(new JuiceKeg(), RelicType.RED);
         BaseMod.addRelic(new KineticCharger(), RelicType.SHARED);
         BaseMod.addRelic(new MawJerky(), RelicType.SHARED);
         BaseMod.addRelic(new PoopsieRoll(), RelicType.SHARED);
         BaseMod.addRelic(new RottenAvocado(), RelicType.SHARED);
         BaseMod.addRelic(new SolarisEssence(), RelicType.SHARED);
         BaseMod.addRelic(new StillNotAdequateHouse(), RelicType.SHARED);
+        BaseMod.addRelic(new TinySteamboat(), RelicType.SHARED);
         BaseMod.addRelic(new Treaders(), RelicType.SHARED);
         BaseMod.addRelic(new ThornyGelberry(), RelicType.SHARED);
         BaseMod.addRelic(new WhoaramAlpha(), RelicType.BLUE);

@@ -14,7 +14,7 @@ public class KineticCharger extends CustomRelic {
     public static final String ID = "strawberrySpire:KineticCharger";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
     public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
-    private static final int MINIMUM_ENERGY_COST_AMOUNT = 3;
+    private static final int MINIMUM_COST_AMOUNT = 3;
 
     public KineticCharger() {
         super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.COMMON, LandingSound.HEAVY);
@@ -25,7 +25,7 @@ public class KineticCharger extends CustomRelic {
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (!card.freeToPlayOnce && card.costForTurn >= MINIMUM_ENERGY_COST_AMOUNT || (card.costForTurn == -1 && card.energyOnUse >= MINIMUM_ENERGY_COST_AMOUNT)) {
+        if (!card.freeToPlayOnce && card.costForTurn >= MINIMUM_COST_AMOUNT || (card.costForTurn == -1 && card.energyOnUse >= MINIMUM_COST_AMOUNT)) {
             flash();
             AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));

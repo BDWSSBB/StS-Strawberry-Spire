@@ -1,27 +1,22 @@
 package StrawberrySpireMod.actions.unique;
 
 import com.megacrit.cardcrawl.actions.*;
-import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.characters.*;
 import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
 
-import StrawberrySpireMod.powers.*;
-
-import java.util.*;
-
-public class PackageAction extends AbstractGameAction {
+public class GettingOverItAction extends AbstractGameAction {
 
     public static final String[] TEXT = {
-            "Choose a Card to Remove.",
+            "Choose a Card to Exhaust.",
             "Choose ",
-            " Cards to Remove."
+            " Cards to Exhaust."
     };
     private AbstractPlayer player;
     private int numberOfCards;
 
-    public PackageAction(int magicNumber) {
+    public GettingOverItAction(int magicNumber) {
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FASTER;
         this.player = AbstractDungeon.player;
@@ -41,28 +36,29 @@ public class PackageAction extends AbstractGameAction {
             else {
                 CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                 for (AbstractCard c : this.player.drawPile.group) {
-                    temp.addToTop(c);
+                    if (c.type == AbstractCard.CardType.STATUS || c.type == AbstractCard.CardType.CURSE) {
+                        temp.addToTop(c);
+                    }
                 }
                 temp.sortAlphabetically(true);
                 temp.sortByRarityPlusStatusCardType(false);
-                if (this.numberOfCards == 1) {
-                    AbstractDungeon.gridSelectScreen.open(this.player.drawPile, this.numberOfCards, true, TEXT[0]);
+                if (temp.isEmpty()) {
+                    this.isDone = true;
+                    return;
+                }
+                else if (this.numberOfCards == 1) {
+                    AbstractDungeon.gridSelectScreen.open(temp, this.numberOfCards, true, TEXT[0]);
                 }
                 else {
-                    AbstractDungeon.gridSelectScreen.open(this.player.drawPile, this.numberOfCards, true, TEXT[1] + this.numberOfCards + TEXT[2]);
+                    AbstractDungeon.gridSelectScreen.open(temp, this.numberOfCards, true, TEXT[1] + this.numberOfCards + TEXT[2]);
                 }
                 tickDuration();
                 return;
             }
         }
         if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
-            ArrayList<AbstractCard> cardList = new ArrayList<>();
             for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
-                cardList.add(c);
-                this.player.drawPile.removeCard(c);
-            }
-            if (!cardList.isEmpty()) {
-                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(this.player, this.player, new PackagePower(this.player, cardList)));
+                this.player.drawPile.moveToExhaustPile(c);
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
             AbstractDungeon.player.hand.refreshHandLayout();
@@ -70,3 +66,4 @@ public class PackageAction extends AbstractGameAction {
         tickDuration();
     }
 }
+

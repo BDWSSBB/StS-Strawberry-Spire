@@ -88,15 +88,15 @@ public class MirrorTunnel extends AbstractImageEvent {
             case TAKE_2:
                 switch (buttonPressed) {
                     case 0:
-                        this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
+                        AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck, 1, OPTIONS[6], false, false, false, false);
+                        AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH * 0.5F, Settings.HEIGHT * 0.5F,  RelicLibrary.getRelic(BrokenVision.ID).makeCopy());
+                        this.imageEventText.updateBodyText(DESCRIPTIONS[4]);
                         this.screen = CurScreen.END;
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[2]);
                         break;
                     case 1:
-                        AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck, 1, OPTIONS[6], false, false, false, false);
-                        AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH * 0.5F, Settings.HEIGHT * 0.5F,  RelicLibrary.getRelic(BrokenVision.ID).makeCopy());
-                        this.imageEventText.updateBodyText(DESCRIPTIONS[4]);
+                        this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         this.screen = CurScreen.END;
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[2]);

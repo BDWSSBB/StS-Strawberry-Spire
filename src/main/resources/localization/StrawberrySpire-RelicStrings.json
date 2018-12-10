@@ -31,6 +31,15 @@
       "Start each combat #yConfused."
     ]
   },
+  "strawberrySpire:ByrdBeak": {
+    "NAME": "Byrd Beak",
+    "FLAVOR": "It's important to stay at the top of the pecking order in the Spire.",
+    "DESCRIPTIONS": [
+      "Every #b",
+      "th #yAttack you play applies #b",
+      " #yVulnerable."
+    ]
+  },
   "strawberrySpire:CapacitorDischarge": {
     "NAME": "Capacitor Discharge",
     "FLAVOR": "\"I'm going to guess that this is just meant to occupy your attention, because otherwise this is some shoddy electronics work.\"",
@@ -73,6 +82,15 @@
       " #yStrength this turn."
     ]
   },
+  "strawberrySpire:Flakhammer": {
+    "NAME": "Flakhammer",
+    "FLAVOR": "Groundbreaking indeed!",
+    "DESCRIPTIONS": [
+      "The first #yAttack you play that costs #b",
+      " or more applies #b",
+      " #yVulnerable to ALL enemies."
+    ]
+  },
   "strawberrySpire:GlyphStone": {
     "NAME": "Glyph Stone",
     "FLAVOR": "Not quite about simplicity or elegance, but rather both it seems.",
@@ -100,10 +118,18 @@
   },
   "strawberrySpire:IronFlakes": {
     "NAME": "Iron Flakes",
-    "FLAVOR": "Unfortunately, someone already ate them all. All that's left is a few scraps.",
+    "FLAVOR": "Unfortunately, someone already ate them all. All that's left now is a few scraps.",
     "DESCRIPTIONS": [
       "Whenever you lose HP in combat, heal #b",
       " HP."
+    ]
+  },
+  "strawberrySpire:JuiceKeg": {
+    "NAME": "Juice Keg",
+    "FLAVOR": "SSWIIiiinnNNGGG!!!",
+    "DESCRIPTIONS": [
+      "Start each combat #yConfused and with #b",
+      " Strength. At the start of your turn, play the highest-cost #yAttack in your hand."
     ]
   },
   "strawberrySpire:KineticCharger": {

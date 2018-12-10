@@ -1,4 +1,11 @@
 {
+  "strawberrySpire:AngeryBot": {
+    "NAME": "Angery",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " #yClaw cards into your hand."
+    ]
+  },
   "strawberrySpire:AnotherWinter": {
     "NAME": "Another Winter",
     "DESCRIPTIONS": [
@@ -26,6 +33,13 @@
     "DESCRIPTIONS": [
       "#yChannel #b",
 	  " random #yOrbs next turn."
+    ]
+  },
+  "strawberrySpire:ByrdBeak": {
+    "NAME": "Byrd Beak",
+    "DESCRIPTIONS": [
+      "Your next #yAttack applies #b",
+      " #yVulnerable."
     ]
   },
   "strawberrySpire:Conflagrate": {

@@ -21,7 +21,7 @@ public class PlungePower extends AbstractPower {
         this.type = AbstractPower.PowerType.DEBUFF;
         this.owner = owner;
         this.amount = amount;
-        this.updateDescription();
+        updateDescription();
         loadRegion("doubleTap");
     }
 

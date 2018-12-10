@@ -34,7 +34,7 @@ public class AztechBall extends CustomRelic implements OnChannelRelic {
                 if (AbstractDungeon.player.orbs.get(i).ID != null &&
                         AbstractDungeon.player.orbs.get(i).ID == AbstractDungeon.player.orbs.get(i + 1).ID &&
                         AbstractDungeon.player.orbs.get(i).ID == AbstractDungeon.player.orbs.get(i + 2).ID) {
-                    this.flash();
+                    flash();
                     for (int j = 0; j < CHANNEL_AMOUNT; j++) { // The actions are listed in reverse so they are added into the queue properly.
                         AbstractDungeon.actionManager.addToTop(new ChannelAction(AbstractOrb.getRandomOrb(true)));
                     }

@@ -21,7 +21,7 @@ public class PackagePower extends AbstractPower {
 
     public PackagePower(AbstractCreature owner, ArrayList<AbstractCard> cardList) {
         this.ID = POWER_ID + powerIDOffset;
-        powerIDOffset++;
+        this.powerIDOffset++;
         this.name = NAME;
         this.type = AbstractPower.PowerType.BUFF;
         this.owner = owner;
@@ -31,7 +31,7 @@ public class PackagePower extends AbstractPower {
         for (AbstractCard c: this.cardList) {
             c.resetAttributes();
         }
-        this.updateDescription();
+        updateDescription();
         loadRegion("heatsink");
     }
 

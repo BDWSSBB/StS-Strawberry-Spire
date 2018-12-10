@@ -73,7 +73,7 @@ public class AnnoyancePower extends AbstractPower {
         this.name = NAME;
         this.type = AbstractPower.PowerType.DEBUFF;
         this.owner = owner;
-        this.updateDescription();
+        updateDescription();
         loadRegion("amplify");
     }
 

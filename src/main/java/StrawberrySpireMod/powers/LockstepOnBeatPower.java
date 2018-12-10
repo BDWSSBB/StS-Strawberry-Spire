@@ -19,7 +19,7 @@ public class LockstepOnBeatPower extends AbstractPower {
         this.name = NAME;
         this.type = AbstractPower.PowerType.BUFF;
         this.owner = owner;
-        this.updateDescription();
+        updateDescription();
         loadRegion("focus");
         this.priority = 6;
     }

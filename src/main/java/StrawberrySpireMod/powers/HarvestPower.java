@@ -9,13 +9,14 @@ import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.*;
 
+import StrawberrySpireMod.actions.unique.*;
+
 public class HarvestPower extends AbstractPower {
 
     public static final String POWER_ID = "strawberrySpire:Harvest";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = POWER_STRINGS.NAME;
     public static final String[] DESCRIPTIONS = POWER_STRINGS.DESCRIPTIONS;
-    private boolean removePowerLater;
 
     public HarvestPower(AbstractCreature owner, int amount) {
         this.ID = POWER_ID;
@@ -23,9 +24,8 @@ public class HarvestPower extends AbstractPower {
         this.type = AbstractPower.PowerType.BUFF;
         this.owner = owner;
         this.amount = amount;
-        this.updateDescription();
+        updateDescription();
         loadRegion("sadistic");
-        this.removePowerLater = false;
     }
 
     public void updateDescription() {
@@ -40,10 +40,7 @@ public class HarvestPower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK) {
             flash();
-            this.amount -= 1;
-            if (this.amount == 0) {
-                this.removePowerLater = true;
-            }
+            AbstractDungeon.actionManager.addToBottom(new AddActionLaterAction(new ReducePowerAction(this.owner, this.owner, this.ID, 1), 1));
         }
     }
 
@@ -57,10 +54,6 @@ public class HarvestPower extends AbstractPower {
             }
             else {
                 this.owner.heal(damageAmount * 3 / 5);
-            }
-            if (removePowerLater) {
-                removePowerLater = false;
-                AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
             }
         }
     }

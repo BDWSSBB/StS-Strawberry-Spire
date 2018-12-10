@@ -23,7 +23,7 @@ public class ConflagratePower extends AbstractPower implements OnCardDrawPower{
         this.type = AbstractPower.PowerType.BUFF;
         this.owner = owner;
         this.amount = amount;
-        this.updateDescription();
+        updateDescription();
         loadRegion("flameBarrier");
     }
 

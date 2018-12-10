@@ -19,7 +19,7 @@ public class FootworkFormPower extends AbstractPower {
         this.type = AbstractPower.PowerType.BUFF;
         this.owner = owner;
         this.amount = amount;
-        this.updateDescription();
+        updateDescription();
         loadRegion("burst");
     }
 
@@ -27,7 +27,7 @@ public class FootworkFormPower extends AbstractPower {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
-    public void atStartOfTurnPostDraw() {
+    public void atStartOfTurn() {
         flash();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount), this.amount));
     }

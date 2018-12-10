@@ -19,7 +19,7 @@ public class LockstepOffBeatPower extends AbstractPower {
         this.name = NAME;
         this.type = AbstractPower.PowerType.BUFF;
         this.owner = owner;
-        this.updateDescription();
+        updateDescription();
         loadRegion("bias");
         this.priority = 99;
     }

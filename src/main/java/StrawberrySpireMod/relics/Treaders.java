@@ -14,7 +14,7 @@ public class Treaders extends CustomRelic {
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
     public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int DRAW_AMOUNT = 1;
-    private boolean hasDrawnCardThisCombat = false;
+    private boolean hasActivated = false;
 
     public Treaders() {
         super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.COMMON, LandingSound.FLAT);
@@ -26,19 +26,19 @@ public class Treaders extends CustomRelic {
     }
 
     public void atPreBattle() {
-        this.hasDrawnCardThisCombat = false;
+        this.hasActivated = false;
         this.pulse = true;
         beginPulse();
     }
 
     public void onCardDraw(AbstractCard card) {
-        if (!this.hasDrawnCardThisCombat && (card.type == AbstractCard.CardType.STATUS || card.type == AbstractCard.CardType.CURSE)) {
-            this.hasDrawnCardThisCombat = true;
+        if (!this.hasActivated && (card.type == AbstractCard.CardType.STATUS || card.type == AbstractCard.CardType.CURSE)) {
+            this.hasActivated = true;
             this.pulse = false;
             flash();
-            AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            AbstractDungeon.actionManager.addToBottom(new ExhaustSpecificCardAction(card, AbstractDungeon.player.hand));
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, DRAW_AMOUNT));
+            AbstractDungeon.actionManager.addToTop(new DrawCardAction(AbstractDungeon.player, DRAW_AMOUNT));
+            AbstractDungeon.actionManager.addToTop(new ExhaustSpecificCardAction(card, AbstractDungeon.player.hand));
+            AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         }
     }
 

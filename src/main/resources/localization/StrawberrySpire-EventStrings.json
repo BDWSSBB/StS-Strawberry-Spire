@@ -39,12 +39,12 @@
       "#r~Psychokinesis~ #g~and~ #b~you.~ NL NL #p~You~ #p~and~ #p~the~ #p~world.~ NL NL The cards fly out to you with barely any mental effort, but it becomes overwhelming. Eventually, you collapse on the ground, littered with many copies of your cards. You're a little #r~sore~ from the experience, but at least you got what you wanted, right?"
     ],
     "OPTIONS": [
-      "[Take] #gDuplicate #ga #gcard. #rLose #r",
+      "[Take] #gDuplicate #ga #gcard in your deck. #rLose #r",
       " #rHP.",
       "[Leave]",
+      "[One More] #gDuplicate #ga #gcard in your deck. #rBecome #rConfused.",
       "[Stop]",
-      "[One More] #gDuplicate #ga #gcard. #rBecome #rConfused.",
-      "[Hoard] Triplicate ALL cards.",
+      "[Hoard] Triplicate ALL cards in your deck.",
       "Select a Card to Duplicate."
     ]
   },

@@ -105,7 +105,7 @@ public class TheByrdhouse extends AbstractImageEvent {
                 this.screen = CurScreen.RENTED_2;
                 this.imageEventText.clearAllDialogs();
                 if (cardOption != null) {
-                    this.imageEventText.setDialogOption(OPTIONS[6] + cardOption.name + OPTIONS[7]);
+                    this.imageEventText.setDialogOption(OPTIONS[6] + cardOption.name + OPTIONS[7], cardOption.makeStatEquivalentCopy());
                 }
                 else {
                     this.imageEventText.setDialogOption(OPTIONS[8], true);

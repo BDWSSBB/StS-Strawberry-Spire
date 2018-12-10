@@ -32,9 +32,17 @@
     "DESCRIPTION": "Add a Wound into your hand. NL Gain [E].",
     "UPGRADE_DESCRIPTION": "Add a Wound into your hand. NL Gain [E] [E]."
   },
+  "strawberrySpire:FireDrill": {
+    "NAME": "Fire Drill",
+    "DESCRIPTION": "Deal !D! damage. NL Add a Burn into your hand."
+  },
   "strawberrySpire:FortFortyFour": {
     "NAME": "Fort Forty-Four",
     "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block. NL Exhaust."
+  },
+  "strawberrySpire:GettingOverIt": {
+    "NAME": "Getting Over It",
+    "DESCRIPTION": "Exhaust up to !M! Status cards or Curses in your draw pile. NL Exhaust."
   },
   "strawberrySpire:Harvest": {
     "NAME": "Harvest",
@@ -179,6 +187,14 @@
     "DESCRIPTION": "Discard a card. NL If you discard a Skill, Channel !M! Frost. NL Otherwise, Channel !M! Lightning.",
     "UPGRADE_DESCRIPTION": "Choose a card. NL If you choose a Skill, Channel !M! Frost. NL Otherwise, Channel !M! Lightning."
   },
+  "strawberrySpire:AngeryBot": {
+    "NAME": "Angery Bot",
+    "DESCRIPTION": "At the start of your turn, add a Claw card into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a Claw card into your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "Aaaaangery Bot"
+    ]
+  },
   "strawberrySpire:AnotherWinter": {
     "NAME": "Another Winter",
     "DESCRIPTION": "At the start of your turn, Channel !M! Frost."
@@ -193,7 +209,7 @@
   },
   "strawberrySpire:BlasterWyrm": {
     "NAME": "Blaster Wyrm",
-    "DESCRIPTION": "Enemy lose 3 Strength. NL Apply !M! Weak. NL Exhaust."
+    "DESCRIPTION": "Enemy loses 3 Strength. NL Apply !M! Weak. NL Exhaust."
   },
   "strawberrySpire:BreederCore": {
     "NAME": "Breeder Core",
@@ -242,13 +258,17 @@
     "NAME": "Refactor",
     "DESCRIPTION": "Lose !M! Focus this turn. NL Gain 1 Focus."
   },
+  "strawberrySpire:ReturnNull": {
+    "NAME": "Return Null",
+    "DESCRIPTION": "Deal !D! damage. NL Remove your next Orb."
+  },
   "strawberrySpire:Salvo": {
     "NAME": "Salvo",
-    "DESCRIPTION": "Evoke all your orbs twice. NL Exhaust."
+    "DESCRIPTION": "Evoke all your Orbs twice. NL Exhaust."
   },
   "strawberrySpire:THEL": {
     "NAME": "THEL",
-    "DESCRIPTION": "Costs 1 less [E] for each [E] at the end of your turn. Deal !D! damage. Set this card's cost to 4 this combat."
+    "DESCRIPTION": "Costs 1 less [E] for each unspent [E] at the end of your turn. NL Deal !D! damage. NL Set this card's cost to 4 this combat."
   },
   "strawberrySpire:TypeOrDie": {
     "NAME": "Type or Die",
