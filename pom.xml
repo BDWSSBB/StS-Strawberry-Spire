@@ -4,7 +4,7 @@
     <!-- I'm dumb and I dunno how to use this thing without blowing stuff up. -->
     <groupId>strawberyspire</groupId>
     <artifactId>StrawberrySpire</artifactId>
-    <version>0.3.0</version>
+    <version>0.3.1</version>
     <packaging>jar</packaging>
     <name>StrawberrySpire</name>
     <description>More content. More fun. No strawberries included.</description>
