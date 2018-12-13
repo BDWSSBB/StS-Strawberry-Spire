@@ -37,7 +37,7 @@ public class BiBeamBoltPower extends AbstractPower {
 
     public void atEndOfTurn(boolean isPlayer) {
         for (AbstractOrb o : AbstractDungeon.player.orbs) {
-            if (o.ID.equals(Lightning.ORB_ID)) {
+            if (o.ID != null && o.ID.equals(Lightning.ORB_ID)) {
                 AbstractDungeon.actionManager.addToBottom(new EvokeSpecificOrbAction(o));
             }
         }
