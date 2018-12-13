@@ -4,9 +4,9 @@ import com.badlogic.gdx.graphics.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
+import StrawberrySpireMod.relics.*;
 
-public class Starfruit extends CustomRelic { // The Future Max HP benefits are patched.
+public class Starfruit extends AbstractStrawberrySpireRelic { // The Future Max HP benefits are patched.
 
     public static final String ID = "strawberrySpire:Starfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

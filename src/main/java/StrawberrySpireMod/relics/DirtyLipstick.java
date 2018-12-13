@@ -9,7 +9,7 @@ import basemod.abstracts.*;
 
 import java.util.*;
 
-public class DirtyLipstick extends CustomRelic implements CustomSavable<ArrayList<Integer>>{
+public class DirtyLipstick extends AbstractStrawberrySpireRelic implements CustomSavable<ArrayList<Integer>>{
 
     public static final String ID = "strawberrySpire:DirtyLipstick";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

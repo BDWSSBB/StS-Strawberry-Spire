@@ -43,6 +43,7 @@ public class Swampstar extends AbstractStrawberrySpireCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.name = UPGRADE_NAME;
+            initializeTitle();
 
             this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC_NUMBER);
         }

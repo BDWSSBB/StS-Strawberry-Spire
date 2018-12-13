@@ -6,11 +6,11 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.orbs.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
+import StrawberrySpireMod.relics.*;
 
 import com.evacipated.cardcrawl.mod.stslib.relics.*;
 
-public class Stormfruit extends CustomRelic implements OnChannelRelic {
+public class Stormfruit extends AbstractStrawberrySpireRelic implements OnChannelRelic {
 
     public static final String ID = "strawberrySpire:Stormfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

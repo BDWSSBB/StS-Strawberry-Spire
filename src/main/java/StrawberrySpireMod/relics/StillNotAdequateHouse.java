@@ -8,11 +8,9 @@ import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.vfx.*;
 import com.megacrit.cardcrawl.vfx.cardManip.*;
 
-import basemod.abstracts.*;
-
 import java.util.*;
 
-public class StillNotAdequateHouse extends CustomRelic {
+public class StillNotAdequateHouse extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:StillNotAdequateHouse";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

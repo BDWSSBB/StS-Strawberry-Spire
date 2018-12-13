@@ -6,9 +6,7 @@ import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
-
-public class TannedGloves extends CustomRelic {
+public class TannedGloves extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:TannedGloves";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

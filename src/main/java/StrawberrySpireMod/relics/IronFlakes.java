@@ -5,9 +5,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.rooms.*;
 
-import basemod.abstracts.*;
-
-public class IronFlakes extends CustomRelic {
+public class IronFlakes extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:IronFlakes";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

@@ -19,7 +19,6 @@ public class AdapterAction extends AbstractGameAction {
     private boolean upgraded;
 
     public AdapterAction(int magicNumber, boolean upgraded) {
-        this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FAST;
         this.player = AbstractDungeon.player;
         this.numberOfOrbs = magicNumber;
@@ -36,8 +35,7 @@ public class AdapterAction extends AbstractGameAction {
                 return;
             }
             else if (this.player.hand.size() == 1) {
-                AbstractCard tempCard;
-                tempCard = this.player.hand.getBottomCard();
+                AbstractCard tempCard = this.player.hand.getBottomCard();
                 if (tempCard.type == AbstractCard.CardType.SKILL) {
                     for (int i = 0; i < this.numberOfOrbs; i++) {
                         AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Frost()));
@@ -67,6 +65,14 @@ public class AdapterAction extends AbstractGameAction {
         }
         if (!AbstractDungeon.handCardSelectScreen.selectedCards.isEmpty()) {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
+                if (this.upgraded) {
+                    this.player.hand.addToHand(c);
+                }
+                else {
+                    this.player.hand.moveToDiscardPile(c);
+                    c.triggerOnManualDiscard();
+                    GameActionManager.incrementDiscard(false);
+                }
                 if (c.type == AbstractCard.CardType.SKILL) {
                     for (int i = 0; i < this.numberOfOrbs; i++) {
                         AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Frost()));
@@ -76,14 +82,6 @@ public class AdapterAction extends AbstractGameAction {
                     for (int i = 0; i < this.numberOfOrbs; i++) {
                         AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Lightning()));
                     }
-                }
-                if (this.upgraded) {
-                    this.player.hand.addToHand(c);
-                }
-                else {
-                    this.player.hand.moveToDiscardPile(c);
-                    c.triggerOnManualDiscard();
-                    GameActionManager.incrementDiscard(false);
                 }
             }
             AbstractDungeon.handCardSelectScreen.selectedCards.group.clear();

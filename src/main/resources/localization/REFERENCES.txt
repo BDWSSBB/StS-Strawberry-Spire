@@ -3,20 +3,27 @@ References within the mod (Because some are very obscure to everyone else):
 CARDS
     Beatdown: Picture is from Madness: JAILBREAK, a fan collab video based on the ultraviolence series Madness Combat.
     Conflagrate: Picture is the dog from the This is Fine meme. Upgrade name refers to the same thing.
+    Danger Mountain: The name of a soundtrack from Anamanaguchi.
     Draft Punk: Pun on Daft Punk.
+    Getting Over It: The name of that infamous game that infuriates players.
     Incursion: Picture is a reference to SUPERHOT.
+    Just a Wound: Picture is the iconic Black Knight from Monty Python and the Holy Grail.
     Overwork: I had "Karoshi" in mind when I was getting the picture, which means "Death from overwork". Karoshi is also a game.
     Power Stomp: Picture is the foot from Monty Python.
     Spite: Picture is the Grumpy Cat meme.
     Taunt: Reference to The Champ. Small chance to BM like you would in Hearthstone.
+    Dreamfoil Dart: The name of a missile weapon in Shattered Pixel Dungeon.
     Footwork Form: I used to joke about Footwork Form existing since Demon Form exists. Well, it's a real card now.
+    Insectonator: The name of a flash game about smashing insects for stress relief.
     Knife Party: The name of a music publisher. I hate dubstep though.
     Lockstep: The name of a minigame in Rhythm Heaven.
-    Another Winter: The name of a soundtrack from Anamanaguchi.
+    Another Winter: Another name of a soundtrack from Anamanaguchi.
     Blaster Wyrm: Reference to the Blaster Worm computer worm.
     Disconnect: Picture is the dinosaur from Chrome's no-connection game.
+    Hate Bit: Originally I wanted Hate Bit from Calculords, but this one from Venture Bros will have to do.
+    Ronchyble: An anagram of Chernobyl.
+    Search Engine: I don't need to explain this to you.
     THEL: The name of a building in The Space Game (Which stands for Tactical High-Energy Laser).
-    Type or Die: Some quote from BAIKOH. Picture is a more refined Keyboard Cat meme.
     Dropbox: The name of a file sharing website.
     Extra Utilities: The name of a Minecraft mod.
     Neglected Blade: Picture is also from a fan video based on Madness Combat.
@@ -28,9 +35,10 @@ EVENTS
 
 RELICS
     Aztech Ball: Pun on Aztec, reference to Zuma.
-    Blandfruit/Every Blandfruit Product: The name of a food in Shattered Pixel Dungeon.
-    Bonfire Dress: Reference to one of Rhythm Tengoku's minigames, Bon Dance. Notoriously hard too.
+    Blandfruit/Every Blandfruit Derivative: The name of a food in Shattered Pixel Dungeon.
+    Bonfire Dress: Reference to one of Rhythm Tengoku's minigames, Bon Dance.
     Capacitor Discharge: The name of a module in Keep Talking and Nobody Explodes.
+    Charschor Blot: An anagram of Rorschach Blot.
     Dictionifier: Reference to the Minecraft mod Ore Dictionary.
     Dirty Lipstick: Reference to the quote "Lipstick on a pig".
     Electric Rodn't: Reference to Pikachu.
@@ -38,7 +46,7 @@ RELICS
     Flakhammer: Combination of flak cannon and jackhammer. Use your imagination.
     Glyph Stone: Reference to the Back to Basics event. Simplicity is still OP.
     Maw Jerky: I was hungry at the moment. Not really a reference, lol.
-    Poopsie Roll: Pun on Tootsie Roll.
+    Poopsie Roll: Pun on Tootsie Roll. Yes, I hate tootsie rolls.
     Rotten Avocado: Reference to Shelled Parasite.
     Still-Not-Adequate House: Making fun of Tiny House. It's still not adequate.
     Thorny Gelberry: Pun on Nigel Thornberry.

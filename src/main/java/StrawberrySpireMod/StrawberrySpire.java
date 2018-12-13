@@ -4,8 +4,11 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.cards.green.*;
+import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.powers.*;
+import com.megacrit.cardcrawl.relics.*;
 
 import StrawberrySpireMod.cards.blue.*;
 import StrawberrySpireMod.cards.blue.Package; // aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -24,7 +27,7 @@ import basemod.helpers.*;
 import basemod.interfaces.*;
 
 @SpireInitializer
-public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscriber, EditRelicsSubscriber, PostInitializeSubscriber {
+public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscriber, EditRelicsSubscriber, PostInitializeSubscriber, PostPowerApplySubscriber {
 
     public StrawberrySpire() {
         BaseMod.subscribe(this);
@@ -42,6 +45,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addCard(new Beatdown());
         BaseMod.addCard(new Conflagrate());
         BaseMod.addCard(new CrashLanding());
+        BaseMod.addCard(new DangerMountain());
         BaseMod.addCard(new DebrisPile());
         BaseMod.addCard(new DraftPunk());
         BaseMod.addCard(new Endurance());
@@ -51,6 +55,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addCard(new Harvest());
         BaseMod.addCard(new Hellbender());
         BaseMod.addCard(new Incursion());
+        BaseMod.addCard(new JustAWound());
         BaseMod.addCard(new Overwork());
         BaseMod.addCard(new PowerStomp());
         BaseMod.addCard(new PumpUp());
@@ -61,15 +66,17 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         // Green cards
         BaseMod.removeCard(Prepared.ID, AbstractCard.CardColor.GREEN); // Side Swipe makes this card obsolete, and it sucks anyway.
         BaseMod.addCard(new DeltaFlow());
+        BaseMod.addCard(new DreamfoilDart());
         BaseMod.addCard(new Fastroyer());
-        BaseMod.addCard(new FootworkForm());
         BaseMod.addCard(new Grapple());
         BaseMod.addCard(new HopSkipAndJump());
         BaseMod.addCard(new HotShot());
+        BaseMod.addCard(new Insectonator());
         BaseMod.addCard(new KnifeParty());
         BaseMod.addCard(new Lockstep());
         BaseMod.addCard(new Marathoner());
         BaseMod.addCard(new Momentum());
+        BaseMod.addCard(new Pant());
         BaseMod.addCard(new Plunge());
         BaseMod.addCard(new Rummage());
         BaseMod.addCard(new SideSwipe());
@@ -92,13 +99,14 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addCard(new FocalLaser());
         BaseMod.addCard(new Gammacceleration());
         BaseMod.addCard(new GearCrunch());
+        BaseMod.addCard(new HateBit());
         BaseMod.addCard(new NeonFlight());
         BaseMod.addCard(new Package());
         BaseMod.addCard(new Refactor());
         BaseMod.addCard(new ReturnNull());
-        BaseMod.addCard(new Salvo());
+        BaseMod.addCard(new Ronchyble());
+        BaseMod.addCard(new SearchEngine());
         BaseMod.addCard(new THEL());
-        BaseMod.addCard(new TypeOrDie());
 
         // Colorless cards
         BaseMod.addCard(new Disreguard());
@@ -123,6 +131,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addRelic(new BrokenPrinter(), RelicType.SHARED);
         BaseMod.addRelic(new ByrdBeak(), RelicType.GREEN);
         BaseMod.addRelic(new CapacitorDischarge(), RelicType.BLUE);
+        BaseMod.addRelic(new CharschorBlot(), RelicType.SHARED);
         BaseMod.addRelic(new Dictionifier(), RelicType.SHARED);
         BaseMod.addRelic(new DirtyLipstick(), RelicType.SHARED);
         BaseMod.addRelic(new ElectricRodnt(), RelicType.BLUE);
@@ -136,6 +145,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addRelic(new MawJerky(), RelicType.SHARED);
         BaseMod.addRelic(new PoopsieRoll(), RelicType.SHARED);
         BaseMod.addRelic(new RottenAvocado(), RelicType.SHARED);
+        BaseMod.addRelic(new ShipInABottle(), RelicType.SHARED);
         BaseMod.addRelic(new SolarisEssence(), RelicType.SHARED);
         BaseMod.addRelic(new StillNotAdequateHouse(), RelicType.SHARED);
         BaseMod.addRelic(new TinySteamboat(), RelicType.SHARED);
@@ -180,5 +190,14 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addEvent(BlandfruitBush.ID, BlandfruitBush.class, Exordium.ID);
         BaseMod.addEvent(MirrorTunnel.ID, MirrorTunnel.class, TheBeyond.ID);
         BaseMod.addEvent(TheByrdhouse.ID, TheByrdhouse.class, TheCity.ID);
+    }
+
+    @Override
+    public void receivePostPowerApplySubscriber(AbstractPower p, AbstractCreature target, AbstractCreature source) {
+        for (AbstractRelic r : AbstractDungeon.player.relics) {
+            if (r instanceof  AbstractStrawberrySpireRelic) {
+                ((AbstractStrawberrySpireRelic)r).onApplyPower(p, target, source);
+            }
+        }
     }
 }

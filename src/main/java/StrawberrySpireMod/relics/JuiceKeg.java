@@ -8,9 +8,7 @@ import com.megacrit.cardcrawl.relics.*;
 
 import StrawberrySpireMod.actions.unique.*;
 
-import basemod.abstracts.*;
-
-public class JuiceKeg extends CustomRelic {
+public class JuiceKeg extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:JuiceKeg";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

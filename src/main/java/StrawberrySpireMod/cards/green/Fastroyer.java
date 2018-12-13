@@ -16,6 +16,7 @@ public class Fastroyer extends AbstractStrawberrySpireCard {
     public static final String ID = "strawberrySpire:Fastroyer";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
+    public static final String UPGRADE_NAME = CARD_STRINGS.EXTENDED_DESCRIPTION[0];
     public static final String IMAGE_PATH = "cards/green/fastroyer.png";
     private static final int COST = 0;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
@@ -53,7 +54,8 @@ public class Fastroyer extends AbstractStrawberrySpireCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.name = CARD_STRINGS.EXTENDED_DESCRIPTION[0];
+            this.name = UPGRADE_NAME;
+            initializeTitle();
 
             this.upgradeDamage(UPGRADE_PLUS_DAMAGE);
         }

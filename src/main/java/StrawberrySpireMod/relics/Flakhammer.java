@@ -11,14 +11,13 @@ import com.megacrit.cardcrawl.relics.*;
 
 import StrawberrySpireMod.actions.unique.*;
 
-import basemod.abstracts.*;
-
-public class Flakhammer extends CustomRelic {
+public class Flakhammer extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Flakhammer";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
     public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
     private static final int MINIMUM_COST_AMOUNT = 2;
+    private static final int WEAK_AMOUNT = 1;
     private static final int VULNERABLE_AMOUNT = 1;
     private boolean hasActivated = false;
 
@@ -27,7 +26,7 @@ public class Flakhammer extends CustomRelic {
     }
 
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + MINIMUM_COST_AMOUNT + DESCRIPTIONS[1] + VULNERABLE_AMOUNT + DESCRIPTIONS[2];
+        return DESCRIPTIONS[0] + MINIMUM_COST_AMOUNT + DESCRIPTIONS[1] + WEAK_AMOUNT + DESCRIPTIONS[2] + VULNERABLE_AMOUNT + DESCRIPTIONS[3];
     }
 
     public void atTurnStart() {
@@ -41,7 +40,8 @@ public class Flakhammer extends CustomRelic {
             this.hasActivated = true;
             flash();
             AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) { // I HATE SKEWER AND WHIRLWIND
+                AbstractDungeon.actionManager.addToBottom(new AddActionLaterAction(new ApplyPowerAction(m, AbstractDungeon.player, new WeakPower(m, WEAK_AMOUNT, false), WEAK_AMOUNT, true), 1));
                 AbstractDungeon.actionManager.addToBottom(new AddActionLaterAction(new ApplyPowerAction(m, AbstractDungeon.player, new VulnerablePower(m, VULNERABLE_AMOUNT, false), VULNERABLE_AMOUNT, true), 1));
             }
             this.pulse = false;

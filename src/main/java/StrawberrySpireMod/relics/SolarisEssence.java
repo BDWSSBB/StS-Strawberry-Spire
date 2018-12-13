@@ -6,9 +6,7 @@ import com.megacrit.cardcrawl.cards.status.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
-
-public class SolarisEssence extends CustomRelic {
+public class SolarisEssence extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:SolarisEssence";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

@@ -7,9 +7,7 @@ import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
-
-public class PoopsieRoll extends CustomRelic {
+public class PoopsieRoll extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:PoopsieRoll";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

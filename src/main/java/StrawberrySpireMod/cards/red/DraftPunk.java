@@ -1,5 +1,7 @@
 package StrawberrySpireMod.cards.red;
 
+import com.badlogic.gdx.math.MathUtils;
+import com.megacrit.cardcrawl.actions.animations.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.*;
 import com.megacrit.cardcrawl.cards.*;
@@ -28,6 +30,12 @@ public class DraftPunk extends AbstractStrawberrySpireCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        if (MathUtils.randomBoolean(0.003F)) {
+            AbstractDungeon.actionManager.addToBottom(new TalkAction(true, "Burger NL Nuggets NL Nuggets NL Burger", 0.1F, 2.0F));
+        }
+        else if (MathUtils.randomBoolean(0.03F)) {
+            AbstractDungeon.actionManager.addToBottom(new TalkAction(true, "Harder NL Better NL Faster NL Stronger", 0.1F, 2.0F));
+        }
         AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, this.magicNumber, true, false, false));
         AbstractDungeon.actionManager.addToBottom(new WaitAction(0.25F));
         for (int i = 0; i < this.magicNumber; i++) {

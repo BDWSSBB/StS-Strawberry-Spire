@@ -3,6 +3,7 @@
     "NAME": "Angery",
     "DESCRIPTIONS": [
       "At the start of your turn, add #b",
+      " #yClaw card into your hand.",
       " #yClaw cards into your hand."
     ]
   },
@@ -24,14 +25,15 @@
     "NAME": "Bi-Beam Bolt",
     "DESCRIPTIONS": [
       "#yEvoked #yLightning strikes #b",
-      " additional time this turn.",
-	  " additional times this turn."
+      " additional time this turn. At the end of your turn, #yEvoke all your #yLightning.",
+	  " additional times this turn. At the end of your turn, #yEvoke all your #yLightning."
     ]
   },
   "strawberrySpire:BreederCore": {
     "NAME": "Breeder Core",
     "DESCRIPTIONS": [
       "#yChannel #b",
+	  " random #yOrb next turn.",
 	  " random #yOrbs next turn."
     ]
   },
@@ -57,19 +59,18 @@
 	  " #yBlock for each card in your hand."
     ]
   },
+  "strawberrySpire:DreamfoilDart": {
+    "NAME": "Tranquilized",
+    "DESCRIPTIONS": [
+      "At the end of its turn, loses #b1 #yStrength, then reduce #yTranquilized by #b1."
+    ]
+  },
   "strawberrySpire:ExtraUtilities": {
     "NAME": "Extra Utilities",
     "DESCRIPTIONS": [
       "#yUpgrade all cards in your hand for the rest of combat next turn.",
 	  "#yUpgrade all cards in your hand for the rest of combat for #b",
 	  " turns."
-    ]
-  },
-  "strawberrySpire:FootworkForm": {
-    "NAME": "Footwork Form",
-    "DESCRIPTIONS": [
-      "At the start of your turn, gain #b",
-	  " #yDexterity."
     ]
   },
   "strawberrySpire:GainDexterity": {
@@ -104,6 +105,13 @@
 	  " additional damage."
     ]
   },
+  "strawberrySpire:JustAWound": {
+    "NAME": "Just a Wound",
+    "DESCRIPTIONS": [
+      "Whenever you draw a #yStatus card, gain #b",
+      " #yBlock."
+    ]
+  },
   "strawberrySpire:KnifeParty": {
     "NAME": "Knife Party",
     "DESCRIPTIONS": [
@@ -124,6 +132,13 @@
       "#yAttacks deal double damage this turn. #yAttacks deal half damage next turn."
     ]
   },
+  "strawberrySpire:LoseFocus": {
+    "NAME": "Lose Focus",
+    "DESCRIPTIONS": [
+      "At the end of this turn, lose #b",
+      " #yFocus."
+    ]
+  },
   "strawberrySpire:Momentum": {
     "NAME": "Momentum",
     "DESCRIPTIONS": [
@@ -135,7 +150,7 @@
   "strawberrySpire:Neurons": {
     "NAME": "Neurons",
     "DESCRIPTIONS": [
-      "At the start of your turn, reduce the cost of all cards in your hand to 1 this combat."
+      "At the start of your turn, reduce the cost of all cards in your hand to #b1 this combat."
     ]
   },
   "strawberrySpire:Package": {
@@ -163,11 +178,12 @@
 	  " #yFocus."
     ]
   },
-  "strawberrySpire:TypeOrDie": {
-    "NAME": "Lose Focus",
+  "strawberrySpire:Ronchyble": {
+    "NAME": "Ronchyble",
     "DESCRIPTIONS": [
-      "At the end of this turn, lose #b",
-	  " #yFocus."
+      "At the start of your turn, #yChannel #b",
+      " random #yOrb.",
+      " random #yOrbs."
     ]
   }
 }

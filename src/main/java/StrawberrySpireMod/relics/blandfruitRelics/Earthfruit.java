@@ -6,10 +6,9 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 
 import StrawberrySpireMod.powers.*;
+import StrawberrySpireMod.relics.*;
 
-import basemod.abstracts.*;
-
-public class Earthfruit extends CustomRelic {
+public class Earthfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Earthfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

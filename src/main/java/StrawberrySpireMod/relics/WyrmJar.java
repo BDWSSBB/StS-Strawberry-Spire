@@ -7,9 +7,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
-
-public class WyrmJar extends CustomRelic {
+public class WyrmJar extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:WyrmJar";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

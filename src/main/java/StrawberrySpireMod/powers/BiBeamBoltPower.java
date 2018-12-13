@@ -7,6 +7,8 @@ import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.orbs.*;
 import com.megacrit.cardcrawl.powers.*;
 
+import com.evacipated.cardcrawl.mod.stslib.actions.defect.*;
+
 public class BiBeamBoltPower extends AbstractPower {
 
     public static final String POWER_ID = "strawberrySpire:BiBeamBolt";
@@ -34,6 +36,11 @@ public class BiBeamBoltPower extends AbstractPower {
     }
 
     public void atEndOfTurn(boolean isPlayer) {
+        for (AbstractOrb o : AbstractDungeon.player.orbs) {
+            if (o.ID.equals(Lightning.ORB_ID)) {
+                AbstractDungeon.actionManager.addToBottom(new EvokeSpecificOrbAction(o));
+            }
+        }
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
     }
 

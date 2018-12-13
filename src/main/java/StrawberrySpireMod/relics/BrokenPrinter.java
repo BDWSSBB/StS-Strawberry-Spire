@@ -8,9 +8,7 @@ import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.rooms.*;
 import com.megacrit.cardcrawl.vfx.cardManip.*;
 
-import basemod.abstracts.*;
-
-public class BrokenPrinter extends CustomRelic {
+public class BrokenPrinter extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:BrokenPrinter";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

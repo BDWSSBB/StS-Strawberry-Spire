@@ -9,11 +9,9 @@ import com.megacrit.cardcrawl.relics.*;
 
 import StrawberrySpireMod.powers.*;
 
-import basemod.abstracts.*;
-
 import com.evacipated.cardcrawl.mod.stslib.relics.*;
 
-public class WhoaramAlpha extends CustomRelic implements OnChannelRelic {
+public class WhoaramAlpha extends AbstractStrawberrySpireRelic implements OnChannelRelic {
 
     public static final String ID = "strawberrySpire:WhoaramAlpha";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
@@ -40,7 +38,7 @@ public class WhoaramAlpha extends CustomRelic implements OnChannelRelic {
             this.flash();
             AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FocusPower(AbstractDungeon.player, FOCUS_AMOUNT), FOCUS_AMOUNT));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new TypeOrDiePower(AbstractDungeon.player, FOCUS_AMOUNT), FOCUS_AMOUNT));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new LoseFocusPower(AbstractDungeon.player, FOCUS_AMOUNT), FOCUS_AMOUNT));
         }
     }
 

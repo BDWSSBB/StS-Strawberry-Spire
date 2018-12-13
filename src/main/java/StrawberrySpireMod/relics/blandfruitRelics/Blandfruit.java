@@ -4,9 +4,11 @@ import com.badlogic.gdx.graphics.*;
 import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.relics.*;
 
+import StrawberrySpireMod.relics.*;
+
 import basemod.abstracts.*;
 
-public class Blandfruit extends CustomRelic implements CustomSavable<String>{
+public class Blandfruit extends AbstractStrawberrySpireRelic implements CustomSavable<String>{
 
     public static final String ID = "strawberrySpire:Blandfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

@@ -47,6 +47,7 @@ public class Conflagrate extends AbstractStrawberrySpireCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.name = UPGRADE_NAME;
+            initializeTitle();
             this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

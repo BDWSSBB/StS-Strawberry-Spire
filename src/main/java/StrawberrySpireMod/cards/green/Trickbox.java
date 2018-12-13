@@ -33,7 +33,7 @@ public class Trickbox extends AbstractStrawberrySpireCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
-            if ((!monster.isDead) && (!monster.isDying)) {
+            if (!monster.isDead && !monster.isDying) {
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(monster, p, new PoisonPower(monster, p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.POISON));
             }
         }
@@ -47,6 +47,7 @@ public class Trickbox extends AbstractStrawberrySpireCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.name = UPGRADE_NAME;
+            initializeTitle();
 
             this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC_NUMBER);
         }

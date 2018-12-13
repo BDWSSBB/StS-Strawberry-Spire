@@ -28,9 +28,9 @@ public class ExtraUtilities extends AbstractStrawberrySpireCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (this.upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EquilibriumPower(p, 1), this.magicNumber));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EquilibriumPower(p, 1), 1));
         }
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ExtraUtilitiesPower(p, 1), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ExtraUtilitiesPower(p, 1), 1));
     }
 
     public AbstractCard makeCopy() {

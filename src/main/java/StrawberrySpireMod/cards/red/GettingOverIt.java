@@ -18,8 +18,8 @@ public class GettingOverIt extends AbstractStrawberrySpireCard {
     public static final String IMAGE_PATH = "cards/red/gettingOverIt.png";
     private static final int COST = 0;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final int MAGIC_NUMBER = 3;
-    private static final int UPGRADE_PLUS_MAGIC_NUMBER = 2;
+    private static final int MAGIC_NUMBER = 2;
+    private static final int UPGRADE_PLUS_MAGIC_NUMBER = 1;
 
     public GettingOverIt() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, CardType.SKILL, AbstractCard.CardColor.RED, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.NONE);
@@ -28,7 +28,8 @@ public class GettingOverIt extends AbstractStrawberrySpireCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GettingOverItAction(this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new GettingOverItDrawPileAction(this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new GettingOverItDiscardPileAction(this.magicNumber));
     }
 
     public AbstractCard makeCopy() {

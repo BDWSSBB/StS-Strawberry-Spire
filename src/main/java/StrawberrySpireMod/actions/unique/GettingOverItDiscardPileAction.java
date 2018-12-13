@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.*;
 import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
 
-public class GettingOverItAction extends AbstractGameAction {
+public class GettingOverItDiscardPileAction extends AbstractGameAction {
 
     public static final String[] TEXT = {
             "Choose a Card to Exhaust.",
@@ -16,7 +16,7 @@ public class GettingOverItAction extends AbstractGameAction {
     private AbstractPlayer player;
     private int numberOfCards;
 
-    public GettingOverItAction(int magicNumber) {
+    public GettingOverItDiscardPileAction(int magicNumber) {
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FASTER;
         this.player = AbstractDungeon.player;
@@ -29,14 +29,14 @@ public class GettingOverItAction extends AbstractGameAction {
             return;
         }
         if (this.duration == Settings.ACTION_DUR_FASTER) {
-            if (this.player.drawPile.isEmpty()) {
+            if (this.player.discardPile.isEmpty()) {
                 this.isDone = true;
                 return;
             }
             else {
                 CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-                for (AbstractCard c : this.player.drawPile.group) {
-                    if (c.type == AbstractCard.CardType.STATUS || c.type == AbstractCard.CardType.CURSE) {
+                for (AbstractCard c : this.player.discardPile.group) {
+                    if (c.type == AbstractCard.CardType.STATUS) {
                         temp.addToTop(c);
                     }
                 }
@@ -58,7 +58,7 @@ public class GettingOverItAction extends AbstractGameAction {
         }
         if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
             for (AbstractCard c : AbstractDungeon.gridSelectScreen.selectedCards) {
-                this.player.drawPile.moveToExhaustPile(c);
+                this.player.discardPile.moveToExhaustPile(c);
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
             AbstractDungeon.player.hand.refreshHandLayout();

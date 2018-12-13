@@ -5,9 +5,7 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
-
-public class SilkGarment extends CustomRelic {
+public class SilkGarment extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:SilkGarment";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

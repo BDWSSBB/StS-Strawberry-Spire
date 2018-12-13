@@ -6,9 +6,9 @@ import com.megacrit.cardcrawl.actions.defect.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
+import StrawberrySpireMod.relics.*;
 
-public class Fadefruit extends CustomRelic {
+public class Fadefruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Fadefruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

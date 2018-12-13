@@ -43,7 +43,7 @@ public class JuiceKegAction extends AbstractGameAction {
             AbstractDungeon.getCurrRoom().souls.remove(card);
             card.freeToPlayOnce = true;
             AbstractDungeon.player.limbo.group.add(card);
-            card.targetAngle = MathUtils.random(0.0F, 45.0F);
+            card.targetAngle = MathUtils.random(0.0F, 360.0F);
             AbstractMonster target = AbstractDungeon.getRandomMonster();
             card.applyPowers();
             AbstractDungeon.actionManager.addToTop(new QueueCardAction(card, target));

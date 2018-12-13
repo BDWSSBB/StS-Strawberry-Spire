@@ -57,7 +57,7 @@ public class MirrorTunnel extends AbstractImageEvent {
                         this.screen = CurScreen.TAKE_1;
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[0] + this.secondDamageAmount + OPTIONS[1]);
-                        this.imageEventText.setDialogOption(OPTIONS[3]);
+                        this.imageEventText.setDialogOption(OPTIONS[2]);
                         break;
                     case 1:
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);

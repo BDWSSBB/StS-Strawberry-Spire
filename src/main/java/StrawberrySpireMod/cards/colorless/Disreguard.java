@@ -42,6 +42,7 @@ public class Disreguard extends AbstractStrawberrySpireCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.name = UPGRADE_NAME;
+            initializeTitle();
 
             this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }

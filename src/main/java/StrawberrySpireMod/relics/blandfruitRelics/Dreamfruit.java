@@ -2,16 +2,15 @@ package StrawberrySpireMod.relics.blandfruitRelics;
 
 import com.badlogic.gdx.graphics.*;
 import com.megacrit.cardcrawl.actions.common.*;
-import com.megacrit.cardcrawl.actions.unique.*;
 import com.megacrit.cardcrawl.dungeons.*;
-import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
+import StrawberrySpireMod.relics.*;
 
 import java.util.ArrayList;
 
-public class Dreamfruit extends CustomRelic {
+public class Dreamfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Dreamfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

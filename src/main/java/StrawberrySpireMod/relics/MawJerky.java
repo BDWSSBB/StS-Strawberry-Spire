@@ -5,9 +5,7 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
-
-public class MawJerky extends CustomRelic {
+public class MawJerky extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:MawJerky";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

@@ -18,6 +18,7 @@ import java.util.*;
         method = "initializeButtons"
 )
 public class InitializeButtonsPatches {
+
     public static void Postfix(Object __instance) { // This is not mine and I think this patch sucks too.
         CampfireUI campfire = (CampfireUI)__instance;
         try {

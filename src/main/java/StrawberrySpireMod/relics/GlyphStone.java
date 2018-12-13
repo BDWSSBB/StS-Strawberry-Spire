@@ -11,13 +11,12 @@ import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.vfx.cardManip.*;
 
-import basemod.abstracts.*;
 import basemod.helpers.*;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class GlyphStone extends CustomRelic {
+public class GlyphStone extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:GlyphStone";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

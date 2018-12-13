@@ -8,9 +8,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
-
-public class BonfireDress extends CustomRelic {
+public class BonfireDress extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:BonfireDress";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

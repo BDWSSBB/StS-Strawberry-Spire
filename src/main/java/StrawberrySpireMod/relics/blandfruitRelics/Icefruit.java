@@ -7,11 +7,9 @@ import com.megacrit.cardcrawl.monsters.*;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import StrawberrySpireMod.powers.*;
+import StrawberrySpireMod.relics.*;
 
-import basemod.abstracts.*;
-
-public class Icefruit extends CustomRelic {
+public class Icefruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Icefruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

@@ -3,7 +3,7 @@
     "NAME": "Aztech Ball",
     "FLAVOR": "These balls explode whenever 3 of the same color are put together.",
     "DESCRIPTIONS": [
-      "Whenever you have #b3 of the same Orb in a row, #yEvoke them and #yChannel #b",
+      "Whenever you have #b3 of the same type of Orb in a row, #yEvoke them and #yChannel #b",
       " random Orbs."
     ]
   },
@@ -49,6 +49,16 @@
       " less Orb slots."
     ]
   },
+  "strawberrySpire:CharschorBlot": {
+    "NAME": "Charschor Blot",
+    "FLAVOR": "What do you see?",
+    "DESCRIPTIONS": [
+      "Upon pickup, remove a card from your deck and choose #b1 of #b",
+      " #yupgraded cards to add into your deck.",
+      "Choose a Card to Remove.",
+      "Choose a Card to Add."
+    ]
+  },
   "strawberrySpire:Dictionifier": {
     "NAME": "Dictionifier",
     "FLAVOR": "\"What do you mean a blue Strike isn't the same as a red Strike?!\".",
@@ -70,8 +80,8 @@
     "NAME": "Electric Rodn't",
     "FLAVOR": "Not to be confused with its mammal counterpart, the pookachimp.",
     "DESCRIPTIONS": [
-      "Every time you play #b",
-      " cards, #yChannel #b1 #yLightning."
+      "Every time you #yChannel #b",
+      " #yLightning, #yChannel an additional #yLightning."
     ]
   },
   "strawberrySpire:ElefentMask": {
@@ -84,10 +94,11 @@
   },
   "strawberrySpire:Flakhammer": {
     "NAME": "Flakhammer",
-    "FLAVOR": "Groundbreaking indeed!",
+    "FLAVOR": "Shake the floor.",
     "DESCRIPTIONS": [
       "The first #yAttack you play that costs #b",
       " or more applies #b",
+      " #yWeak and #b",
       " #yVulnerable to ALL enemies."
     ]
   },
@@ -161,6 +172,13 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. Whenever you climb a floor, lose #b",
       " Max HP."
+    ]
+  },
+  "strawberrySpire:ShipInABottle": {
+    "NAME": "Ship in a Bottle",
+    "FLAVOR": "Go wherever the seas tell you.",
+    "DESCRIPTIONS": [
+      "Future card rewards have #b1 random card #yupgraded."
     ]
   },
   "strawberrySpire:SilkGarment": {
@@ -311,8 +329,8 @@
     "NAME": "Sorrowfruit",
     "FLAVOR": "It looks ready to be eaten!",
     "DESCRIPTIONS": [
-      "Whenever you shuffle your discard pile, apply #b",
-      " #yPoison to ALL enemies."
+      "Whenever you apply a #ynon-Poison debuff, apply #b",
+      " #yPoison."
     ]
   },
   "strawberrySpire:Starfruit": {

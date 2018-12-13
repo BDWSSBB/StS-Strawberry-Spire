@@ -6,29 +6,29 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class FootworkFormPower extends AbstractPower {
+public class DreamfoilDartPower extends AbstractPower {
 
-    public static final String POWER_ID = "strawberrySpire:FootworkForm";
+    public static final String POWER_ID = "strawberrySpire:DreamfoilDart";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = POWER_STRINGS.NAME;
     public static final String[] DESCRIPTIONS = POWER_STRINGS.DESCRIPTIONS;
 
-    public FootworkFormPower(AbstractCreature owner, int amount) {
+    public DreamfoilDartPower(AbstractCreature owner, int amount) {
         this.ID = POWER_ID;
         this.name = NAME;
-        this.type = AbstractPower.PowerType.BUFF;
+        this.type = AbstractPower.PowerType.DEBUFF;
         this.owner = owner;
         this.amount = amount;
         updateDescription();
-        loadRegion("burst");
+        loadRegion("shift");
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0];
     }
 
-    public void atStartOfTurn() {
+    public void atEndOfTurn(boolean isPlayer) {
         flash();
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, this.amount), this.amount));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -1), -1));
     }
 }

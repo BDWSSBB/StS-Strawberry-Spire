@@ -10,9 +10,7 @@ import com.megacrit.cardcrawl.relics.*;
 import StrawberrySpireMod.actions.unique.*;
 import StrawberrySpireMod.powers.*;
 
-import basemod.abstracts.*;
-
-public class ByrdBeak extends CustomRelic {
+public class ByrdBeak extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:ByrdBeak";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

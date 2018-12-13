@@ -5,9 +5,9 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.rooms.*;
 
-import basemod.abstracts.*;
+import StrawberrySpireMod.relics.*;
 
-public class Sunfruit extends CustomRelic {
+public class Sunfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Sunfruit";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

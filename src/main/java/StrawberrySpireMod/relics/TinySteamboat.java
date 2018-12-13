@@ -6,9 +6,7 @@ import com.megacrit.cardcrawl.actions.defect.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
-
-public class TinySteamboat extends CustomRelic {
+public class TinySteamboat extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:TinySteamboat";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

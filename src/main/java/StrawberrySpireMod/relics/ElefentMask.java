@@ -7,9 +7,7 @@ import com.megacrit.cardcrawl.monsters.*;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.*;
 
-import basemod.abstracts.*;
-
-public class ElefentMask extends CustomRelic {
+public class ElefentMask extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:ElefentMask";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");

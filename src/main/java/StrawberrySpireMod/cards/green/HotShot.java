@@ -2,6 +2,7 @@ package StrawberrySpireMod.cards.green;
 
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
+import com.megacrit.cardcrawl.cards.colorless.Shiv;
 import com.megacrit.cardcrawl.characters.*;
 import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
@@ -29,6 +30,7 @@ public class HotShot extends AbstractStrawberrySpireCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Shiv(), 1, true, false));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new HotShotPower(p, this.magicNumber), this.magicNumber));
     }
 
@@ -40,6 +42,7 @@ public class HotShot extends AbstractStrawberrySpireCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.name = UPGRADE_NAME;
+            initializeTitle();
 
             this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC_NUMBER);
         }

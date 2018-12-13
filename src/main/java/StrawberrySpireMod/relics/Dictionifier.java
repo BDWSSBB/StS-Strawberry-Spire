@@ -9,7 +9,7 @@ import basemod.abstracts.*;
 
 import java.util.*;
 
-public class Dictionifier extends CustomRelic implements CustomSavable<ArrayList<Integer>> { // Originally I wanted to keep the costs 0, but I couldn't find a way
+public class Dictionifier extends AbstractStrawberrySpireRelic implements CustomSavable<ArrayList<Integer>> { // Originally I wanted to keep the costs 0, but I couldn't find a way
 
     public static final String ID = "strawberrySpire:Dictionifier";
     public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
