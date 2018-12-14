@@ -11,8 +11,8 @@ import com.megacrit.cardcrawl.vfx.cardManip.*;
 public class CharschorBlot extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:CharschorBlot";
-    public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
     private static final int CARD_AMOUNT = 25;
     private boolean cardRemoved = false;
     private boolean cardAdded = false;
@@ -33,7 +33,7 @@ public class CharschorBlot extends AbstractStrawberrySpireRelic {
         }
         AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
 
-        AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck.getPurgeableCards(), 1, this.DESCRIPTIONS[2], false, false, false, true);
+        AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck.getPurgeableCards(), 1, DESCRIPTIONS[2], false, false, false, true);
     }
 
     public void update() {

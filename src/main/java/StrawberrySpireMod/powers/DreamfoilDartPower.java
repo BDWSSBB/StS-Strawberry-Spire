@@ -30,5 +30,6 @@ public class DreamfoilDartPower extends AbstractPower {
     public void atEndOfTurn(boolean isPlayer) {
         flash();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -1), -1));
+        AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, this.ID, 1));
     }
 }

@@ -96,7 +96,7 @@
     "NAME": "Flakhammer",
     "FLAVOR": "Shake the floor.",
     "DESCRIPTIONS": [
-      "The first #yAttack you play that costs #b",
+      "The first #yAttack played each turn that costs #b",
       " or more applies #b",
       " #yWeak and #b",
       " #yVulnerable to ALL enemies."

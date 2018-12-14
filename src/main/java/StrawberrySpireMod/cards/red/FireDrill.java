@@ -17,7 +17,7 @@ public class FireDrill extends AbstractStrawberrySpireCard {
     public static final String ID = "strawberrySpire:FireDrill";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
-    public static final String IMAGE_PATH = "cards/red/fireDrill.png";
+    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/red/fireDrill.png";
     private static final int COST = 0;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int ATTACK_DAMAGE = 10;

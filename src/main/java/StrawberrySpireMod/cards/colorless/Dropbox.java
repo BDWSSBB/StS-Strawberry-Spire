@@ -16,7 +16,7 @@ public class Dropbox extends AbstractStrawberrySpireCard {
     public static final String ID = "strawberrySpire:Dropbox";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
-    public static final String IMAGE_PATH = "cards/colorless/dropbox.png";
+    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/colorless/dropbox.png";
     private static final int COST = 3;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = CARD_STRINGS.UPGRADE_DESCRIPTION;

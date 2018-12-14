@@ -14,8 +14,8 @@ import com.evacipated.cardcrawl.mod.stslib.relics.*;
 public class WhoaramAlpha extends AbstractStrawberrySpireRelic implements OnChannelRelic {
 
     public static final String ID = "strawberrySpire:WhoaramAlpha";
-    public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
     private static final int CHANNEL_AMOUNT = 2;
     private static final int FOCUS_AMOUNT = 1;
 

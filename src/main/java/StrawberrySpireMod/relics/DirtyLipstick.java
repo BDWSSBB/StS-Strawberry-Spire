@@ -12,8 +12,8 @@ import java.util.*;
 public class DirtyLipstick extends AbstractStrawberrySpireRelic implements CustomSavable<ArrayList<Integer>>{
 
     public static final String ID = "strawberrySpire:DirtyLipstick";
-    public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
     private static final int STAT_INCREASE_AMOUNT = 2;
     private ArrayList<AbstractCard> boostedCardsList = new ArrayList<>();
 

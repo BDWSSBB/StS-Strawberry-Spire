@@ -19,10 +19,10 @@ public class Flashback extends AbstractStrawberrySpireCard {
     public static final String INVERT_NAME = CARD_STRINGS.EXTENDED_DESCRIPTION[0];
     public static final String DUALITY_NAME = CARD_STRINGS.EXTENDED_DESCRIPTION[2];
     public static final String MONOCHROME_NAME = CARD_STRINGS.EXTENDED_DESCRIPTION[4];
-    public static final String FLASHBACK_IMAGE_PATH = "cards/colorless/flashback.png";
-    public static final String INVERT_IMAGE_PATH = "cards/colorless/invert.png";
-    public static final String DUALITY_IMAGE_PATH = "cards/colorless/duality.png";
-    public static final String MONOCHROME_IMAGE_PATH = "cards/colorless/monochrome.png";
+    public static final String FLASHBACK_IMAGE_PATH = "StrawberrySpireMod/cards/colorless/flashback.png";
+    public static final String INVERT_IMAGE_PATH = "StrawberrySpireMod/cards/colorless/invert.png";
+    public static final String DUALITY_IMAGE_PATH = "StrawberrySpireMod/cards/colorless/duality.png";
+    public static final String MONOCHROME_IMAGE_PATH = "StrawberrySpireMod/cards/colorless/monochrome.png";
     private static final int COST = 0;
     public static final String FLASHBACK_DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     public static final String INVERT_DESCRIPTION = CARD_STRINGS.EXTENDED_DESCRIPTION[1];

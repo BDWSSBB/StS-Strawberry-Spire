@@ -13,8 +13,8 @@ import java.util.*;
 public class StillNotAdequateHouse extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:StillNotAdequateHouse";
-    public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
     private static final int GOLD_AMOUNT = 90;
     private static final int MAX_HP_AMOUNT = 6;
     private static final int ATTACK_CARD_AMOUNT = 1;

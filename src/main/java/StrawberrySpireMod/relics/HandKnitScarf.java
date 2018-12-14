@@ -11,8 +11,8 @@ import com.evacipated.cardcrawl.mod.stslib.relics.*;
 public class HandKnitScarf extends AbstractStrawberrySpireRelic implements OnChannelRelic {
 
     public static final String ID = "strawberrySpire:HandKnitScarf";
-    public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
     private static final int BLOCK_AMOUNT = 1;
 
     public HandKnitScarf() {

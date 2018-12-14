@@ -10,8 +10,8 @@ import com.megacrit.cardcrawl.relics.*;
 public class ElefentMask extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:ElefentMask";
-    public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
     private static final int STRENGTH_LOSS_AMOUNT = 8;
 
     public ElefentMask() {

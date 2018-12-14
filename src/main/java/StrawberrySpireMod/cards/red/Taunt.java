@@ -21,7 +21,7 @@ public class Taunt extends AbstractStrawberrySpireCard {
     public static final String ID = "strawberrySpire:Taunt";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
-    public static final String IMAGE_PATH = "cards/red/taunt.png";
+    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/red/taunt.png";
     private static final int COST = 1;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int MAGIC_NUMBER = 2;

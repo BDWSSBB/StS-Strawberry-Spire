@@ -14,8 +14,8 @@ import StrawberrySpireMod.actions.unique.*;
 public class Flakhammer extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Flakhammer";
-    public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
     private static final int MINIMUM_COST_AMOUNT = 2;
     private static final int WEAK_AMOUNT = 1;
     private static final int VULNERABLE_AMOUNT = 1;

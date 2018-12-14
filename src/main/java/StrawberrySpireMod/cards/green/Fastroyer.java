@@ -17,7 +17,7 @@ public class Fastroyer extends AbstractStrawberrySpireCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
     public static final String UPGRADE_NAME = CARD_STRINGS.EXTENDED_DESCRIPTION[0];
-    public static final String IMAGE_PATH = "cards/green/fastroyer.png";
+    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/green/fastroyer.png";
     private static final int COST = 0;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int ATTACK_DAMAGE = 15;

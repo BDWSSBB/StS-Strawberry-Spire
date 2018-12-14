@@ -15,7 +15,7 @@ public class PumpUp extends AbstractStrawberrySpireCard {
     public static final String ID = "strawberrySpire:PumpUp";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
-    public static final String IMAGE_PATH = "cards/red/pumpUp.png";
+    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/red/pumpUp.png";
     private static final int COST = 1;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = CARD_STRINGS.UPGRADE_DESCRIPTION;

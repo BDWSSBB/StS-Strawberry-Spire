@@ -178,11 +178,12 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
 
     @Override
     public void receiveEditStrings() {
-        BaseMod.loadCustomStringsFile(CardStrings.class, "localization/StrawberrySpire-CardStrings.json");
-        BaseMod.loadCustomStringsFile(EventStrings.class, "localization/StrawberrySpire-EventStrings.json");
-        BaseMod.loadCustomStringsFile(PowerStrings.class, "localization/StrawberrySpire-PowerStrings.json");
-        BaseMod.loadCustomStringsFile(RelicStrings.class, "localization/StrawberrySpire-RelicStrings.json");
-        BaseMod.loadCustomStringsFile(UIStrings.class, "localization/StrawberrySpire-UIStrings.json");
+        BaseMod.loadCustomStringsFile(CardStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-CardStrings.json");
+        BaseMod.loadCustomStringsFile(EventStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-EventStrings.json");
+        BaseMod.loadCustomStringsFile(MonsterStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-MonsterStrings.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-PowerStrings.json");
+        BaseMod.loadCustomStringsFile(RelicStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-RelicStrings.json");
+        BaseMod.loadCustomStringsFile(UIStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-UIStrings.json");
     }
 
     @Override

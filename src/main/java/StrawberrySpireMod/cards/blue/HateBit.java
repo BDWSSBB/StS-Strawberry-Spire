@@ -17,7 +17,7 @@ public class HateBit extends AbstractStrawberrySpireCard {
     public static final String ID = "strawberrySpire:HateBit";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
-    public static final String IMAGE_PATH = "cards/blue/hateBit.png";
+    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/blue/hateBit.png";
     private static final int COST = 0;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int MAGIC_NUMBER = 2;

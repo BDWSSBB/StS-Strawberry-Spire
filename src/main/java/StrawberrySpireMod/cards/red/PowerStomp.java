@@ -17,7 +17,7 @@ public class PowerStomp extends AbstractStrawberrySpireCard {
     public static final String ID = "strawberrySpire:PowerStomp";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
-    public static final String IMAGE_PATH = "cards/red/powerStomp.png";
+    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/red/powerStomp.png";
     private static final int COST = 2;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int ATTACK_DAMAGE = 14;

@@ -11,8 +11,8 @@ import basemod.abstracts.*;
 public class Blandfruit extends AbstractStrawberrySpireRelic implements CustomSavable<String>{
 
     public static final String ID = "strawberrySpire:Blandfruit";
-    public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
     public AbstractRelic chosenFruit;
     private AbstractRelic tempFruit;
 

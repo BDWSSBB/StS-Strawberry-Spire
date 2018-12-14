@@ -17,7 +17,7 @@ public class Plunge extends AbstractStrawberrySpireCard {
     public static final String ID = "strawberrySpire:Plunge";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
-    public static final String IMAGE_PATH = "cards/green/plunge.png";
+    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/green/plunge.png";
     private static final int COST = 2;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int ATTACK_DAMAGE = 12;

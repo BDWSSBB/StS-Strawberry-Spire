@@ -19,7 +19,7 @@ public class Fade extends AbstractStrawberrySpireCard {
     public static final String ID = "strawberrySpire:Fade";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
-    public static final String IMAGE_PATH = "cards/colorless/fade.png";
+    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/colorless/fade.png";
     private static final int COST = 3;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int MAGIC_NUMBER = 3;

@@ -10,8 +10,8 @@ import StrawberrySpireMod.relics.*;
 public class Sunfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Sunfruit";
-    public static final Texture IMAGE_PATH = new Texture("relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
     private static final int HEAL_AMOUNT = 3;
 
     public Sunfruit() {

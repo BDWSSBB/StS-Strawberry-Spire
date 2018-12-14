@@ -15,7 +15,7 @@ public class Annoyance extends AbstractStrawberrySpireCard { // Not actually add
 
     public static final String ID = "strawberrySpire:Annoyance";
     public static final String NAME = "Annoyance";
-    public static final String IMAGE_PATH = "cards/placeholder/blankSkill.png";
+    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/placeholder/blankSkill.png";
     private static final int COST = -2;
     public static final String DESCRIPTION = "Unplayable. NL Whenever you draw this card, Exhaust it and become annoying.";
 
