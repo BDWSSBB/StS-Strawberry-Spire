@@ -12,8 +12,8 @@ import java.util.*;
 public class Dictionifier extends AbstractStrawberrySpireRelic implements CustomSavable<ArrayList<Integer>> { // Originally I wanted to keep the costs 0, but I couldn't find a way
 
     public static final String ID = "strawberrySpire:Dictionifier";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
     private boolean cardSelected = false;
     private AbstractCard cardToReduce = null;
     private ArrayList<AbstractCard> reducedCardsList = new ArrayList<>();

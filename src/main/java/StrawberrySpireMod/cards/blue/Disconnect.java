@@ -20,7 +20,7 @@ public class Disconnect extends AbstractStrawberrySpireCard {
     public static final String ID = "strawberrySpire:Disconnect";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
-    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/blue/disconnect.png";
+    public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/blue/disconnect.png";
     private static final int COST = 1;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int ATTACK_DAMAGE = 5;

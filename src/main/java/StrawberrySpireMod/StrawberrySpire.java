@@ -178,12 +178,12 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
 
     @Override
     public void receiveEditStrings() {
-        BaseMod.loadCustomStringsFile(CardStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-CardStrings.json");
-        BaseMod.loadCustomStringsFile(EventStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-EventStrings.json");
-        BaseMod.loadCustomStringsFile(MonsterStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-MonsterStrings.json");
-        BaseMod.loadCustomStringsFile(PowerStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-PowerStrings.json");
-        BaseMod.loadCustomStringsFile(RelicStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-RelicStrings.json");
-        BaseMod.loadCustomStringsFile(UIStrings.class, "StrawberrySpireMod/localization/StrawberrySpire-UIStrings.json");
+        BaseMod.loadCustomStringsFile(CardStrings.class, "StrawberrySpireModResources/localization/StrawberrySpire-CardStrings.json");
+        BaseMod.loadCustomStringsFile(EventStrings.class, "StrawberrySpireModResources/localization/StrawberrySpire-EventStrings.json");
+        BaseMod.loadCustomStringsFile(MonsterStrings.class, "StrawberrySpireModResources/localization/StrawberrySpire-MonsterStrings.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, "StrawberrySpireModResources/localization/StrawberrySpire-PowerStrings.json");
+        BaseMod.loadCustomStringsFile(RelicStrings.class, "StrawberrySpireModResources/localization/StrawberrySpire-RelicStrings.json");
+        BaseMod.loadCustomStringsFile(UIStrings.class, "StrawberrySpireModResources/localization/StrawberrySpire-UIStrings.json");
     }
 
     @Override

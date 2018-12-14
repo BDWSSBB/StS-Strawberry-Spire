@@ -9,8 +9,8 @@ import com.megacrit.cardcrawl.relics.*;
 public class TinySteamboat extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:TinySteamboat";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
     private static final int CARD_AMOUNT = 2;
 
     public TinySteamboat() {

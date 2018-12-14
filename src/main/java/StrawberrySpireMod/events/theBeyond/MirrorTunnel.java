@@ -32,7 +32,7 @@ public class MirrorTunnel extends AbstractImageEvent {
     }
 
     public MirrorTunnel() {
-        super(EVENT_STRINGS.NAME, DESCRIPTIONS[0], "StrawberrySpireMod/events/mirrorTunnel.jpg");
+        super(EVENT_STRINGS.NAME, DESCRIPTIONS[0], "StrawberrySpireModResources/events/mirrorTunnel.jpg");
         if (AbstractDungeon.ascensionLevel >= 15) {
             this.firstDamageAmount = ((int)(AbstractDungeon.player.maxHealth * ASC_FIRST_HP_LOSS_PERCENT));
             this.secondDamageAmount = ((int)(AbstractDungeon.player.maxHealth * ASC_SECOND_HP_LOSS_PERCENT));

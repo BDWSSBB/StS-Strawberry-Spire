@@ -9,8 +9,8 @@ import com.megacrit.cardcrawl.relics.*;
 public class BrokenVision extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:BrokenVision";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
 
     public BrokenVision() {
         super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.MAGICAL);

@@ -17,7 +17,7 @@ public class Marathoner extends AbstractStrawberrySpireCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
     public static final String UPGRADE_NAME = CARD_STRINGS.EXTENDED_DESCRIPTION[0];
-    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/green/marathoner.png";
+    public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/green/marathoner.png";
     private static final int COST = -2;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int MAGIC_NUMBER = 2;

@@ -10,8 +10,8 @@ import com.megacrit.cardcrawl.relics.*;
 public class WyrmJar extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:WyrmJar";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
     private static final int EXHAUST_AMOUNT = 3;
     private static final int STRENGTH_AMOUNT = 1;
 

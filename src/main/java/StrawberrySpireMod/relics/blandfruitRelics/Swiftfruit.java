@@ -11,8 +11,8 @@ import StrawberrySpireMod.relics.*;
 public class Swiftfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Swiftfruit";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
     private static final int DEXTERITY_AMOUNT = 2;
 
     public Swiftfruit() {

@@ -28,7 +28,7 @@ public class BlandfruitBush extends AbstractImageEvent {
     }
 
     public BlandfruitBush(){
-        super(EVENT_STRINGS.NAME, DESCRIPTIONS[0], "StrawberrySpireMod/events/blandfruitBush.jpg");
+        super(EVENT_STRINGS.NAME, DESCRIPTIONS[0], "StrawberrySpireModResources/events/blandfruitBush.jpg");
         this.screen = CurScreen.INTRO;
         this.imageEventText.setDialogOption(OPTIONS[0], CardLibrary.getCopy(Clumsy.ID));
         this.imageEventText.setDialogOption(OPTIONS[1]);

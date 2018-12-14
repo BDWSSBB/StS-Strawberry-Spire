@@ -17,7 +17,7 @@ public class InfuseBlandfruitOption extends AbstractCampfireOption
     public InfuseBlandfruitOption() {
         this.label = TEXT[0];
         this.description = TEXT[1];
-        this.img = new Texture("StrawberrySpireMod/campfire/infuseBlandfruit.png");
+        this.img = new Texture("StrawberrySpireModResources/campfire/infuseBlandfruit.png");
     }
 
     public void useOption() {

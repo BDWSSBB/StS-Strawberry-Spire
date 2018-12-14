@@ -9,8 +9,8 @@ import com.megacrit.cardcrawl.relics.*;
 public class Treaders extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Treaders";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireMod/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireMod/relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
     private static final int DRAW_AMOUNT = 1;
     private boolean hasActivated = false;
 

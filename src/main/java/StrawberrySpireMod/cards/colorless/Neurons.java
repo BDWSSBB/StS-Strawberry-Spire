@@ -18,7 +18,7 @@ public class Neurons extends AbstractStrawberrySpireCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
     public static final String UPGRADE_NAME = "Newrons";
-    public static final String IMAGE_PATH = "StrawberrySpireMod/cards/colorless/neurons.png";
+    public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/colorless/neurons.png";
     private static final int COST = 3;
     private static final int UPGRADE_COST = 2;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;

@@ -32,7 +32,7 @@ public class TheByrdhouse extends AbstractImageEvent {
     }
 
     public TheByrdhouse(){
-        super(EVENT_STRINGS.NAME, DESCRIPTIONS[0], "StrawberrySpireMod/events/theByrdhouse.jpg");
+        super(EVENT_STRINGS.NAME, DESCRIPTIONS[0], "StrawberrySpireModResources/events/theByrdhouse.jpg");
         if (AbstractDungeon.ascensionLevel >= 15) {
             this.healAmount = ((int)(AbstractDungeon.player.maxHealth * ASC_HP_HEAL_PERCENT));
         }
