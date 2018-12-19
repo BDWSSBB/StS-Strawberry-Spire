@@ -14,7 +14,6 @@ public class PowerStompAction extends AbstractGameAction {
     private int strengthDownAmount;
 
     public PowerStompAction(AbstractCreature monster, int magicNumber) {
-        this.duration = Settings.ACTION_DUR_XFAST;
         this.target = monster;
         this.player = AbstractDungeon.player;
         this.strengthDownAmount = magicNumber;

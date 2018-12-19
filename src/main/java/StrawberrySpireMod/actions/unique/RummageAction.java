@@ -10,9 +10,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 
 public class RummageAction extends AbstractGameAction {
 
-    public static final String[] TEXT = {
-            "Discard",
-    };
+    public static final String[] TEXT = CardCrawlGame.languagePack.getUIString("DiscardAction").TEXT;
     private AbstractPlayer player;
     private int cardsToDiscard;
 

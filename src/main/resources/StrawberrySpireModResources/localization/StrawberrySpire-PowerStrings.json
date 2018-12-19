@@ -37,6 +37,14 @@
 	  " random #yOrbs next turn."
     ]
   },
+  "strawberrySpire:BurningRoom": {
+    "NAME": "Burning Room",
+    "DESCRIPTIONS": [
+      "At the end of your turn, take #b",
+      "At the end of its turn, takes #b",
+      " damage."
+    ]
+  },
   "strawberrySpire:ByrdBeak": {
     "NAME": "Byrd Beak",
     "DESCRIPTIONS": [
@@ -50,6 +58,27 @@
       "Whenever you draw a #yBurn, gain ",
 	  "[E] ",
 	  "."
+    ]
+  },
+  "strawberrySpire:Combustion": {
+    "NAME": "Combustion",
+    "DESCRIPTIONS": [
+      "Upon death, everyone takes #b",
+      " damage."
+    ]
+  },
+  "strawberrySpire:Conduction": {
+    "NAME": "Conduction",
+    "DESCRIPTIONS": [
+      "Upon death, everyone gains #b",
+      " #yStrength."
+    ]
+  },
+  "strawberrySpire:Convection": {
+    "NAME": "Convection",
+    "DESCRIPTIONS": [
+      "Upon death, everyone takes #b",
+      " damage at the end of their turn."
     ]
   },
   "strawberrySpire:DebrisPile": {
@@ -105,6 +134,14 @@
 	  " additional damage."
     ]
   },
+  "strawberrySpire:HourOfTolling": {
+    "NAME": "Hour of Tolling",
+    "DESCRIPTIONS": [
+      "Gains #b",
+      " #yStrength every #b",
+      " turns."
+    ]
+  },
   "strawberrySpire:JustAWound": {
     "NAME": "Just a Wound",
     "DESCRIPTIONS": [
@@ -139,6 +176,14 @@
       " #yFocus."
     ]
   },
+  "strawberrySpire:MinuteOfSilence": {
+    "NAME": "Minute of Silence",
+    "DESCRIPTIONS": [
+      "Every time you play #b",
+      " cards, lose #b",
+      " #yStrength this turn."
+    ]
+  },
   "strawberrySpire:Momentum": {
     "NAME": "Momentum",
     "DESCRIPTIONS": [
@@ -169,6 +214,14 @@
       "Receives double damage from your next #yAttack.",
       "Receives double damage from your next #b",
       " #yAttacks."
+    ]
+  },
+  "strawberrySpire:Reallocate": {
+    "NAME": "Reallocate",
+    "DESCRIPTIONS": [
+      "Upon death, ALL enemies heal #b",
+      " HP and gain #b",
+      " #yStrength."
     ]
   },
   "strawberrySpire:Refactor": {

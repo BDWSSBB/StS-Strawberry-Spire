@@ -10,10 +10,7 @@ import com.megacrit.cardcrawl.orbs.*;
 
 public class AdapterAction extends AbstractGameAction {
 
-    public static final String[] TEXT = {
-            "Discard",
-            "Register"
-    };
+    public static final String[] TEXT = CardCrawlGame.languagePack.getUIString("strawberrySpire:AdapterAction").TEXT;
     private AbstractPlayer player;
     private int numberOfOrbs;
     private boolean upgraded;

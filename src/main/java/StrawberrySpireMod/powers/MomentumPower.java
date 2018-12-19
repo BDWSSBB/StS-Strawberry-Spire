@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class MomentumPower extends AbstractPower {
+public class MomentumPower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:Momentum";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

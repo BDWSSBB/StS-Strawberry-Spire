@@ -14,7 +14,6 @@ public class SpinKickAction extends AbstractGameAction {
     private int blockNumber;
 
     public SpinKickAction(AbstractCreature m, int blockNumber) {
-        this.duration = Settings.ACTION_DUR_XFAST;
         this.target = m;
         this.player = AbstractDungeon.player;
         this.blockNumber = blockNumber;

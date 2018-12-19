@@ -3,7 +3,6 @@ package StrawberrySpireMod.actions.unique;
 import com.megacrit.cardcrawl.actions.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.characters.*;
-import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.monsters.*;
 
@@ -14,7 +13,6 @@ public class UrgencyAction extends AbstractGameAction {
     private int amountOfCards;
 
     public UrgencyAction(AbstractMonster m, int amountOfCards) {
-        this.duration = Settings.ACTION_DUR_XFAST;
         this.target = m;
         this.player = AbstractDungeon.player;
         this.amountOfCards = amountOfCards;

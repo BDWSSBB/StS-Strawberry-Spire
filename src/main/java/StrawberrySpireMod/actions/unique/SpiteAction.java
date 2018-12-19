@@ -15,7 +15,6 @@ public class SpiteAction extends AbstractGameAction {
     private DamageInfo info;
 
     public SpiteAction(AbstractCreature target, DamageInfo info) {
-        this.duration = Settings.ACTION_DUR_XFAST;
         this.target = target;
         this.player = AbstractDungeon.player;
         this.info = info;

@@ -18,7 +18,6 @@ public class BeatdownAction extends AbstractGameAction {
     private int energyOnUse;
 
     public BeatdownAction(AbstractCreature target, DamageInfo info, boolean freeToPlayOnce, int energyOnUse) {
-        this.duration = Settings.ACTION_DUR_XFAST;
         this.target = target;
         this.player = AbstractDungeon.player;
         this.info = info;

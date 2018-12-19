@@ -8,8 +8,8 @@ import com.megacrit.cardcrawl.rooms.*;
 public class IronFlakes extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:IronFlakes";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/ironFlakes.png");
+    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/ironFlakes.png");
     private static final int HEAL_AMOUNT = 1;
 
     public IronFlakes() {

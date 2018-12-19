@@ -3,6 +3,7 @@ package StrawberrySpireMod.actions.unique;
 import com.megacrit.cardcrawl.actions.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.helpers.*;
+
 import java.util.*;
 
 public class ModifyMagicNumberAction extends AbstractGameAction {

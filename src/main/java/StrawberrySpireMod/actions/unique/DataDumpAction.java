@@ -8,11 +8,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 
 public class DataDumpAction extends AbstractGameAction {
 
-    public static final String[] TEXT = {
-            "Choose a Card to Put into Your Discard Pile.",
-            "Choose ",
-            " Cards to Put into Your Discard Pile."
-    };
+    public static final String[] TEXT = CardCrawlGame.languagePack.getUIString("strawberrySpire:DataDumpAction").TEXT;
     private AbstractPlayer player;
     private int numberOfCards;
 

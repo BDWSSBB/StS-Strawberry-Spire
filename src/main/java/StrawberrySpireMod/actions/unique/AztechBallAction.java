@@ -4,7 +4,6 @@ import com.megacrit.cardcrawl.actions.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.defect.*;
 import com.megacrit.cardcrawl.actions.utility.*;
-import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.orbs.*;
 
@@ -15,7 +14,7 @@ import com.evacipated.cardcrawl.mod.stslib.actions.defect.*;
 public class AztechBallAction extends AbstractGameAction {
 
     public AztechBallAction() {
-        this.duration = Settings.ACTION_DUR_FAST;
+
     }
 
     public void update() {
@@ -24,7 +23,7 @@ public class AztechBallAction extends AbstractGameAction {
                 if (AbstractDungeon.player.orbs.get(i).ID != null &&
                         AbstractDungeon.player.orbs.get(i).ID.equals(AbstractDungeon.player.orbs.get(i + 1).ID) &&
                         AbstractDungeon.player.orbs.get(i).ID.equals(AbstractDungeon.player.orbs.get(i + 2).ID)) {
-                    for (int j = 0; j < 2; j++) { // The actions are listed in reverse so they are added into the queue properly.
+                    for (int j = 0; j < 2; j++) { // The actions are listed in reverse so they are added into the queue properly. Seriously, why isn't there a thing to add a list of actions together?
                         AbstractDungeon.actionManager.addToTop(new ChannelAction(AbstractOrb.getRandomOrb(true)));
                     }
                     for (int j = 0; j < 3; j++) {

@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class LockstepOffBeatPower extends AbstractPower {
+public class LockstepOffBeatPower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:LockstepOffBeat";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

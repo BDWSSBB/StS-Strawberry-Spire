@@ -19,9 +19,9 @@ public class Insectonator extends AbstractStrawberrySpireCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = CARD_STRINGS.NAME;
     public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/green/insectonator.png";
-    private static final int COST = 0;
+    private static final int COST = 1;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final int MAGIC_NUMBER = 5;
+    private static final int MAGIC_NUMBER = 6;
     private static final int UPGRADE_PLUS_MAGIC_NUMBER = 2;
 
     public Insectonator() {

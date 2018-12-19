@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class LoseFocusPower extends AbstractPower {
+public class LoseFocusPower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:LoseFocus";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

@@ -1,8 +1,47 @@
 {
+  "strawberrySpire:AdapterAction": {
+    "TEXT": [
+      "Discard",
+      "Register"
+    ]
+  },
+  "strawberrySpire:DataDumpAction": {
+    "TEXT": [
+      "Choose a Card to Put into Your Discard Pile.",
+      "Choose ",
+      " Cards to Put into Your Discard Pile."
+    ]
+  },
+  "strawberrySpire:GettingOverItAction": {
+    "TEXT": [
+      "Choose a Card to Exhaust.",
+      "Choose ",
+      " Cards to Exhaust."
+    ]
+  },
   "strawberrySpire:InfuseBlandfruitOption": {
     "TEXT": [
       "Infuse",
       "Infuse the Blandfruit with your seed."
+    ]
+  },
+  "strawberrySpire:PackageAction": {
+    "TEXT": [
+      "Choose a Card to Remove.",
+      "Choose ",
+      " Cards to Remove."
+    ]
+  },
+  "strawberrySpire:SearchEngineAction": {
+    "TEXT": [
+      "Search"
+    ]
+  },
+  "strawberrySpire:SlideAction": {
+    "TEXT": [
+      "Choose a Card to Put into Your Hand.",
+      "Choose ",
+      " Cards to Put into Your Hand."
     ]
   }
 }

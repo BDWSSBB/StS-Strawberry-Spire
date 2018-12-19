@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.orbs.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class AnotherWinterPower extends AbstractPower {
+public class AnotherWinterPower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:AnotherWinter";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

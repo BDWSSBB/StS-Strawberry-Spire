@@ -25,9 +25,9 @@ public class ElefentMask extends AbstractStrawberrySpireRelic {
     public void atBattleStart() {
         flash();
         AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        if (AbstractDungeon.getCurrRoom().monsters.monsters.size() >= 1) {
+        if (AbstractDungeon.getMonsters().monsters.size() >= 1) {
             AbstractMonster mostHpMonster = null;
-            for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
                 if (mostHpMonster == null || m.maxHealth > mostHpMonster.maxHealth) {
                     mostHpMonster = m;
                 }

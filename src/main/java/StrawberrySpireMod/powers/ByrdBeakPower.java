@@ -12,7 +12,7 @@ import StrawberrySpireMod.actions.unique.*;
 
 import java.util.ArrayList;
 
-public class ByrdBeakPower extends AbstractPower {
+public class ByrdBeakPower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:ByrdBeak";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

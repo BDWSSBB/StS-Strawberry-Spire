@@ -10,9 +10,7 @@ import basemod.BaseMod;
 
 public class SearchEngineAction extends AbstractGameAction {
 
-    public static final String[] TEXT = {
-            "Search"
-    };
+    public static final String[] TEXT = CardCrawlGame.languagePack.getUIString("strawberrySpire:SearchEngineAction").TEXT;
     private AbstractPlayer player;
     private int numberOfCards;
 

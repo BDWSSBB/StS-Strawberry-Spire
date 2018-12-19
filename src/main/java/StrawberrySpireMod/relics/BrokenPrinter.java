@@ -14,7 +14,6 @@ public class BrokenPrinter extends AbstractStrawberrySpireRelic {
     public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
     public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
     private static final int CARD_AMOUNT = 5;
-    private boolean cardSelected = false;
 
     public BrokenPrinter() {
         super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SHOP, LandingSound.HEAVY);
@@ -38,8 +37,8 @@ public class BrokenPrinter extends AbstractStrawberrySpireRelic {
 
     public void update() {
         super.update();
-        if ((!this.cardSelected) && (AbstractDungeon.gridSelectScreen.selectedCards.size() == 1)) {
-            this.cardSelected = true;
+        if ((this.counter == -1) && (AbstractDungeon.gridSelectScreen.selectedCards.size() == 1)) {
+            this.counter = -2;
             for (int i = 0; i < CARD_AMOUNT; i++) {
                 AbstractCard c = AbstractDungeon.gridSelectScreen.selectedCards.get(0).makeStatEquivalentCopy();
                 c.inBottleFlame = false;

@@ -2,8 +2,8 @@
   "strawberrySpire:BlandfruitBush": {
     "NAME": "Blandfruit Bush",
     "DESCRIPTIONS": [
-      "You wander through a former nature trail, now only populated by weeds, but a familiar bush stands in front of you. You've heard about this somewhere, but you can't quite remember where. This blandfruit bush yields a tasteless produce, but it can be infused with alchemy. NL NL You never expected this to survive the #pSpireblight. Might as well help yourself, but what would you do with it?",
-      "You've never actually touched blandfruit before in your life. As you return from the detour, you #r@trip@ on a seed pod and spill its seeds all over the floor. After recovering from your #r~clumsiness,~ you remember these seeds are the key ingredient to infusing blandfruit. You should take one, or else the harvest would be a waste.",
+      "You wander through a former nature trail, now only populated by weeds, but a familiar bush stands in front of you. You've heard about this from somewhere, but you can't quite remember where. This blandfruit bush yields a tasteless produce, but it can be infused with alchemy. NL NL You never expected this to survive the #pSpireblight. Might as well help yourself, but what would you do with it?",
+      "You've never actually touched blandfruit before in your life. As you return from the detour, you #r@trip@ on a seed pod and spill its seeds all over the floor. After recovering from your #r~clumsiness,~ you remember these seeds are the key ingredient for infusing blandfruit. You should take one, or else the harvest would be a waste.",
       "Now with a blandfruit and a seed, all you need is a place to mix the two together. Perhaps the next time you stop to rest, you can.",
       "With you #pcauldron, you mix the blandfruit and seed together in warm water. After the blandfruit soaks up the seed's nutrients, you take it out and help yourself. NL NL It tastes #y~delicious~!"
     ],
@@ -39,10 +39,10 @@
       "#r~Psychokinesis~ #g~and~ #b~you.~ NL NL #p~You~ #p~and~ #p~the~ #p~world.~ NL NL The cards fly out to you with barely any mental effort, but it becomes overwhelming. Eventually, you collapse on the ground, littered with many copies of your cards. You're a little #r~sore~ from the experience, but at least you got what you wanted, right?"
     ],
     "OPTIONS": [
-      "[Take] #gDuplicate #ga #gcard in your deck. #rLose #r",
+      "[Take] #gDuplicate #ga #gcard #gin #gyour #gdeck. #rLose #r",
       " #rHP.",
       "[Leave]",
-      "[One More] #gDuplicate #ga #gcard in your deck. #rBecome #rConfused.",
+      "[One More] #gDuplicate #ga #gcard #gin #gyour #gdeck. #rBecome #rConfused.",
       "[Stop]",
       "[Hoard] Triplicate ALL cards in your deck.",
       "Select a Card to Duplicate."
@@ -51,7 +51,7 @@
   "strawberrySpire:TheByrdhouse": {
     "NAME": "The Byrdhouse",
     "DESCRIPTIONS": [
-      "Out in the middle of the streets lies a little cottage, a sign hanging out reading \"BYRD AND BEAKFAST\". You feel exhausted from your journey up the Spire, so you check out what's inside. A bell #y@rings@ as you open the door.",
+      "Out in the middle of the streets lies a little cottage, a sign hanging out reading #b\"BYRD #bAND #bBEAKFAST\". You feel exhausted from your journey up the Spire, so you check out what's inside. A bell #y@rings@ as you open the door.",
       "#r@\"CAW@ #r@CAAAW!\"@ the innkeeper shouts. \"You look weary, you should stay to rest!\" It turns out a flock of #pcultists run the place! Ornate decorations worshipping the #p~Awakened~ #p~One~ hang on the walls. They don't seem hostile, but why not? NL NL ",
       "You're not sure if you trust these cultists, but the price they're offering for a good night's rest is a pretty good deal to you. Breakfast is included, or whatever is left from the #pSpireblight.",
       "The \"room\" you rented doesn't feel like one of an inn, but more of a full-fledged bedroom. The cultists seem to have renovated the cottage into an inn. Perhaps it's family-run? Nonetheless, the night was surprisingly restful. NL NL ",

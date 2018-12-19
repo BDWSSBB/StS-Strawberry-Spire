@@ -36,9 +36,9 @@ public class BlandfruitBush extends AbstractImageEvent {
 
     protected void buttonEffect(int buttonPressed) {
         switch (this.screen) {
-            case INTRO:
+            case INTRO: {
                 switch (buttonPressed) {
-                    case 0:
+                    case 0: {
                         AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F, RelicLibrary.getRelic(Blandfruit.ID).makeCopy());
                         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(CardLibrary.getCopy(Clumsy.ID), Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
                         CardCrawlGame.sound.play("BLUNT_HEAVY");
@@ -57,14 +57,17 @@ public class BlandfruitBush extends AbstractImageEvent {
                             }
                         }
                         break;
-                    case 1:
+                    }
+                    case 1: {
                         this.openMap();
                         this.screen = CurScreen.END;
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[1]);
+                    }
                 }
                 break;
-            case CHOOSE_SEED:
+            }
+            case CHOOSE_SEED: {
                 if (AbstractDungeon.player.hasRelic(Blandfruit.ID)) { // I swear something is gonna troll me by removing the blandfruit right when the player picks it up
                     if (AbstractDungeon.player.hasRelic(Cauldron.ID)) {
                         AbstractDungeon.player.loseRelic(Blandfruit.ID);
@@ -84,10 +87,12 @@ public class BlandfruitBush extends AbstractImageEvent {
                 this.imageEventText.clearAllDialogs();
                 this.imageEventText.setDialogOption(OPTIONS[1]);
                 break;
-            case END:
+            }
+            case END: {
                 this.openMap();
                 this.imageEventText.clearAllDialogs();
                 this.imageEventText.setDialogOption(OPTIONS[1]);
+            }
         }
     }
 

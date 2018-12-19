@@ -55,7 +55,7 @@ public class TheByrdhouse extends AbstractImageEvent {
 
     protected void buttonEffect(int buttonPressed) {
         switch (this.screen) {
-            case INTRO_1:
+            case INTRO_1: {
                 int randomSound = MathUtils.random(2);
                 if (randomSound == 0) {
                     CardCrawlGame.sound.play("VO_CULTIST_1A");
@@ -72,9 +72,10 @@ public class TheByrdhouse extends AbstractImageEvent {
                 this.imageEventText.setDialogOption(OPTIONS[1] + REST_COST + OPTIONS[2] + this.healAmount + OPTIONS[3], AbstractDungeon.player.gold < REST_COST);
                 this.imageEventText.setDialogOption(OPTIONS[4]);
                 break;
-            case INTRO_2:
+            }
+            case INTRO_2: {
                 switch (buttonPressed) {
-                    case 0:
+                    case 0: {
                         AbstractDungeon.player.loseGold(REST_COST);
                         AbstractDungeon.player.heal(this.healAmount);
                         this.imageEventText.updateBodyText(DESCRIPTIONS[3] + DESCRIPTIONS[4]);
@@ -82,14 +83,17 @@ public class TheByrdhouse extends AbstractImageEvent {
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[5]);
                         break;
-                    case 1:
+                    }
+                    case 1: {
                         this.openMap();
                         this.screen = CurScreen.END_2;
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[4]);
+                    }
                 }
                 break;
-            case RENTED_1:
+            }
+            case RENTED_1: {
                 if (AbstractDungeon.player instanceof Ironclad) {
                     this.imageEventText.updateBodyText(DESCRIPTIONS[5] + DESCRIPTIONS[7] + DESCRIPTIONS[6]);
                 }
@@ -112,9 +116,10 @@ public class TheByrdhouse extends AbstractImageEvent {
                 }
                 this.imageEventText.setDialogOption(OPTIONS[4]);
                 break;
-            case RENTED_2:
+            }
+            case RENTED_2: {
                 switch (buttonPressed) {
-                    case 0:
+                    case 0: {
                         AbstractDungeon.effectList.add(new PurgeCardEffect(this.cardOption));
                         AbstractDungeon.player.masterDeck.removeCard(this.cardOption);
                         if (AbstractDungeon.player instanceof Ironclad) {
@@ -133,14 +138,17 @@ public class TheByrdhouse extends AbstractImageEvent {
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[5]);
                         break;
-                    case 1:
+                    }
+                    case 1: {
                         this.openMap();
                         this.screen = CurScreen.END_2;
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[4]);
+                    }
                 }
                 break;
-            case END_1:
+            }
+            case END_1: {
                 if (AbstractDungeon.player instanceof Ironclad) {
                     AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH * 0.5F, Settings.HEIGHT * 0.5F,  RelicLibrary.getRelic(TannedGloves.ID).makeCopy());
                     this.imageEventText.updateBodyText(DESCRIPTIONS[15] + DESCRIPTIONS[18] + DESCRIPTIONS[16] + DESCRIPTIONS[20] + DESCRIPTIONS[17]);
@@ -161,10 +169,12 @@ public class TheByrdhouse extends AbstractImageEvent {
                 this.imageEventText.clearAllDialogs();
                 this.imageEventText.setDialogOption(OPTIONS[4]);
                 break;
-            case END_2:
+            }
+            case END_2: {
                 this.openMap();
                 this.imageEventText.clearAllDialogs();
                 this.imageEventText.setDialogOption(OPTIONS[4]);
+            }
         }
     }
 

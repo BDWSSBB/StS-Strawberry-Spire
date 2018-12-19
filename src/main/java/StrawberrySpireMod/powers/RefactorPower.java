@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class RefactorPower extends AbstractPower {
+public class RefactorPower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:Refactor";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

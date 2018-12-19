@@ -3,6 +3,7 @@ package StrawberrySpireMod.relics.blandfruitRelics;
 import com.badlogic.gdx.graphics.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.defect.*;
+import com.megacrit.cardcrawl.actions.utility.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 
@@ -26,6 +27,7 @@ public class Fadefruit extends AbstractStrawberrySpireRelic {
     public void atBattleStart() {
         flash();
         AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        AbstractDungeon.actionManager.addToBottom(new WaitAction(0.25F));
         AbstractDungeon.actionManager.addToBottom(new SeekAction(CARD_AMOUNT));
     }
 

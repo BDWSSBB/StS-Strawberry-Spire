@@ -3,7 +3,6 @@ package StrawberrySpireMod.actions.unique;
 import com.megacrit.cardcrawl.actions.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.characters.*;
-import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.ui.panels.*;
@@ -19,7 +18,6 @@ public class FocalLaserAction extends AbstractGameAction {
     private int energyOnUse;
 
     public FocalLaserAction(UUID uuid, int magicNumber, boolean freeToPlayOnce, int energyOnUse) {
-        this.duration = Settings.ACTION_DUR_XFAST;
         this.player = AbstractDungeon.player;
         this.uuid = uuid;
         this.damageIncrementAmount = magicNumber;

@@ -11,23 +11,19 @@ import basemod.*;
 public class SlideAction extends AbstractGameAction
 {
 
-    public static final String[] TEXT = {
-            "Choose a Card to Put into Your Hand.",
-            "Choose ",
-            " Cards to Put into Your Hand."
-    };
+    public static final String[] TEXT = CardCrawlGame.languagePack.getUIString("strawberrySpire:SlideAction").TEXT;
     private AbstractPlayer player;
     private int numberOfCards;
 
     public SlideAction(int magicNumber) {
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
-        this.duration = Settings.ACTION_DUR_FASTER;
+        this.duration = Settings.ACTION_DUR_FAST;
         this.player = AbstractDungeon.player;
         this.numberOfCards = magicNumber;
     }
 
     public void update() {
-        if (this.duration == Settings.ACTION_DUR_FASTER) {
+        if (this.duration == Settings.ACTION_DUR_FAST) {
             if (this.player.drawPile.isEmpty()) {
                 this.isDone = true;
                 return;

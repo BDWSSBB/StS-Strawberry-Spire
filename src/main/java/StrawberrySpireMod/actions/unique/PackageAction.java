@@ -13,17 +13,13 @@ import java.util.*;
 
 public class PackageAction extends AbstractGameAction {
 
-    public static final String[] TEXT = {
-            "Choose a Card to Remove.",
-            "Choose ",
-            " Cards to Remove."
-    };
+    public static final String[] TEXT = CardCrawlGame.languagePack.getUIString("strawberrySpire:PackageAction").TEXT;
     private AbstractPlayer player;
     private int numberOfCards;
 
     public PackageAction(int magicNumber) {
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
-        this.duration = Settings.ACTION_DUR_FASTER;
+        this.duration = Settings.ACTION_DUR_FAST;
         this.player = AbstractDungeon.player;
         this.numberOfCards = magicNumber;
     }
@@ -33,7 +29,7 @@ public class PackageAction extends AbstractGameAction {
             this.isDone = true;
             return;
         }
-        if (this.duration == Settings.ACTION_DUR_FASTER) {
+        if (this.duration == Settings.ACTION_DUR_FAST) {
             if (this.player.drawPile.isEmpty()) {
                 this.isDone = true;
                 return;

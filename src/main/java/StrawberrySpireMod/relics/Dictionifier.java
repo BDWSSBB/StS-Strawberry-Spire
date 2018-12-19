@@ -14,8 +14,6 @@ public class Dictionifier extends AbstractStrawberrySpireRelic implements Custom
     public static final String ID = "strawberrySpire:Dictionifier";
     public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
     public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
-    private boolean cardSelected = false;
-    private AbstractCard cardToReduce = null;
     private ArrayList<AbstractCard> reducedCardsList = new ArrayList<>();
 
     public Dictionifier() {
@@ -27,7 +25,6 @@ public class Dictionifier extends AbstractStrawberrySpireRelic implements Custom
     }
 
     public void onEquip() {
-        this.cardSelected = false;
         CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         ArrayList<String> cardsAdded = new ArrayList<>();
         for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
@@ -37,7 +34,6 @@ public class Dictionifier extends AbstractStrawberrySpireRelic implements Custom
             }
         }
         if (temp.isEmpty()) {
-            this.cardSelected = true;
             return;
         }
         else if (AbstractDungeon.isScreenUp) {
@@ -60,11 +56,11 @@ public class Dictionifier extends AbstractStrawberrySpireRelic implements Custom
 
     public void update() {
         super.update();
-        if (!this.cardSelected && AbstractDungeon.gridSelectScreen.selectedCards.size() == 1) {
-            this.cardSelected = true;
-            this.cardToReduce = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
+        if (this.counter == -1 && AbstractDungeon.gridSelectScreen.selectedCards.size() == 1) {
+            this.counter = -2;
+            AbstractCard cardToReduce = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
             for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
-                if (c.cardID.equals(this.cardToReduce.cardID) && c.cost != 0) {
+                if (c.cardID.equals(cardToReduce.cardID) && c.cost != 0) {
                     this.reducedCardsList.add(c);
                     c.updateCost(-c.cost);
                 }

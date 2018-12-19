@@ -21,6 +21,7 @@ public class Pant extends AbstractStrawberrySpireCard {
     public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/green/pant.png";
     private static final int COST = 0;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = CARD_STRINGS.UPGRADE_DESCRIPTION;
     private static final int MAGIC_NUMBER = 2;
 
     public Pant() {
@@ -54,6 +55,8 @@ public class Pant extends AbstractStrawberrySpireCard {
             this.upgradeName();
             this.name = UPGRADE_NAME;
             initializeTitle();
+            this.rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }

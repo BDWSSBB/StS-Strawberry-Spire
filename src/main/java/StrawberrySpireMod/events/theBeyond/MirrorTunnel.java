@@ -48,9 +48,9 @@ public class MirrorTunnel extends AbstractImageEvent {
 
     protected void buttonEffect(int buttonPressed) {
         switch (this.screen) {
-            case INTRO:
+            case INTRO: {
                 switch (buttonPressed) {
-                    case 0:
+                    case 0: {
                         AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck, 1, OPTIONS[6], false, false, false, false);
                         AbstractDungeon.player.damage(new DamageInfo(null, this.firstDamageAmount));
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
@@ -59,16 +59,19 @@ public class MirrorTunnel extends AbstractImageEvent {
                         this.imageEventText.setDialogOption(OPTIONS[0] + this.secondDamageAmount + OPTIONS[1]);
                         this.imageEventText.setDialogOption(OPTIONS[2]);
                         break;
-                    case 1:
+                    }
+                    case 1: {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         this.screen = CurScreen.END;
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[2]);
+                    }
                 }
                 break;
-            case TAKE_1:
+            }
+            case TAKE_1: {
                 switch (buttonPressed) {
-                    case 0:
+                    case 0: {
                         AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck, 1, OPTIONS[6], false, false, false, false);
                         AbstractDungeon.player.damage(new DamageInfo(null, this.secondDamageAmount));
                         this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
@@ -78,16 +81,19 @@ public class MirrorTunnel extends AbstractImageEvent {
                         this.imageEventText.setDialogOption(OPTIONS[4]);
                         this.imageEventText.setDialogOption(OPTIONS[5]);
                         break;
-                    case 1:
+                    }
+                    case 1: {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         this.screen = CurScreen.END;
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[2]);
+                    }
                 }
                 break;
-            case TAKE_2:
+            }
+            case TAKE_2: {
                 switch (buttonPressed) {
-                    case 0:
+                    case 0: {
                         AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck, 1, OPTIONS[6], false, false, false, false);
                         AbstractDungeon.getCurrRoom().spawnRelicAndObtain(Settings.WIDTH * 0.5F, Settings.HEIGHT * 0.5F,  RelicLibrary.getRelic(BrokenVision.ID).makeCopy());
                         this.imageEventText.updateBodyText(DESCRIPTIONS[4]);
@@ -95,13 +101,15 @@ public class MirrorTunnel extends AbstractImageEvent {
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[2]);
                         break;
-                    case 1:
+                    }
+                    case 1: {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         this.screen = CurScreen.END;
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[2]);
                         break;
-                    case 2:
+                    }
+                    case 2: {
                         ArrayList<AbstractCard> cardsToDuplicate = new ArrayList<>();
                         for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
                             cardsToDuplicate.add(c);
@@ -118,12 +126,15 @@ public class MirrorTunnel extends AbstractImageEvent {
                         this.screen = CurScreen.END;
                         this.imageEventText.clearAllDialogs();
                         this.imageEventText.setDialogOption(OPTIONS[2]);
+                    }
                 }
                 break;
-            case END:
+            }
+            case END: {
                 this.openMap();
                 this.imageEventText.clearAllDialogs();
                 this.imageEventText.setDialogOption(OPTIONS[2]);
+            }
         }
     }
 

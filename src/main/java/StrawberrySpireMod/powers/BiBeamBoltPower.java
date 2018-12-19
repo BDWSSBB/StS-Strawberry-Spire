@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.powers.*;
 
 import com.evacipated.cardcrawl.mod.stslib.actions.defect.*;
 
-public class BiBeamBoltPower extends AbstractPower {
+public class BiBeamBoltPower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:BiBeamBolt";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

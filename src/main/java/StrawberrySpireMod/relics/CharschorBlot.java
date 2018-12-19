@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.rooms.*;
+import com.megacrit.cardcrawl.unlock.*;
 import com.megacrit.cardcrawl.vfx.cardManip.*;
 
 public class CharschorBlot extends AbstractStrawberrySpireRelic {
@@ -14,8 +15,6 @@ public class CharschorBlot extends AbstractStrawberrySpireRelic {
     public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
     public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
     private static final int CARD_AMOUNT = 25;
-    private boolean cardRemoved = false;
-    private boolean cardAdded = false;
 
     public CharschorBlot() {
         super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.UNCOMMON, LandingSound.MAGICAL);
@@ -38,8 +37,8 @@ public class CharschorBlot extends AbstractStrawberrySpireRelic {
 
     public void update() {
         super.update();
-        if (!this.cardRemoved && AbstractDungeon.gridSelectScreen.selectedCards.size() == 1) {
-            this.cardRemoved = true;
+        if (this.counter == -1 && AbstractDungeon.gridSelectScreen.selectedCards.size() == 1) {
+            this.counter = -2;
             if (AbstractDungeon.isScreenUp) {
                 AbstractDungeon.dynamicBanner.hide();
                 AbstractDungeon.overlayMenu.cancelButton.hide();
@@ -55,6 +54,7 @@ public class CharschorBlot extends AbstractStrawberrySpireRelic {
                 if (!availableCards.contains(temp)) {
                     temp.upgrade();
                     availableCards.addToBottom(temp);
+                    UnlockTracker.markCardAsSeen(temp.cardID);
                 }
                 else {
                     i--;
@@ -62,8 +62,8 @@ public class CharschorBlot extends AbstractStrawberrySpireRelic {
             }
             AbstractDungeon.gridSelectScreen.open(availableCards, 1, DESCRIPTIONS[3], false);
         }
-        else if (!this.cardAdded && AbstractDungeon.gridSelectScreen.selectedCards.size() == 1) {
-            this.cardAdded = true;
+        else if (this.counter == -2 && AbstractDungeon.gridSelectScreen.selectedCards.size() == 1) {
+            this.counter = -3;
             AbstractCard card = AbstractDungeon.gridSelectScreen.selectedCards.get(0).makeStatEquivalentCopy();
             AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(card, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
             AbstractDungeon.gridSelectScreen.selectedCards.clear();

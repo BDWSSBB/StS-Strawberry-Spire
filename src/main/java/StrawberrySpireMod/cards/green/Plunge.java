@@ -30,7 +30,7 @@ public class Plunge extends AbstractStrawberrySpireCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new PlungePower(m, 1)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new PlungePower(m, 1), 1));
     }
 
     public AbstractCard makeCopy() {

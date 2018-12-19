@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.green.*;
 import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.monsters.*;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.*;
 
@@ -19,6 +20,7 @@ import StrawberrySpireMod.cards.red.*;
 import StrawberrySpireMod.events.exordium.*;
 import StrawberrySpireMod.events.theBeyond.*;
 import StrawberrySpireMod.events.theCity.*;
+import StrawberrySpireMod.monsters.elite.*;
 import StrawberrySpireMod.relics.*;
 import StrawberrySpireMod.relics.blandfruitRelics.*;
 
@@ -191,6 +193,24 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addEvent(BlandfruitBush.ID, BlandfruitBush.class, Exordium.ID);
         BaseMod.addEvent(MirrorTunnel.ID, MirrorTunnel.class, TheBeyond.ID);
         BaseMod.addEvent(TheByrdhouse.ID, TheByrdhouse.class, TheCity.ID);
+        BaseMod.addMonster("strawberrySpire:EnergyPylons", () -> new MonsterGroup(new AbstractMonster[]{ // Will put these somewhere else later, I'm too sleepy rn.
+                new ThermalPylon(-330.0F, 25.0F),
+                new KineticPylon(-85.0F, 10.0F),
+                new ElectricalPylon(140.0F, 30.0F)
+        }));
+        BaseMod.addEliteEncounter(Exordium.ID, new MonsterInfo("strawberrySpire:EnergyPylons", 1.0F));
+        BaseMod.addMonster("strawberrySpire:AncientClocktower", () -> new MonsterGroup(new AbstractMonster[]{
+                new AncientClocktower(0.0F, 0.0F)
+        }));
+        BaseMod.addEliteEncounter(TheCity.ID, new MonsterInfo("strawberrySpire:AncientClocktower", 1.0F));
+        BaseMod.addMonster("strawberrySpire:EssenceStones", () -> new MonsterGroup(new AbstractMonster[]{
+                new Minicio(-480.0F, 200.0F),
+                new Accio(-320.0F, 20.0F),
+                new Crucio(-160.0F, 160.0F),
+                new Imperio(0.0F, 0.0F),
+                new Zivicio(160.0F, 180.0F)
+        }));
+        BaseMod.addEliteEncounter(TheBeyond.ID, new MonsterInfo("strawberrySpire:EnergyPylons", 2.0F));
     }
 
     @Override

@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.*;
 
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.*;
 
-public class ConflagratePower extends AbstractPower implements OnCardDrawPower{
+public class ConflagratePower extends AbstractStrawberrySpirePower implements OnCardDrawPower{
 
     public static final String POWER_ID = "strawberrySpire:Conflagrate";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

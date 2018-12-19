@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.orbs.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class RonchyblePower extends AbstractPower {
+public class RonchyblePower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:Ronchyble";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

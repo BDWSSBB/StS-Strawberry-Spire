@@ -1,3 +1,91 @@
 {
-
+  "strawberrySpire:Accio": {
+    "MOVES": [
+      "Flare"
+    ],
+    "NAME": "Accio",
+    "DIALOG": [
+      ""
+    ]
+  },
+  "strawberrySpire:AncientClocktower": {
+    "MOVES": [
+      "Toll",
+      "Earritate",
+      "Maintenance"
+    ],
+    "NAME": "Ancient Clocktower",
+    "DIALOG": [
+      ""
+    ]
+  },
+  "strawberrySpire:Crucio": {
+    "MOVES": [
+      "Rebound"
+    ],
+    "NAME": "Crucio",
+    "DIALOG": [
+      ""
+    ]
+  },
+  "strawberrySpire:ElectricalPylon": {
+    "MOVES": [
+      "Discharge",
+      "Disintegrate",
+      "Charge"
+    ],
+    "NAME": "Electrical Pylon",
+    "DIALOG": [
+      ""
+    ]
+  },
+  "strawberrySpire:Imperio": {
+    "MOVES": [
+      "Bounce"
+    ],
+    "NAME": "Imperio",
+    "DIALOG": [
+      ""
+    ]
+  },
+  "strawberrySpire:KineticPylon": {
+    "MOVES": [
+      "Pulse",
+      "Disintegrate",
+      "Charge"
+    ],
+    "NAME": "Kinetic Pylon",
+    "DIALOG": [
+      ""
+    ]
+  },
+  "strawberrySpire:Minicio": {
+    "MOVES": [
+      "Pulse"
+    ],
+    "NAME": "Minicio",
+    "DIALOG": [
+      ""
+    ]
+  },
+  "strawberrySpire:ThermalPylon": {
+    "MOVES": [
+      "Sear",
+      "Disintegrate",
+      "Charge"
+    ],
+    "NAME": "Thermal Pylon",
+    "DIALOG": [
+      ""
+    ]
+  },
+  "strawberrySpire:Zivicio": {
+    "MOVES": [
+      "Energize"
+    ],
+    "NAME": "Zivicio",
+    "DIALOG": [
+      ""
+    ]
+  }
 }

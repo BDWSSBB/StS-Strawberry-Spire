@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class PlungePower extends AbstractPower {
+public class PlungePower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:Plunged";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

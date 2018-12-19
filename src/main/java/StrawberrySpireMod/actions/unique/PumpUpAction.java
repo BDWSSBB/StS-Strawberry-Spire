@@ -11,9 +11,7 @@ import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 public class PumpUpAction extends AbstractGameAction {
 
-    public static final String[] TEXT = {
-            "Exhaust",
-    };
+    public static final String[] TEXT = CardCrawlGame.languagePack.getUIString("ExhaustAction").TEXT;
     private AbstractPlayer player;
     private int numberOfCards;
     private boolean upgraded;

@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class HellbenderPower extends AbstractPower {
+public class HellbenderPower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:Hellbender";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

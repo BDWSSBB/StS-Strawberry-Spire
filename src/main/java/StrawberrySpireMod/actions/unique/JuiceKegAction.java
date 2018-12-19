@@ -1,6 +1,6 @@
 package StrawberrySpireMod.actions.unique;
 
-import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.math.*;
 import com.megacrit.cardcrawl.actions.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.*;
@@ -14,13 +14,13 @@ import StrawberrySpireMod.relics.*;
 
 public class JuiceKegAction extends AbstractGameAction {
 
-    private CardGroup potentialCardsToPlay = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
 
     public JuiceKegAction() {
-        this.duration = Settings.ACTION_DUR_FAST;
+
     }
 
     public void update() {
+        CardGroup potentialCardsToPlay = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         int highestCost = 0;
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
             if (c.type == AbstractCard.CardType.ATTACK && (c.costForTurn > highestCost || (c.costForTurn == -1 && EnergyPanel.totalCount > highestCost))) {
@@ -30,16 +30,16 @@ public class JuiceKegAction extends AbstractGameAction {
                 else {
                     highestCost = c.costForTurn;
                 }
-                this.potentialCardsToPlay.clear();
-                this.potentialCardsToPlay.addToRandomSpot(c);
+                potentialCardsToPlay.clear();
+                potentialCardsToPlay.addToRandomSpot(c);
             }
             else if (c.type == AbstractCard.CardType.ATTACK && (c.costForTurn == highestCost || (c.costForTurn == -1 && EnergyPanel.totalCount == highestCost))) {
-                this.potentialCardsToPlay.addToRandomSpot(c);
+                potentialCardsToPlay.addToRandomSpot(c);
             }
         }
-        this.potentialCardsToPlay.shuffle();
-        if (!this.potentialCardsToPlay.isEmpty()) {
-            AbstractCard card = this.potentialCardsToPlay.getBottomCard();
+        potentialCardsToPlay.shuffle();
+        if (!potentialCardsToPlay.isEmpty()) {
+            AbstractCard card = potentialCardsToPlay.getBottomCard();
             AbstractDungeon.getCurrRoom().souls.remove(card);
             card.freeToPlayOnce = true;
             AbstractDungeon.player.limbo.group.add(card);
@@ -58,7 +58,6 @@ public class JuiceKegAction extends AbstractGameAction {
                 AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, AbstractDungeon.player.getRelic(JuiceKeg.ID)));
             }
         }
-        this.potentialCardsToPlay.clear();
         this.isDone = true;
     }
 }

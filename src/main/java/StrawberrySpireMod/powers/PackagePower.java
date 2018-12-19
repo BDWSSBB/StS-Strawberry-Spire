@@ -4,13 +4,12 @@ import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
-import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
 import java.util.*;
 
-public class PackagePower extends AbstractPower {
+public class PackagePower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:Package";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

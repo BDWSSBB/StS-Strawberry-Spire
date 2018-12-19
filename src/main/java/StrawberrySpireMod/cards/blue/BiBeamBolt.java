@@ -17,7 +17,7 @@ public class BiBeamBolt extends AbstractStrawberrySpireCard {
     public static final String NAME = CARD_STRINGS.NAME;
     public static final String UPGRADE_NAME = CARD_STRINGS.EXTENDED_DESCRIPTION[0];
     public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/blue/biBeamBolt.png";
-    private static final int COST = 1;
+    private static final int COST = 2;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = CARD_STRINGS.UPGRADE_DESCRIPTION;
     private static final int MAGIC_NUMBER = 1;

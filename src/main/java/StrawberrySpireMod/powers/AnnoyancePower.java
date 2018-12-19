@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.powers.*;
 import com.badlogic.gdx.math.*;
 
-public class AnnoyancePower extends AbstractPower {
+public class AnnoyancePower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "StrawberrySpire:Annoyance";
     public static final String NAME = "Annoyance";

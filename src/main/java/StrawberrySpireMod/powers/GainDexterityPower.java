@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.powers.*;
 
-public class GainDexterityPower extends AbstractPower {
+public class GainDexterityPower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:GainDexterity";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

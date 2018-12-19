@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.relics.*;
 
 import StrawberrySpireMod.actions.unique.*;
 
-public class HarvestPower extends AbstractPower {
+public class HarvestPower extends AbstractStrawberrySpirePower {
 
     public static final String POWER_ID = "strawberrySpire:Harvest";
     private static final PowerStrings POWER_STRINGS = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);

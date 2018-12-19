@@ -8,17 +8,13 @@ import com.megacrit.cardcrawl.dungeons.*;
 
 public class GettingOverItDrawPileAction extends AbstractGameAction {
 
-    public static final String[] TEXT = {
-            "Choose a Card to Exhaust.",
-            "Choose ",
-            " Cards to Exhaust."
-    };
+    public static final String[] TEXT = CardCrawlGame.languagePack.getUIString("strawberrySpire:GettingOverItAction").TEXT;
     private AbstractPlayer player;
     private int numberOfCards;
 
     public GettingOverItDrawPileAction(int magicNumber) {
         this.actionType = AbstractGameAction.ActionType.CARD_MANIPULATION;
-        this.duration = Settings.ACTION_DUR_FASTER;
+        this.duration = Settings.ACTION_DUR_XFAST;
         this.player = AbstractDungeon.player;
         this.numberOfCards = magicNumber;
     }
@@ -28,7 +24,7 @@ public class GettingOverItDrawPileAction extends AbstractGameAction {
             this.isDone = true;
             return;
         }
-        if (this.duration == Settings.ACTION_DUR_FASTER) {
+        if (this.duration == Settings.ACTION_DUR_XFAST) {
             if (this.player.drawPile.isEmpty()) {
                 this.isDone = true;
                 return;

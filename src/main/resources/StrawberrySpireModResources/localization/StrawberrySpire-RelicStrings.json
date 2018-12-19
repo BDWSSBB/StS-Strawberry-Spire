@@ -129,7 +129,7 @@
   },
   "strawberrySpire:IronFlakes": {
     "NAME": "Iron Flakes",
-    "FLAVOR": "Unfortunately, someone already ate them all. All that's left now is a few scraps.",
+    "FLAVOR": "These were once a popular cereal brand before the Spireblight hit.",
     "DESCRIPTIONS": [
       "Whenever you lose HP in combat, heal #b",
       " HP."
