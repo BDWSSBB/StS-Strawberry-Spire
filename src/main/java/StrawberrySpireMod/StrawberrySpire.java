@@ -210,7 +210,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
                 new Imperio(0.0F, 0.0F),
                 new Zivicio(160.0F, 180.0F)
         }));
-        BaseMod.addEliteEncounter(TheBeyond.ID, new MonsterInfo("strawberrySpire:EnergyPylons", 2.0F));
+        BaseMod.addEliteEncounter(TheBeyond.ID, new MonsterInfo("strawberrySpire:EssenceStones", 2.0F));
     }
 
     @Override
