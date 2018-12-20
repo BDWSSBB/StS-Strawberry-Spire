@@ -2,12 +2,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- I'm dumb and I dunno how to use this thing without blowing stuff up. -->
-    <groupId>strawberyspire</groupId>
+    <groupId>StrawberrySpireMod</groupId>
     <artifactId>StrawberrySpire</artifactId>
-    <version>0.4.0</version>
+    <version>0.4.2</version>
     <packaging>jar</packaging>
-    <name>StrawberrySpire</name>
-    <description>More content. More fun. No strawberries included.</description>
 
     <dependencies>
         <dependency>

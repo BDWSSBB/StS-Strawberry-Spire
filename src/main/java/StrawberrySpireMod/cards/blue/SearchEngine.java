@@ -22,7 +22,7 @@ public class SearchEngine extends AbstractStrawberrySpireCard {
     private static final int UPGRADE_PLUS_MAGIC_NUMBER = 1;
 
     public SearchEngine() {
-        super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.NONE);
+        super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.NONE);
         this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
     }
 

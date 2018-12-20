@@ -37,7 +37,7 @@ public class AncientClocktower extends AbstractMonster {
     private static final String MAINTENANCE_NAME = MOVES[2];
     private static final int INNATE_ARTIFACT_AMOUNT = 2;
     private static final int INNATE_MINUTE_OF_SILENCE_STRENGTH_DOWN_AMOUNT = 60;
-    private static final int INNATE_MINUTE_OF_SILENCE_CARD_AMOUNT = 12;
+    private static final int INNATE_MINUTE_OF_SILENCE_CARD_AMOUNT = 6;
     private static final int INNATE_HOUR_OF_TOLLING_STRENGTH_GAIN_AMOUNT = 2;
     private static final int ASC_INNATE_HOUR_OF_TOLLING_STRENGTH_GAIN_AMOUNT = 3;
     private static final int INNATE_HOUR_OF_TOLLING_TURN_AMOUNT = 3;
