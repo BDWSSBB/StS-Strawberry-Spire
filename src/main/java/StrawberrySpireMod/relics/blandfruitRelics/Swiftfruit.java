@@ -3,6 +3,7 @@ package StrawberrySpireMod.relics.blandfruitRelics;
 import com.badlogic.gdx.graphics.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.dungeons.*;
+import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.*;
 
@@ -11,8 +12,8 @@ import StrawberrySpireMod.relics.*;
 public class Swiftfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Swiftfruit";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
     private static final int DEXTERITY_AMOUNT = 2;
 
     public Swiftfruit() {

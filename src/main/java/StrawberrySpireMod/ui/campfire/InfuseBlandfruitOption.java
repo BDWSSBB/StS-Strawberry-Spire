@@ -1,8 +1,8 @@
 package StrawberrySpireMod.ui.campfire;
 
-import com.badlogic.gdx.graphics.*;
-import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.dungeons.*;
+import com.megacrit.cardcrawl.helpers.*;
+import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.ui.campfire.*;
 import com.megacrit.cardcrawl.core.*;
 
@@ -17,7 +17,7 @@ public class InfuseBlandfruitOption extends AbstractCampfireOption
     public InfuseBlandfruitOption() {
         this.label = TEXT[0];
         this.description = TEXT[1];
-        this.img = new Texture("StrawberrySpireModResources/campfire/infuseBlandfruit.png");
+        this.img = ImageMaster.loadImage("StrawberrySpireModResources/campfire/infuseBlandfruit.png");
     }
 
     public void useOption() {

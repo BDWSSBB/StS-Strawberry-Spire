@@ -27,10 +27,10 @@ public class ThermalPylon extends AbstractMonster {
     private static final float HB_Y = 68.0F;
     private static final float HB_W = 160.0F;
     private static final float HB_H = 120.0F;
-    private static final int HP_MIN = 43;
-    private static final int HP_MAX = 47;
-    private static final int ASC_HP_MIN = 46;
-    private static final int ASC_HP_MAX = 50;
+    private static final int HP_MIN = 38;
+    private static final int HP_MAX = 42;
+    private static final int ASC_HP_MIN = 41;
+    private static final int ASC_HP_MAX = 45;
     private static final byte SEAR = 1;
     private static final byte DISINTEGRATE = 2;
     private static final byte CHARGE = 3;

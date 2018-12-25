@@ -33,8 +33,8 @@
   },
   "strawberrySpire:Endurance": {
     "NAME": "Endurance",
-    "DESCRIPTION": "Add a Wound into your hand. NL Gain [E].",
-    "UPGRADE_DESCRIPTION": "Add a Wound into your hand. NL Gain [E] [E]."
+    "DESCRIPTION": "Add a Wound into your discard pile. NL Gain [E].",
+    "UPGRADE_DESCRIPTION": "Add a Wound into your discard pile. NL Gain [E] [E]."
   },
   "strawberrySpire:FireDrill": {
     "NAME": "Fire Drill",
@@ -271,7 +271,7 @@
   },
   "strawberrySpire:HateBit": {
     "NAME": "Hate Bit",
-    "DESCRIPTION": "Gain !M! Strength. NL Remove your next Orb."
+    "DESCRIPTION": "Lose 1 Focus. NL Gain !M! Strength."
   },
   "strawberrySpire:NeonFlight": {
     "NAME": "Neon Flight",

@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
+import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.rooms.*;
 import com.megacrit.cardcrawl.unlock.*;
@@ -12,8 +13,8 @@ import com.megacrit.cardcrawl.vfx.cardManip.*;
 public class CharschorBlot extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:CharschorBlot";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/charschorBlot.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/charschorBlotOutline.png");
     private static final int CARD_AMOUNT = 25;
 
     public CharschorBlot() {
@@ -24,7 +25,7 @@ public class CharschorBlot extends AbstractStrawberrySpireRelic {
         return DESCRIPTIONS[0] + CARD_AMOUNT + DESCRIPTIONS[1];
     }
 
-    public void onEquip() {
+    public void onEquip() { // Note to self: There was some bug about the select screens vanishing and softlocking the player if you went to see other screens, I don't know the exact causes, but something's up.
         if (AbstractDungeon.isScreenUp) {
             AbstractDungeon.dynamicBanner.hide();
             AbstractDungeon.overlayMenu.cancelButton.hide();

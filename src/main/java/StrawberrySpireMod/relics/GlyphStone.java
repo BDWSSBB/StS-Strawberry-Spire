@@ -19,8 +19,8 @@ import java.util.Iterator;
 public class GlyphStone extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:GlyphStone";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
     private static final int TRANSFORM_AMOUNT = 2;
 
     public GlyphStone() {

@@ -3,6 +3,7 @@ package StrawberrySpireMod.relics;
 import com.badlogic.gdx.graphics.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.dungeons.*;
+import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.relics.*;
 
 import basemod.abstracts.*;
@@ -12,8 +13,8 @@ import java.util.*;
 public class Dictionifier extends AbstractStrawberrySpireRelic implements CustomSavable<ArrayList<Integer>> { // Originally I wanted to keep the costs 0, but I couldn't find a way
 
     public static final String ID = "strawberrySpire:Dictionifier";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/placeholder.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
     private ArrayList<AbstractCard> reducedCardsList = new ArrayList<>();
 
     public Dictionifier() {

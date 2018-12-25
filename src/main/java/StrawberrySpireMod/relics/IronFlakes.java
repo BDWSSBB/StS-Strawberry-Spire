@@ -2,14 +2,15 @@ package StrawberrySpireMod.relics;
 
 import com.badlogic.gdx.graphics.*;
 import com.megacrit.cardcrawl.dungeons.*;
+import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.relics.*;
 import com.megacrit.cardcrawl.rooms.*;
 
 public class IronFlakes extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:IronFlakes";
-    public static final Texture IMAGE_PATH = new Texture("StrawberrySpireModResources/relics/ironFlakes.png");
-    public static final Texture IMAGE_OUTLINE_PATH = new Texture("StrawberrySpireModResources/relics/outline/ironFlakes.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/ironFlakes.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/ironFlakesOutline.png");
     private static final int HEAL_AMOUNT = 1;
 
     public IronFlakes() {

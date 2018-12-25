@@ -193,7 +193,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
         BaseMod.addEvent(BlandfruitBush.ID, BlandfruitBush.class, Exordium.ID);
         BaseMod.addEvent(MirrorTunnel.ID, MirrorTunnel.class, TheBeyond.ID);
         BaseMod.addEvent(TheByrdhouse.ID, TheByrdhouse.class, TheCity.ID);
-        BaseMod.addMonster("strawberrySpire:EnergyPylons", () -> new MonsterGroup(new AbstractMonster[]{ // Will put these somewhere else later, I'm too sleepy rn.
+        BaseMod.addMonster("strawberrySpire:EnergyPylons", "Energy Pylons", () -> new MonsterGroup(new AbstractMonster[]{ // Will put these somewhere else later, I'm too sleepy rn.
                 new ThermalPylon(-330.0F, 25.0F),
                 new KineticPylon(-85.0F, 10.0F),
                 new ElectricalPylon(140.0F, 30.0F)
@@ -203,7 +203,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
                 new AncientClocktower(0.0F, 0.0F)
         }));
         BaseMod.addEliteEncounter(TheCity.ID, new MonsterInfo("strawberrySpire:AncientClocktower", 1.0F));
-        BaseMod.addMonster("strawberrySpire:EssenceStones", () -> new MonsterGroup(new AbstractMonster[]{
+        BaseMod.addMonster("strawberrySpire:EssenceStones", "Essence Stones", () -> new MonsterGroup(new AbstractMonster[]{
                 new Minicio(-480.0F, 200.0F),
                 new Accio(-320.0F, 20.0F),
                 new Crucio(-160.0F, 160.0F),
