@@ -2,6 +2,8 @@ package StrawberrySpireMod.relics.blandfruitRelics;
 
 import com.badlogic.gdx.graphics.*;
 import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.powers.*;
@@ -14,20 +16,25 @@ public class Swiftfruit extends AbstractStrawberrySpireRelic {
     public static final String ID = "strawberrySpire:Swiftfruit";
     public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
     public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
-    private static final int DEXTERITY_AMOUNT = 2;
+    public boolean isActive = false;
 
     public Swiftfruit() {
         super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);
     }
 
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + DEXTERITY_AMOUNT + DESCRIPTIONS[1];
+        return DESCRIPTIONS[0];
     }
 
-    public void atBattleStart() {
-        flash();
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, DEXTERITY_AMOUNT), DEXTERITY_AMOUNT));
-        AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+    public void atTurnStart() {
+        this.isActive = true;
+        this.pulse = true;
+        beginPulse();
+    }
+
+    public void onUseCard(AbstractCard card, UseCardAction action) {
+        this.isActive = false;
+        this.pulse = false;
     }
 
     public AbstractRelic makeCopy() {

@@ -17,16 +17,16 @@
   "strawberrySpire:Barkskin": {
     "NAME": "Barkskin",
     "DESCRIPTIONS": [
-      "Reduce attack damage taken by #b",
-      ". At the end of everyone's turn, reduce #yBarkskin by #b1."
+      "Receive #b",
+      " less damage from #yAttacks. At the end of each turn, reduce #yBarkskin by #b1."
     ]
   },
   "strawberrySpire:BiBeamBolt": {
     "NAME": "Bi-Beam Bolt",
     "DESCRIPTIONS": [
       "#yEvoked #yLightning strikes #b",
-      " additional time this turn. At the end of your turn, #yEvoke all your #yLightning.",
-	  " additional times this turn. At the end of your turn, #yEvoke all your #yLightning."
+      " additional time this turn. At the end of this turn, #yEvoke all your #yLightning.",
+	  " additional times this turn. At the end of this turn, #yEvoke all your #yLightning."
     ]
   },
   "strawberrySpire:BreederCore": {
@@ -63,21 +63,21 @@
   "strawberrySpire:Combustion": {
     "NAME": "Combustion",
     "DESCRIPTIONS": [
-      "Upon death, everyone takes #b",
+      "Upon death, EVERYONE takes #b",
       " damage."
     ]
   },
   "strawberrySpire:Conduction": {
     "NAME": "Conduction",
     "DESCRIPTIONS": [
-      "Upon death, everyone gains #b",
+      "Upon death, EVERYONE gains #b",
       " #yStrength."
     ]
   },
   "strawberrySpire:Convection": {
     "NAME": "Convection",
     "DESCRIPTIONS": [
-      "Upon death, everyone takes #b",
+      "Upon death, EVERYONE takes #b",
       " damage at the end of their turn."
     ]
   },
@@ -201,10 +201,10 @@
   "strawberrySpire:Package": {
     "NAME": "Package",
     "DESCRIPTIONS": [
-      "Add #y",
-	  ", #y",
-	  ", and #y",
-	  " and #y",
+      "Add ",
+	  ", ",
+	  ", and ",
+	  " and ",
       " into your hand next turn."
     ]
   },

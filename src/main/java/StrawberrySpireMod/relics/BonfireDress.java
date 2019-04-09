@@ -37,7 +37,7 @@ public class BonfireDress extends AbstractStrawberrySpireRelic {
     }
 
     public void atTurnStart() {
-        if (!isFirstTurn && !hasBrokenAlternation) {
+        if (!this.isFirstTurn && !this.hasBrokenAlternation) {
             flash();
             AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, DEXTERITY_AMOUNT), DEXTERITY_AMOUNT));

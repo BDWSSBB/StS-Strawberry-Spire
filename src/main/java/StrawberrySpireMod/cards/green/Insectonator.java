@@ -21,7 +21,7 @@ public class Insectonator extends AbstractStrawberrySpireCard {
     public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/green/insectonator.png";
     private static final int COST = 1;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final int MAGIC_NUMBER = 6;
+    private static final int MAGIC_NUMBER = 5;
     private static final int UPGRADE_PLUS_MAGIC_NUMBER = 2;
 
     public Insectonator() {
@@ -35,7 +35,7 @@ public class Insectonator extends AbstractStrawberrySpireCard {
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(monster, p, new PoisonPower(monster, p, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.POISON));
             }
         }
-        AbstractDungeon.actionManager.addToBottom(new ModifyMagicNumberAction(this.uuid, -2));
+        AbstractDungeon.actionManager.addToBottom(new ModifyMagicNumberAction(this.uuid, -1));
     }
 
     public AbstractCard makeCopy() {

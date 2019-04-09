@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.*;
 import StrawberrySpireMod.relics.blandfruitRelics.*;
 
 public class CampfireInfuseBlandfruitEffect extends AbstractGameEffect {
+
     private static final float DURATION = 2.0f;
     private boolean hasInfused;
     private Color screenColor;
@@ -66,5 +67,9 @@ public class CampfireInfuseBlandfruitEffect extends AbstractGameEffect {
     public void render(final SpriteBatch sb) {
         sb.setColor(this.screenColor);
         sb.draw(ImageMaster.WHITE_SQUARE_IMG, 0.0f, 0.0f, Settings.WIDTH, Settings.HEIGHT);
+    }
+
+    public void dispose() {
+
     }
 }

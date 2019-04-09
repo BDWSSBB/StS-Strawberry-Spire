@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
 
 import basemod.BaseMod;
+import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 public class SearchEngineAction extends AbstractGameAction {
 
@@ -66,7 +67,7 @@ public class SearchEngineAction extends AbstractGameAction {
                 this.player.hand.addToHand(c);
                 CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                 for (AbstractCard ca : this.player.drawPile.group) {
-                    if (ca.costForTurn == c.costForTurn || ((c.costForTurn == 0 || c.freeToPlayOnce) && (ca.costForTurn == 0 || ca.freeToPlayOnce))) {
+                    if (ca.costForTurn == c.costForTurn || ((c.costForTurn == 0 || c.freeToPlayOnce) && (ca.costForTurn == 0 || ca.freeToPlayOnce) || (c.costForTurn == -1 && ca.costForTurn == EnergyPanel.getCurrentEnergy()))) {
                         temp.addToTop(ca);
                     }
                 }

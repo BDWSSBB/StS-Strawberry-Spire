@@ -133,7 +133,7 @@
   },
   "strawberrySpire:Insectonator": {
     "NAME": "Insectonator",
-    "DESCRIPTION": "Apply !M! Poison to ALL enemies. NL Decrease this card's Poison by 2 this combat."
+    "DESCRIPTION": "Apply !M! Poison to ALL enemies. NL Decrease this card's Poison by 1 this combat."
   },
   "strawberrySpire:KnifeParty": {
     "NAME": "Knife Party",
@@ -222,8 +222,8 @@
   },
   "strawberrySpire:BiBeamBolt": {
     "NAME": "Bi-Beam Bolt",
-    "DESCRIPTION": "This turn, Evoked Lightning strikes !M! additional time. NL At the end of your turn, Evoke all your Lightning.",
-    "UPGRADE_DESCRIPTION": "This turn, Evoked Lightning strikes !M! additional times. NL At the end of your turn, Evoke all your Lightning.",
+    "DESCRIPTION": "This turn, Evoked Lightning strikes !M! additional time. NL At the end of this turn, Evoke all your Lightning.",
+    "UPGRADE_DESCRIPTION": "This turn, Evoked Lightning strikes !M! additional times. NL At the end of this turn, Evoke all your Lightning.",
     "EXTENDED_DESCRIPTION": [
 	  "Tri-Thunder Taze"
 	]
@@ -324,7 +324,7 @@
     "DESCRIPTION": "Gain !M! Intangible. NL Add a Decay Curse into your deck. NL Exhaust."
   },
   "strawberrySpire:Flashback": {
-    "NAME": "Flashback",
+    "NAME": "Flashblack",
     "DESCRIPTION": "Gain !B! Block. NL Can be upgraded 3 more times.",
     "EXTENDED_DESCRIPTION": [
       "Invert",
@@ -341,7 +341,7 @@
   },
   "strawberrySpire:Neurons": {
     "NAME": "Neurons",
-    "DESCRIPTION": "At the start of your turn, reduce the cost of all cards in your hand to 1 this combat. NL Become Confused.",
+    "DESCRIPTION": "Become Confused. NL At the start of your turn, reduce the cost of all cards in your hand to 1 this combat.",
 	"EXTENDED_DESCRIPTION": [
 	  "Newrons"
 	]

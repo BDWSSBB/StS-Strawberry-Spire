@@ -21,10 +21,7 @@ public class PowerStompAction extends AbstractGameAction {
 
     public void update() {
         if (this.target != null && this.target.hasPower(VulnerablePower.POWER_ID)) {
-            if (this.target != null && !this.target.hasPower(ArtifactPower.POWER_ID)) {
-                AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(this.target, this.player, new GainStrengthPower(this.target, this.strengthDownAmount), this.strengthDownAmount));
-            }
-            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(this.target, this.player, new StrengthPower(this.target, -this.strengthDownAmount), -this.strengthDownAmount));
+            AbstractDungeon.actionManager.addToTop(new ApplyDebuffAndInverseAction(this.target, this.player, new StrengthPower(this.target, -this.strengthDownAmount), -this.strengthDownAmount, new GainStrengthPower(this.target, this.strengthDownAmount), this.strengthDownAmount));
         }
         this.isDone = true;
     }

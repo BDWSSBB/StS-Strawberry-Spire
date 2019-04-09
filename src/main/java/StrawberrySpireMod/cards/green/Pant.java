@@ -1,5 +1,7 @@
 package StrawberrySpireMod.cards.green;
 
+import StrawberrySpireMod.actions.unique.ApplyDebuffAndInverseAction;
+import StrawberrySpireMod.helpers.ConfigHelper;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.characters.*;
@@ -30,14 +32,8 @@ public class Pant extends AbstractStrawberrySpireCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, -this.magicNumber), -this.magicNumber));
-        if (!p.hasPower(ArtifactPower.POWER_ID)) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new GainStrengthPower(p, this.magicNumber), this.magicNumber));
-        }
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, -this.magicNumber), -this.magicNumber));
-        if (!p.hasPower(ArtifactPower.POWER_ID) || (p.hasPower(ArtifactPower.POWER_ID) && p.getPower(ArtifactPower.POWER_ID).amount <= 1)) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new GainDexterityPower(p, this.magicNumber), this.magicNumber));
-        }
+        AbstractDungeon.actionManager.addToBottom(new ApplyDebuffAndInverseAction(p, p, new StrengthPower(p, -this.magicNumber), -this.magicNumber,  new GainStrengthPower(p, this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyDebuffAndInverseAction(p, p, new DexterityPower(p, -this.magicNumber), -this.magicNumber,  new GainDexterityPower(p, this.magicNumber), this.magicNumber));
         if (this.upgraded) {
             AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(2));
         }
@@ -53,8 +49,10 @@ public class Pant extends AbstractStrawberrySpireCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.name = UPGRADE_NAME;
-            initializeTitle();
+            if (ConfigHelper.useSpecialUpgradeNames) {
+                this.name = UPGRADE_NAME;
+                initializeTitle();
+            }
             this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

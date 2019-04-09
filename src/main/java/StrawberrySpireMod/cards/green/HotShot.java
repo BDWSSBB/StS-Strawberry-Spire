@@ -1,5 +1,6 @@
 package StrawberrySpireMod.cards.green;
 
+import StrawberrySpireMod.helpers.ConfigHelper;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.cards.colorless.Shiv;
@@ -41,8 +42,10 @@ public class HotShot extends AbstractStrawberrySpireCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.name = UPGRADE_NAME;
-            initializeTitle();
+            if (ConfigHelper.useSpecialUpgradeNames) {
+                this.name = UPGRADE_NAME;
+                initializeTitle();
+            }
 
             this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC_NUMBER);
         }

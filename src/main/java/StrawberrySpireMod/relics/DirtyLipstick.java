@@ -61,12 +61,14 @@ public class DirtyLipstick extends AbstractStrawberrySpireRelic implements Custo
     }
 
     public void onLoad(ArrayList<Integer> cardIndices) {
-        for (Integer i : cardIndices) {
-            AbstractCard card = AbstractDungeon.player.masterDeck.group.get(i);
-            if (card != null) {
-                this.boostedCardsList.add(card);
-                card.baseDamage += STAT_INCREASE_AMOUNT;
-                card.baseBlock += STAT_INCREASE_AMOUNT;
+        if (cardIndices != null) {
+            for (Integer i : cardIndices) {
+                AbstractCard card = AbstractDungeon.player.masterDeck.group.get(i);
+                if (card != null) {
+                    this.boostedCardsList.add(card);
+                    card.baseDamage += STAT_INCREASE_AMOUNT;
+                    card.baseBlock += STAT_INCREASE_AMOUNT;
+                }
             }
         }
     }

@@ -12,7 +12,7 @@
     "FLAVOR": "Dondo [YELLOW]panpa panpa [WHITE]dondo [YELLOW]pan panpa pa!",
     "DESCRIPTIONS": [
       "If you do not play the same type of card twice in a row this turn, gain #b",
-      " #yDexterity at the end of you turn."
+      " #yDexterity at the start of you next turn."
     ]
   },
   "strawberrySpire:BrokenPrinter": {
@@ -72,7 +72,7 @@
     "NAME": "Dirty Lipstick",
     "FLAVOR": "Covered in mud and slop. Looks like some swine got its hooves on it.",
     "DESCRIPTIONS": [
-      "Upon pickup, permanently increase the damage and #yBlock of all Basic cards by #b",
+      "Upon pickup, permanently increase the damage and #yBlock of all #yBasic cards by #b",
       "."
     ]
   },
@@ -162,8 +162,7 @@
     "NAME": "Poopsie Roll",
     "FLAVOR": "Do you really want to eat this?",
     "DESCRIPTIONS": [
-      "At the start of each combat, deal damage equal to #b",
-      "% of your missing HP to ALL enemies."
+      "At the start of each combat, deal damage equal to onethird of your missing HP to ALL enemies."
     ]
   },
   "strawberrySpire:RottenAvocado": {
@@ -296,7 +295,8 @@
     "NAME": "Fadefruit",
     "FLAVOR": "It looks ready to be eaten!",
     "DESCRIPTIONS": [
-      "At the start of each combat, put #b",
+      "At the start of each combat, draw #b",
+      " less card and put #b",
       " card from your draw pile into your hand."
     ]
   },
@@ -362,8 +362,7 @@
     "NAME": "Swiftfruit",
     "FLAVOR": "It looks ready to be eaten!",
     "DESCRIPTIONS": [
-      "Start each combat with #b",
-      " #yDexterity."
+      "The first card you play each turn gains double #yBlock."
     ]
   }
 }

@@ -13,20 +13,26 @@ public class PoopsieRoll extends AbstractStrawberrySpireRelic {
     public static final String ID = "strawberrySpire:PoopsieRoll";
     public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
     public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
-    private static final int DAMAGE_PERCENT_AMOUNT = 40;
 
     public PoopsieRoll() {
         super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.UNCOMMON, LandingSound.FLAT);
+        if (AbstractDungeon.player != null) {
+            this.counter = (AbstractDungeon.player.maxHealth - AbstractDungeon.player.currentHealth) / 3;
+        }
     }
 
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + DAMAGE_PERCENT_AMOUNT + DESCRIPTIONS[1];
+        return DESCRIPTIONS[0];
     }
 
     public void atBattleStart() {
         flash();
         AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(((AbstractDungeon.player.maxHealth - AbstractDungeon.player.currentHealth) * DAMAGE_PERCENT_AMOUNT / 100), true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(((AbstractDungeon.player.maxHealth - AbstractDungeon.player.currentHealth) / 3), true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+    }
+
+    public void onBloodied() {
+        this.counter = (AbstractDungeon.player.maxHealth - AbstractDungeon.player.currentHealth) / 3;
     }
 
     public AbstractRelic makeCopy() {

@@ -8,8 +8,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 
 import basemod.*;
 
-public class SlideAction extends AbstractGameAction
-{
+public class SlideAction extends AbstractGameAction {
 
     public static final String[] TEXT = CardCrawlGame.languagePack.getUIString("strawberrySpire:SlideAction").TEXT;
     private AbstractPlayer player;

@@ -91,6 +91,15 @@ public class StillNotAdequateHouse extends AbstractStrawberrySpireRelic {
         return list.get(0);
     }
 
+    public boolean canSpawn() {
+        if (CardHelper.hasCardType(AbstractCard.CardType.ATTACK) && CardHelper.hasCardType(AbstractCard.CardType.SKILL) && CardHelper.hasCardType(AbstractCard.CardType.POWER)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
     public AbstractRelic makeCopy() {
         return new StillNotAdequateHouse();
     }

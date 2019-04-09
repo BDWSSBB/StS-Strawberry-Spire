@@ -15,8 +15,7 @@ public class AggressionAction extends AbstractGameAction {
     private int maxAmountOfAttacks;
     private int failsafeCounter;
 
-    public AggressionAction(int amount, int failsafeCounter)
-    {
+    public AggressionAction(int amount, int failsafeCounter) {
         this.player = AbstractDungeon.player;
         this.maxAmountOfAttacks = amount;
         this.failsafeCounter = failsafeCounter;

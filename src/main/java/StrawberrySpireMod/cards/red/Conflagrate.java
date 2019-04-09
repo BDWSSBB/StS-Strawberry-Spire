@@ -1,5 +1,6 @@
 package StrawberrySpireMod.cards.red;
 
+import StrawberrySpireMod.helpers.ConfigHelper;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.cards.status.*;
@@ -46,8 +47,10 @@ public class Conflagrate extends AbstractStrawberrySpireCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.name = UPGRADE_NAME;
-            initializeTitle();
+            if (ConfigHelper.useSpecialUpgradeNames) {
+                this.name = UPGRADE_NAME;
+                initializeTitle();
+            }
             this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

@@ -45,10 +45,15 @@ public class Lockstep extends AbstractStrawberrySpireCard {
     }
 
     public void upgrade() {
-        if (!this.upgraded) {
-            this.upgradeName();
-            this.rawDescription = UPGRADE_DESCRIPTION;
-            initializeDescription();
-        }
+//        if (!this.upgraded) {
+//            this.upgradeName();
+//            this.rawDescription = UPGRADE_DESCRIPTION;
+//            initializeDescription();
+//        }
+    }
+
+    public boolean canUpgrade() {
+        // Temporary solution.
+        return false;
     }
 }

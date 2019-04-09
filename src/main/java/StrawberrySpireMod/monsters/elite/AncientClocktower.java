@@ -25,10 +25,10 @@ public class AncientClocktower extends AbstractMonster {
     private static final float HB_Y = 136.0F;
     private static final float HB_W = 320.0F;
     private static final float HB_H = 240.0F;
-    private static final int HP_MIN = 164;
-    private static final int HP_MAX = 168;
-    private static final int ASC_HP_MIN = 170;
-    private static final int ASC_HP_MAX = 174;
+    private static final int HP_MIN = 160;
+    private static final int HP_MAX = 164;
+    private static final int ASC_HP_MIN = 166;
+    private static final int ASC_HP_MAX = 170;
     private static final byte TOLL = 1;
     private static final byte EARRITATE = 2;
     private static final byte MAINTENANCE = 3;
@@ -48,9 +48,9 @@ public class AncientClocktower extends AbstractMonster {
     private static final int EARRITATE_WEAK_AMOUNT = 1;
     private static final int ASC_EARRITATE_DAMAGE = 15;
     private static final int ASC2_EARRITATE_WEAK_AMOUNT = 2;
-    private static final int MAINTENANCE_HEAL_AMOUNT = 40;
+    private static final int MAINTENANCE_HEAL_AMOUNT = 32;
     private static final int MAINTENANCE_ARTIFACT_AMOUNT = 1;
-    private static final int ASC2_MAINTENANCE_HEAL_AMOUNT = 50;
+    private static final int ASC2_MAINTENANCE_HEAL_AMOUNT = 32;
     private int innateArtifactAmount;
     private int innateMinuteOfSilenceStrengthDownAmount;
     private int innateMinuteOfSilenceCardAmount;
@@ -111,8 +111,8 @@ public class AncientClocktower extends AbstractMonster {
             this.maintenanceHealAmount = MAINTENANCE_HEAL_AMOUNT;
             this.maintenanceArtifactAmount = MAINTENANCE_ARTIFACT_AMOUNT;
         }
-        this.damage.add(new DamageInfo(this, tollDamage));
-        this.damage.add(new DamageInfo(this, earritateDamage));
+        this.damage.add(new DamageInfo(this, this.tollDamage));
+        this.damage.add(new DamageInfo(this, this.earritateDamage));
     }
 
     public void usePreBattleAction() {

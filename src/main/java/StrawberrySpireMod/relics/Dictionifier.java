@@ -84,11 +84,13 @@ public class Dictionifier extends AbstractStrawberrySpireRelic implements Custom
     }
 
     public void onLoad(ArrayList<Integer> cardIndices) {
-        for (Integer i : cardIndices) {
-            AbstractCard card = AbstractDungeon.player.masterDeck.group.get(i);
-            if (card != null) {
-                this.reducedCardsList.add(card);
-                card.updateCost(-card.cost);
+        if (cardIndices != null) {
+            for (Integer i : cardIndices) {
+                AbstractCard card = AbstractDungeon.player.masterDeck.group.get(i);
+                if (card != null) {
+                    this.reducedCardsList.add(card);
+                    card.updateCost(-card.cost);
+                }
             }
         }
     }

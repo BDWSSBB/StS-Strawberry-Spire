@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import StrawberrySpireMod.cards.*;
 
 @SpirePatch(
-        cls = "com.megacrit.cardcrawl.actions.GameActionManager",
+        clz = GameActionManager.class,
         method = "callEndOfTurnActions"
 )
 public class CallEndOfTurnActionPatches {

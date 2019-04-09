@@ -26,14 +26,16 @@ public class CharschorBlot extends AbstractStrawberrySpireRelic {
     }
 
     public void onEquip() { // Note to self: There was some bug about the select screens vanishing and softlocking the player if you went to see other screens, I don't know the exact causes, but something's up.
-        if (AbstractDungeon.isScreenUp) {
-            AbstractDungeon.dynamicBanner.hide();
-            AbstractDungeon.overlayMenu.cancelButton.hide();
-            AbstractDungeon.previousScreen = AbstractDungeon.screen;
-        }
-        AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
+        if (AbstractDungeon.player.masterDeck.getPurgeableCards().size() > 0) {
+            if (AbstractDungeon.isScreenUp) {
+                AbstractDungeon.dynamicBanner.hide();
+                AbstractDungeon.overlayMenu.cancelButton.hide();
+                AbstractDungeon.previousScreen = AbstractDungeon.screen;
+            }
+            AbstractDungeon.getCurrRoom().phase = AbstractRoom.RoomPhase.INCOMPLETE;
 
-        AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck.getPurgeableCards(), 1, DESCRIPTIONS[2], false, false, false, true);
+            AbstractDungeon.gridSelectScreen.open(AbstractDungeon.player.masterDeck.getPurgeableCards(), 1, DESCRIPTIONS[2], false, false, false, true);
+        }
     }
 
     public void update() {

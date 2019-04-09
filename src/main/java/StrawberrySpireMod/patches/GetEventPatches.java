@@ -11,14 +11,14 @@ import javassist.*;
 import java.util.*;
 
 @SpirePatch(
-        clz=AbstractDungeon.class,
-        method="getEvent"
+        clz = AbstractDungeon.class,
+        method = "getEvent"
 )
-public class GetEventPatches
-{
+public class GetEventPatches {
+
     @SpireInsertPatch(
-            locator=Locator.class,
-            localvars={"tmp"}
+            locator = Locator.class,
+            localvars = {"tmp"}
     )
     public static void Insert(Random rng, ArrayList<String> tmp) {
         if (!TheByrdhouse.canSpawn()) {

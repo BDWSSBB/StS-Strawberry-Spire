@@ -1,5 +1,6 @@
 package StrawberrySpireMod.relics;
 
+import StrawberrySpireMod.actions.unique.ApplyDebuffAndInverseAction;
 import com.badlogic.gdx.graphics.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.dungeons.*;
@@ -33,10 +34,7 @@ public class ElefentMask extends AbstractStrawberrySpireRelic {
                     mostHpMonster = m;
                 }
             }
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mostHpMonster, AbstractDungeon.player, new StrengthPower(mostHpMonster, -STRENGTH_LOSS_AMOUNT), -STRENGTH_LOSS_AMOUNT));
-            if (mostHpMonster != null && !mostHpMonster.hasPower(ArtifactPower.POWER_ID)) {
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(mostHpMonster, AbstractDungeon.player, new GainStrengthPower(mostHpMonster, STRENGTH_LOSS_AMOUNT), STRENGTH_LOSS_AMOUNT));
-            }
+            AbstractDungeon.actionManager.addToBottom(new ApplyDebuffAndInverseAction(mostHpMonster, AbstractDungeon.player, new StrengthPower(mostHpMonster, -STRENGTH_LOSS_AMOUNT), -STRENGTH_LOSS_AMOUNT, new GainStrengthPower(mostHpMonster, STRENGTH_LOSS_AMOUNT), STRENGTH_LOSS_AMOUNT));
         }
     }
 

@@ -37,8 +37,7 @@ public class NeglectedBlade extends AbstractStrawberrySpireCard {
         AbstractDungeon.actionManager.addToBottom(new IncreaseMiscAction(this.uuid, this.misc, -this.magicNumber));
     }
 
-    public void applyPowers()
-    {
+    public void applyPowers() {
         this.baseDamage = this.misc;
         super.applyPowers();
         initializeDescription();

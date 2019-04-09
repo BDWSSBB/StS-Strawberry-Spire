@@ -26,7 +26,7 @@ public class AdapterAction extends AbstractGameAction {
         if (this.duration == Settings.ACTION_DUR_FAST) {
             if (this.player.hand.isEmpty()) {
                 for (int i = 0; i < this.numberOfOrbs; i++) {
-                    AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Lightning()));
+                    AbstractDungeon.actionManager.addToTop(new ChannelAction(new Lightning()));
                 }
                 this.isDone = true;
                 return;
@@ -35,12 +35,12 @@ public class AdapterAction extends AbstractGameAction {
                 AbstractCard tempCard = this.player.hand.getBottomCard();
                 if (tempCard.type == AbstractCard.CardType.SKILL) {
                     for (int i = 0; i < this.numberOfOrbs; i++) {
-                        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Frost()));
+                        AbstractDungeon.actionManager.addToTop(new ChannelAction(new Frost()));
                     }
                 }
                 else {
                     for (int i = 0; i < this.numberOfOrbs; i++) {
-                        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Lightning()));
+                        AbstractDungeon.actionManager.addToTop(new ChannelAction(new Lightning()));
                     }
                 }
                 if (!this.upgraded) {
@@ -72,12 +72,12 @@ public class AdapterAction extends AbstractGameAction {
                 }
                 if (c.type == AbstractCard.CardType.SKILL) {
                     for (int i = 0; i < this.numberOfOrbs; i++) {
-                        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Frost()));
+                        AbstractDungeon.actionManager.addToTop(new ChannelAction(new Frost()));
                     }
                 }
                 else {
                     for (int i = 0; i < this.numberOfOrbs; i++) {
-                        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Lightning()));
+                        AbstractDungeon.actionManager.addToTop(new ChannelAction(new Lightning()));
                     }
                 }
             }

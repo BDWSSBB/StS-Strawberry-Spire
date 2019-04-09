@@ -1,5 +1,6 @@
 package StrawberrySpireMod.cards.green;
 
+import StrawberrySpireMod.helpers.ConfigHelper;
 import com.megacrit.cardcrawl.actions.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
@@ -54,8 +55,10 @@ public class Fastroyer extends AbstractStrawberrySpireCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.name = UPGRADE_NAME;
-            initializeTitle();
+            if (ConfigHelper.useSpecialUpgradeNames) {
+                this.name = UPGRADE_NAME;
+                initializeTitle();
+            }
 
             this.upgradeDamage(UPGRADE_PLUS_DAMAGE);
         }

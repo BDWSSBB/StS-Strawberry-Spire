@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.*;
 import StrawberrySpireMod.cards.*;
 
 @SpirePatch(
-        cls = "com.megacrit.cardcrawl.characters.AbstractPlayer",
+        clz = AbstractPlayer.class,
         method = "useCard"
 )
 public class UseCardPatches {

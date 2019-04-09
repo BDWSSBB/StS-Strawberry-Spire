@@ -55,7 +55,7 @@
       "#r@\"CAW@ #r@CAAAW!\"@ the innkeeper shouts. \"You look weary, you should stay to rest!\" It turns out a flock of #pcultists run the place! Ornate decorations worshipping the #p~Awakened~ #p~One~ hang on the walls. They don't seem hostile, but why not? NL NL ",
       "You're not sure if you trust these cultists, but the price they're offering for a good night's rest is a pretty good deal to you. Breakfast is included, or whatever is left from the #pSpireblight.",
       "The \"room\" you rented doesn't feel like one of an inn, but more of a full-fledged bedroom. The cultists seem to have renovated the cottage into an inn. Perhaps it's family-run? Nonetheless, the night was surprisingly restful. NL NL ",
-      "Breakfast is a little peculiar. The main course is #pmushrooms and something that resembles carrot sticks, but are #g@green@ #g@and@ #g@rough@. It tastes a little funny, but the chars dilutes it.",
+      "Breakfast is a little peculiar. The main course is #pmushrooms and something that resembles carrot sticks, but are #g@green@ #g@and@ #g@rough.@ It tastes a little funny, but the char dilutes it.",
       "One of the cultists seems to be looking for something through the drawers. \"We were also thinking of gifting you a little something! I remember we had ",
       "somewhere... We're unloading some of the stuff we #rpillaged in our old lives. Do you mind if you stay a while?\"",
       "#r~some~ #r~nice~ #r~gloves~ ",
@@ -82,7 +82,7 @@
       " #gHP.",
       "[Leave]",
       "[Continue]",
-      "[Wait] #rLose #r",
+      "[Wait] #rLose ",
       ". #gObtain #ga #gspecial #gRelic.",
       "[Locked] Requires: Card."
     ]

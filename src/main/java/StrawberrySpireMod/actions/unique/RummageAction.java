@@ -21,8 +21,7 @@ public class RummageAction extends AbstractGameAction {
     }
 
     public void update() {
-        if (this.duration == Settings.ACTION_DUR_FAST)
-        {
+        if (this.duration == Settings.ACTION_DUR_FAST) {
             if (AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
                 this.isDone = true;
                 return;
@@ -55,11 +54,9 @@ public class RummageAction extends AbstractGameAction {
                 return;
             }
         }
-        if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved)
-        {
+        if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
             int numberOfAttacksDiscarded = 0;
-            for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group)
-            {
+            for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
                 if (c.type == AbstractCard.CardType.ATTACK) {
                     numberOfAttacksDiscarded++;
                 }

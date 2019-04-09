@@ -1,5 +1,6 @@
 package StrawberrySpireMod.cards.blue;
 
+import StrawberrySpireMod.helpers.ConfigHelper;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.characters.*;
@@ -39,8 +40,10 @@ public class AngeryBot extends AbstractStrawberrySpireCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.name = UPGRADE_NAME;
-            initializeTitle();
+            if (ConfigHelper.useSpecialUpgradeNames) {
+                this.name = UPGRADE_NAME;
+                initializeTitle();
+            }
             this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
 

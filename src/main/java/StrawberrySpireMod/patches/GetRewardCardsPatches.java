@@ -17,7 +17,15 @@ public class GetRewardCardsPatches {
 
     public static ArrayList<AbstractCard> Postfix(ArrayList<AbstractCard> __result) {
         if (AbstractDungeon.player.hasRelic(ShipInABottle.ID)) {
-            __result.get(AbstractDungeon.cardRng.random(0, __result.size() - 1)).upgrade();
+            ArrayList<AbstractCard> upgradeableCards = new ArrayList<>();
+            for (AbstractCard c : __result) {
+                if (c.canUpgrade()) {
+                    upgradeableCards.add(c);
+                }
+            }
+            if (!upgradeableCards.isEmpty()) {
+                upgradeableCards.get(AbstractDungeon.cardRng.random(0, upgradeableCards.size() - 1)).upgrade();
+            }
         }
         return __result;
     }

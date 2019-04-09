@@ -12,7 +12,7 @@ public class TannedGloves extends AbstractStrawberrySpireRelic {
     public static final String ID = "strawberrySpire:TannedGloves";
     public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
     public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
-    private static final int EXHAUST_AMOUNT = 6;
+    private static final int EXHAUST_AMOUNT = 7;
 
     public TannedGloves() {
         super(ID, IMAGE_PATH, IMAGE_OUTLINE_PATH, RelicTier.SPECIAL, LandingSound.FLAT);

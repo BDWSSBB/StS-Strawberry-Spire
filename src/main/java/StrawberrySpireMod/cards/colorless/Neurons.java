@@ -28,8 +28,8 @@ public class Neurons extends AbstractStrawberrySpireCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new NeuronsPower(p)));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ConfusionPower(p)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new NeuronsPower(p)));
     }
 
     public AbstractCard makeCopy() {

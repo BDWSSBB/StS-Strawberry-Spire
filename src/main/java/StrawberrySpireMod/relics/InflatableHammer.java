@@ -1,5 +1,6 @@
 package StrawberrySpireMod.relics;
 
+import StrawberrySpireMod.actions.unique.ApplyDebuffAndInverseAction;
 import com.badlogic.gdx.graphics.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.*;
@@ -34,10 +35,7 @@ public class InflatableHammer extends AbstractStrawberrySpireRelic {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK) {
             flash();
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, -STRENGTH_LOSS_AMOUNT), -STRENGTH_LOSS_AMOUNT));
-            if (!AbstractDungeon.player.hasPower(ArtifactPower.POWER_ID)) {
-                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new GainStrengthPower(AbstractDungeon.player, STRENGTH_LOSS_AMOUNT), STRENGTH_LOSS_AMOUNT));
-            }
+            AbstractDungeon.actionManager.addToBottom(new ApplyDebuffAndInverseAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, -STRENGTH_LOSS_AMOUNT), -STRENGTH_LOSS_AMOUNT, new GainStrengthPower(AbstractDungeon.player, STRENGTH_LOSS_AMOUNT), STRENGTH_LOSS_AMOUNT));
         }
     }
 

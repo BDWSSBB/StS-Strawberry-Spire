@@ -27,23 +27,24 @@ public class KineticPylon extends AbstractMonster {
     private static final float HB_Y = 68.0F;
     private static final float HB_W = 160.0F;
     private static final float HB_H = 120.0F;
-    private static final int HP_MIN = 38;
-    private static final int HP_MAX = 42;
-    private static final int ASC_HP_MIN = 41;
-    private static final int ASC_HP_MAX = 45;
+    private static final int HP_MIN = 37;
+    private static final int HP_MAX = 41;
+    private static final int ASC_HP_MIN = 40;
+    private static final int ASC_HP_MAX = 44;
     private static final byte PULSE = 1;
     private static final byte DISINTEGRATE = 2;
     private static final byte CHARGE = 3;
     private static final String PULSE_NAME = MOVES[0];
     private static final String DISINTEGRATE_NAME = MOVES[1];
     private static final String CHARGE_NAME = MOVES[2];
-    private static final int INNATE_COMBUSTION_AMOUNT = 8;
+    private static final int INNATE_COMBUSTION_AMOUNT = 6;
+    private static final int ASC2_INNATE_COMBUSTION_AMOUNT = 8;
     private static final int PULSE_DAMAGE = 4;
     private static final int PULSE_DAZE_AMOUNT = 2;
     private static final int ASC2_PULSE_DAZE_AMOUNT = 3;
     private static final int ASC_PULSE_DAMAGE = 5;
-    private static final int DISINTEGRATE_DAMAGE = 8;
-    private static final int ASC_DISINTEGRATE_DAMAGE = 9;
+    private static final int DISINTEGRATE_DAMAGE = 7;
+    private static final int ASC_DISINTEGRATE_DAMAGE = 8;
     private static final int CHARGE_STRENGTH_GAIN_AMOUNT = 1;
     private int innateCombustionAmount;
     private int pulseDamage;
@@ -61,7 +62,7 @@ public class KineticPylon extends AbstractMonster {
             setHp(HP_MIN, HP_MAX);
         }
         if (AbstractDungeon.ascensionLevel >= 18) {
-            this.innateCombustionAmount = INNATE_COMBUSTION_AMOUNT;
+            this.innateCombustionAmount = ASC2_INNATE_COMBUSTION_AMOUNT;
             this.pulseDamage = ASC_PULSE_DAMAGE;
             this.pulseDazeAmount = ASC2_PULSE_DAZE_AMOUNT;
             this.disintegrateDamage = ASC_DISINTEGRATE_DAMAGE;

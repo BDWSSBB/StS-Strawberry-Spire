@@ -27,7 +27,6 @@ public class CrashLanding extends AbstractStrawberrySpireCard {
     public CrashLanding() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCard.CardColor.RED, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
         this.damage = this.baseDamage = ATTACK_DAMAGE;
-        this.magicNumber = this.baseMagicNumber = this.baseDamage;
         this.isInnate = true;
         this.exhaust = true;
     }

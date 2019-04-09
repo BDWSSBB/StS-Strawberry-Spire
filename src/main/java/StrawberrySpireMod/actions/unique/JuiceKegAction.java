@@ -14,7 +14,6 @@ import StrawberrySpireMod.relics.*;
 
 public class JuiceKegAction extends AbstractGameAction {
 
-
     public JuiceKegAction() {
 
     }
@@ -50,7 +49,8 @@ public class JuiceKegAction extends AbstractGameAction {
             AbstractDungeon.actionManager.addToTop(new UnlimboAction(card));
             if (!Settings.FAST_MODE) {
                 AbstractDungeon.actionManager.addToTop(new WaitAction(Settings.ACTION_DUR_MED));
-            } else {
+            }
+            else {
                 AbstractDungeon.actionManager.addToTop(new WaitAction(Settings.ACTION_DUR_FASTER));
             }
             if (AbstractDungeon.player.hasRelic(JuiceKeg.ID)) {

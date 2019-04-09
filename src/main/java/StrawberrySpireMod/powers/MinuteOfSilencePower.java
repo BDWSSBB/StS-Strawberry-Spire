@@ -1,6 +1,5 @@
 package StrawberrySpireMod.powers;
 
-import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.core.*;
@@ -41,10 +40,10 @@ public class MinuteOfSilencePower extends AbstractStrawberrySpirePower {
         if (this.amount % this.numberOfCards == 0) {
             this.amount = 0;
             this.playApplyPowerSfx();
-            AbstractDungeon.actionManager.addToBottom(new AddActionLaterAction(new ApplyPowerAction(AbstractDungeon.player, this.owner, new StrengthPower(AbstractDungeon.player, -this.strengthDownAmount), -this.strengthDownAmount), 1));
-            if (!AbstractDungeon.player.hasPower(ArtifactPower.POWER_ID)) {
-                AbstractDungeon.actionManager.addToBottom(new AddActionLaterAction(new ApplyPowerAction(AbstractDungeon.player, this.owner, new GainStrengthPower(AbstractDungeon.player, this.strengthDownAmount), this.strengthDownAmount), 1));
-            }
+            AbstractDungeon.actionManager.addToBottom(new AddActionLaterAction
+                    (new ApplyDebuffAndInverseAction(AbstractDungeon.player, this.owner,
+                            new StrengthPower(AbstractDungeon.player, -this.strengthDownAmount), -this.strengthDownAmount,
+                            new GainStrengthPower(AbstractDungeon.player, this.strengthDownAmount), this.strengthDownAmount), 1));
         }
     }
 }

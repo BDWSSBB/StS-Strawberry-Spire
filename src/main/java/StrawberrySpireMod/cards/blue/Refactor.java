@@ -1,5 +1,6 @@
 package StrawberrySpireMod.cards.blue;
 
+import StrawberrySpireMod.actions.unique.ApplyDebuffAndInverseAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.characters.*;
@@ -29,11 +30,8 @@ public class Refactor extends AbstractStrawberrySpireCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new FocusPower(p, -this.magicNumber), -this.magicNumber));
-        if (!p.hasPower(ArtifactPower.POWER_ID)) {
-            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new RefactorPower(p, this.magicNumber), this.magicNumber));
-        }
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new FocusPower(p, 1), 1));
+        AbstractDungeon.actionManager.addToBottom(new ApplyDebuffAndInverseAction(p, p, new FocusPower(p, -this.magicNumber), -this.magicNumber, new RefactorPower(p, this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FocusPower(p, 1), 1));
     }
 
     public AbstractCard makeCopy() {

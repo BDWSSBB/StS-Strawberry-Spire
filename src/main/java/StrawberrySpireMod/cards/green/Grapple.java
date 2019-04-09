@@ -1,5 +1,6 @@
 package StrawberrySpireMod.cards.green;
 
+import StrawberrySpireMod.actions.unique.ApplyDebuffAndInverseAction;
 import com.megacrit.cardcrawl.actions.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
@@ -33,10 +34,7 @@ public class Grapple extends AbstractStrawberrySpireCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber), -this.magicNumber));
-        if (m != null && !m.hasPower(ArtifactPower.POWER_ID)) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new GainStrengthPower(m, this.magicNumber), this.magicNumber));
-        }
+        AbstractDungeon.actionManager.addToBottom(new ApplyDebuffAndInverseAction(m, p, new StrengthPower(m, -this.magicNumber), -this.magicNumber, new GainStrengthPower(m, this.magicNumber), this.magicNumber));
     }
 
     public AbstractCard makeCopy() {

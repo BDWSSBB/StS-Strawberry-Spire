@@ -45,11 +45,11 @@ public class DataDumpAction extends AbstractGameAction {
                 }
                 temp.sortAlphabetically(true);
                 temp.sortByRarityPlusStatusCardType(false);
-                if (numberOfCards == 1) {
-                    AbstractDungeon.gridSelectScreen.open(temp, numberOfCards, false, TEXT[0]);
+                if (this.numberOfCards == 1) {
+                    AbstractDungeon.gridSelectScreen.open(temp, this.numberOfCards, false, TEXT[0]);
                 }
                 else {
-                    AbstractDungeon.gridSelectScreen.open(temp, numberOfCards, false, TEXT[1] + numberOfCards + TEXT[2]);
+                    AbstractDungeon.gridSelectScreen.open(temp, this.numberOfCards, false, TEXT[1] + numberOfCards + TEXT[2]);
                 }
                 tickDuration();
                 return;
