@@ -23,7 +23,9 @@ public class IncreaseMaxHpPatches {
                 locator = Locator.class
         )
         public static void Insert(AbstractCreature __instance, final int amount, final boolean showEffect) {
-            __instance.maxHealth += amount / 2;
+            if (__instance == AbstractDungeon.player && AbstractDungeon.player.hasRelic(Starfruit.ID)) {
+                __instance.maxHealth += amount / 2;
+            }
         }
 
         private static class Locator extends SpireInsertLocator {
@@ -48,7 +50,7 @@ public class IncreaseMaxHpPatches {
                     if (m.getMethodName().equals("heal")) {
                         m.replace(
                                 "{" +
-                                        "if (" + Nested.class.getName() + ".hasStarfruit()) {" +
+                                        "if (" + Nested.class.getName() + ".hasStarfruit($0)) {" +
                                         "$_ = $proceed($1 + " + Nested.class.getName() + ".increaseAmount($1), $2);" +
                                         "}" +
                                         "else" +
@@ -63,8 +65,8 @@ public class IncreaseMaxHpPatches {
 
         public static class Nested {
 
-            public static boolean hasStarfruit() {
-                if (AbstractDungeon.player.hasRelic(Starfruit.ID)) {
+            public static boolean hasStarfruit(AbstractCreature creature) {
+                if (creature == AbstractDungeon.player && AbstractDungeon.player.hasRelic(Starfruit.ID)) {
                     return true;
                 }
                 else {
