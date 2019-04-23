@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.powers.*;
 import com.megacrit.cardcrawl.relics.*;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 public class ThornyGelberry extends AbstractStrawberrySpireRelic {
 
@@ -25,7 +26,7 @@ public class ThornyGelberry extends AbstractStrawberrySpireRelic {
     }
 
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if (info.type == DamageInfo.DamageType.NORMAL) {
+        if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && info.type == DamageInfo.DamageType.NORMAL) {
             flash();
             AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ThornsPower(AbstractDungeon.player, THORNS_AMOUNT), THORNS_AMOUNT));
         }

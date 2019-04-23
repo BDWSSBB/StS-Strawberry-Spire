@@ -1,6 +1,8 @@
 package StrawberrySpireMod.monsters.elite;
 
 import com.badlogic.gdx.graphics.*;
+import com.badlogic.gdx.math.MathUtils;
+import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.actions.*;
 import com.megacrit.cardcrawl.actions.animations.*;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -23,10 +25,10 @@ public class KineticPylon extends AbstractMonster {
     private static final MonsterStrings MONSTER_STRINGS = CardCrawlGame.languagePack.getMonsterStrings(ID);
     public static final String NAME = MONSTER_STRINGS.NAME;
     public static final String[] MOVES = MONSTER_STRINGS.MOVES;
-    private static final float HB_X = 4.0F;
-    private static final float HB_Y = 68.0F;
-    private static final float HB_W = 160.0F;
-    private static final float HB_H = 120.0F;
+    private static final float HB_X = 0.0F;
+    private static final float HB_Y = -5.0F;
+    private static final float HB_W = 180.0F;
+    private static final float HB_H = 310.0F;
     private static final int HP_MIN = 37;
     private static final int HP_MAX = 41;
     private static final int ASC_HP_MIN = 40;
@@ -53,7 +55,7 @@ public class KineticPylon extends AbstractMonster {
     private int chargeStrengthAmount;
 
     public KineticPylon(float x, float y) {
-        super(NAME, ID, HP_MAX, HB_X, HB_Y, HB_W, HB_H, "StrawberrySpireModResources/monsters/placeholder2.png", x, y);
+        super(NAME, ID, HP_MAX, HB_X, HB_Y, HB_W, HB_H, null, x, y);
         this.type = EnemyType.ELITE;
         if (AbstractDungeon.ascensionLevel >= 8) {
             setHp(ASC_HP_MIN, ASC_HP_MAX);
@@ -84,6 +86,33 @@ public class KineticPylon extends AbstractMonster {
         }
         this.damage.add(new DamageInfo(this, pulseDamage));
         this.damage.add(new DamageInfo(this, disintegrateDamage));
+        this.loadAnimation("StrawberrySpireModResources/monsters/kineticPylon/skeleton.atlas", "StrawberrySpireModResources/monsters/kineticPylon/skeleton.json", 1.0f);
+        final AnimationState.TrackEntry e = this.state.setAnimation(0, "idle", true);
+        e.setTimeScale(2.0f);
+        e.setTime(e.getEndTime() * MathUtils.random());
+        this.stateData.setMix("idle", "attack", 0.1f);
+        this.stateData.setMix("idle", "spaz1", 0.1f);
+        this.stateData.setMix("idle", "hit", 0.1f);
+    }
+
+    @Override
+    public void damage(final DamageInfo info) {
+        super.damage(info);
+        if (info.owner != null && info.type != DamageInfo.DamageType.THORNS && info.output > 0) {
+            this.state.setAnimation(0, "hit", false);
+            this.state.addAnimation(0, "idle", true, 0.0f);
+        }
+    }
+
+    @Override
+    public void changeState(final String stateName) {
+        switch (stateName) {
+            case "ATTACK": {
+                this.state.setAnimation(0, "attack", false);
+                this.state.addAnimation(0, "idle", true, 0.0f);
+                break;
+            }
+        }
     }
 
     public void usePreBattleAction() {
@@ -99,6 +128,7 @@ public class KineticPylon extends AbstractMonster {
                 break;
             }
             case DISINTEGRATE: {
+                AbstractDungeon.actionManager.addToBottom(new ChangeStateAction(this, "ATTACK"));
                 AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_MAGIC_BEAM_SHORT", 0.5f)); // lol this is the sentry's code
                 AbstractDungeon.actionManager.addToBottom(new VFXAction(new BorderFlashEffect(Color.SKY)));
                 if (Settings.FAST_MODE) {
