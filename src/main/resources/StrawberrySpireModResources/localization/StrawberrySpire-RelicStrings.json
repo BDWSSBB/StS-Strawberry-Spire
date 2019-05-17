@@ -17,7 +17,7 @@
   },
   "strawberrySpire:BrokenPrinter": {
     "NAME": "Broken Printer",
-    "FLAVOR": "\"It's not broken! Stop hitting the print button!\"",
+    "FLAVOR": "At least it's honest about how broken it is.",
     "DESCRIPTIONS": [
       "Upon pickup, obtain #b",
       " copies of a card in your deck.",
@@ -162,7 +162,7 @@
     "NAME": "Poopsie Roll",
     "FLAVOR": "Do you really want to eat this?",
     "DESCRIPTIONS": [
-      "At the start of each combat, deal damage equal to onethird of your missing HP to ALL enemies."
+      "At the start of each combat, deal damage equal to one third of your missing HP to ALL enemies."
     ]
   },
   "strawberrySpire:RottenAvocado": {
@@ -182,7 +182,7 @@
   },
   "strawberrySpire:SilkGarment": {
     "NAME": "Silk Garment",
-    "FLAVOR": "You feel loose and limber in your new cloak!",
+    "FLAVOR": "You feel loose and limber in your new outfit!",
     "DESCRIPTIONS": [
       "The first time you discard a card each turn, draw #b",
       " card."

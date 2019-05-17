@@ -13,8 +13,8 @@ import com.evacipated.cardcrawl.mod.stslib.relics.*;
 public class AztechBall extends AbstractStrawberrySpireRelic implements OnChannelRelic {
 
     public static final String ID = "strawberrySpire:AztechBall";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/aztechBall.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/aztechBall.png");
     private static final int CHANNEL_AMOUNT = 2;
 
     public AztechBall() {

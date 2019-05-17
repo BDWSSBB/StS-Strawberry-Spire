@@ -9,8 +9,7 @@
   },
   "strawberrySpire:Conflagrate": {
     "NAME": "Conflagrate",
-    "DESCRIPTION": "Shuffle !M! Burns into your draw pile. NL Whenever you draw a Burn, gain [E].",
-    "UPGRADE_DESCRIPTION": "Shuffle !M! Burns into your draw pile. NL Whenever you draw a Burn, gain [E] [E].",
+    "DESCRIPTION": "Shuffle 2 Burns into your draw pile. NL Whenever you draw a Burn, deal !M! damage to ALL enemies.",
 	"EXTENDED_DESCRIPTION": [
 	  "This is Fine"
 	]
@@ -29,16 +28,16 @@
   },
   "strawberrySpire:DraftPunk": {
     "NAME": "Draft Punk",
-    "DESCRIPTION": "Exhaust !M! random cards in your hand. NL Add !M! random cards into your hand."
+    "DESCRIPTION": "Exhaust !M! cards. NL Add !M! random cards into your hand."
   },
   "strawberrySpire:Endurance": {
     "NAME": "Endurance",
-    "DESCRIPTION": "Add a Wound into your discard pile. NL Gain [E].",
-    "UPGRADE_DESCRIPTION": "Add a Wound into your discard pile. NL Gain [E] [E]."
+    "DESCRIPTION": "Add a Wound into your hand. NL Gain [E].",
+    "UPGRADE_DESCRIPTION": "Add a Wound into your hand. NL Gain [E] [E]."
   },
   "strawberrySpire:FireDrill": {
     "NAME": "Fire Drill",
-    "DESCRIPTION": "Deal !D! damage. NL Add a Burn into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Add a Burn into your discard pile."
   },
   "strawberrySpire:FortFortyFour": {
     "NAME": "Fort Forty-Four",
@@ -54,7 +53,7 @@
   },
   "strawberrySpire:Hellbender": {
     "NAME": "Hellbender",
-    "DESCRIPTION": "At the start of your turn, Exhaust !M! card and add !M! random card into your hand."
+    "DESCRIPTION": "Whenever an Attack is Exhausted, gain !M! Strength."
   },
   "strawberrySpire:Incursion": {
     "NAME": "Incursion",
@@ -69,7 +68,8 @@
   },
   "strawberrySpire:Overwork": {
     "NAME": "Overwork",
-    "DESCRIPTION": "Gain 2 Weak. NL Gain 2 Frail. NL Gain [E] [E]. NL Draw !M! cards. NL Exhaust."
+    "DESCRIPTION": "Gain 1 Weak. NL Gain 1 Frail. NL Gain [E]. NL Draw !M! cards. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":  "Gain 1 Weak. NL Gain 1 Frail. NL Gain [E] [E]. NL Draw !M! cards. NL Exhaust."
   },
   "strawberrySpire:PowerStomp": {
     "NAME": "Power Stomp",
@@ -78,7 +78,7 @@
   "strawberrySpire:PumpUp": {
     "NAME": "Pump Up",
     "DESCRIPTION": "Exhaust !M! card. NL Gain Strength equal to its cost.",
-    "UPGRADE_DESCRIPTION": "Exhaust up to !M! cards in your hand. NL Gain Strength equal to their costs."
+    "UPGRADE_DESCRIPTION": "Exhaust up to !M! cards. NL Gain Strength equal to their costs."
   },
   "strawberrySpire:Spite": {
     "NAME": "Spite",
@@ -106,7 +106,7 @@
   },
   "strawberrySpire:DreamfoilDart": {
     "NAME": "Dreamfoil Dart",
-    "DESCRIPTION": "Deal !D! damage. NL Enemy loses 1 Strength at the end of its turn for !M! turns. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has at least !M! Poison, it loses !M! Poison and 2 Strength."
   },
   "strawberrySpire:Fastroyer": {
     "NAME": "Fastroyer",
@@ -170,7 +170,7 @@
   },
   "strawberrySpire:Rummage": {
     "NAME": "Rummage",
-    "DESCRIPTION": "Draw !M! cards. NL Discard !M! cards. NL Add 1 Shiv into your hand for each Attack discarded."
+    "DESCRIPTION": "Draw !M! cards. NL Discard !M! cards. NL Add a Shiv into your hand for each Attack discarded."
   },
   "strawberrySpire:SideSwipe": {
     "NAME": "Side Swipe",
@@ -201,7 +201,7 @@
   },
   "strawberrySpire:Urgency": {
     "NAME": "Urgency",
-    "DESCRIPTION": "If the enemy intends to attack, draw !M! cards."
+    "DESCRIPTION": "If the enemy intends to attack, draw !M! cards. NL Exhaust."
   },
   "strawberrySpire:Adapter": {
     "NAME": "Adapter",
@@ -292,11 +292,11 @@
   },
   "strawberrySpire:Ronchyble": {
     "NAME": "Ronchyble",
-    "DESCRIPTION": "Add 2 upgraded Burns into your hand. NL At the start of your turn, Channel !M! random Orbs."
+    "DESCRIPTION": "Add 3 Burns into your hand. NL At the start of your turn, Channel !M! random Orbs."
   },
   "strawberrySpire:SearchEngine": {
     "NAME": "Search Engine",
-    "DESCRIPTION": "Choose a card. NL Put !M! random cards of the same cost from your draw pile into your hand."
+    "DESCRIPTION": "Discard a card. NL Put !M! random cards of the same cost from your draw pile into your hand."
   },
   "strawberrySpire:THEL": {
     "NAME": "THEL",

@@ -18,12 +18,13 @@ public class Urgency extends AbstractStrawberrySpireCard {
     public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/green/urgency.png";
     private static final int COST = 0;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final int MAGIC_NUMBER = 2;
+    private static final int MAGIC_NUMBER = 3;
     private static final int UPGRADE_PLUS_MAGIC_NUMBER = 1;
 
     public Urgency() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.GREEN, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
         this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
+        this.exhaust = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

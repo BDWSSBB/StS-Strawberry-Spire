@@ -20,8 +20,8 @@ public class Spite extends AbstractStrawberrySpireCard {
     public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/red/spite.png";
     private static final int COST = 1;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final int ATTACK_DAMAGE = 7;
-    private static final int UPGRADE_PLUS_DAMAGE = 3;
+    private static final int ATTACK_DAMAGE = 8;
+    private static final int UPGRADE_PLUS_DAMAGE = 2;
 
     public Spite() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCard.CardColor.RED, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);

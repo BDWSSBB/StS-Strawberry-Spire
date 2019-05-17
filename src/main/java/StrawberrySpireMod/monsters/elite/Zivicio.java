@@ -1,5 +1,7 @@
 package StrawberrySpireMod.monsters.elite;
 
+import com.badlogic.gdx.math.MathUtils;
+import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.actions.animations.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.*;
@@ -19,10 +21,10 @@ public class Zivicio extends AbstractMonster {
     private static final MonsterStrings MONSTER_STRINGS = CardCrawlGame.languagePack.getMonsterStrings(ID);
     public static final String NAME = MONSTER_STRINGS.NAME;
     public static final String[] MOVES = MONSTER_STRINGS.MOVES;
-    private static final float HB_X = 4.0F;
-    private static final float HB_Y = 68.0F;
-    private static final float HB_W = 160.0F;
-    private static final float HB_H = 120.0F;
+    private static final float HB_X = -8.0F;
+    private static final float HB_Y = -10.0F;
+    private static final float HB_W = 150.0F;
+    private static final float HB_H = 150.0F;
     private static final int HP_MIN = 58;
     private static final int HP_MAX = 60;
     private static final int ASC_HP_MIN = 65;
@@ -68,6 +70,10 @@ public class Zivicio extends AbstractMonster {
             this.energizeStrengthGainAmount = ENERGIZE_STRENGTH_GAIN_AMOUNT;
         }
         this.damage.add(new DamageInfo(this, energizeDamage));
+
+        loadAnimation("StrawberrySpireModResources/monsters/zivicio/skeleton.atlas", "StrawberrySpireModResources/monsters/zivicio/skeleton.json", 1f);
+        AnimationState.TrackEntry e = state.setAnimation(0, "idle", true);
+        e.setTime(e.getEndTime() * MathUtils.random());
     }
 
     public void usePreBattleAction() {

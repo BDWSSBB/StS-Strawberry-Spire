@@ -26,7 +26,7 @@ public class Endurance extends AbstractStrawberrySpireCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Wound(), 1));
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Wound(), 1));
         if (this.upgraded) {
             AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(2));
         }

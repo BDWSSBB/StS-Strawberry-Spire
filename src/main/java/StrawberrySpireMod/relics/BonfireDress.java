@@ -12,8 +12,8 @@ import com.megacrit.cardcrawl.relics.*;
 public class BonfireDress extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:BonfireDress";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/bonfireDress.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/bonfireDress.png");
     private static final int DEXTERITY_AMOUNT = 1;
     private boolean isFirstTurn = false;
     private AbstractCard.CardType lastCardType = null;

@@ -19,7 +19,7 @@ public class Package extends AbstractStrawberrySpireCard {
     private static final int COST = 1;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = CARD_STRINGS.UPGRADE_DESCRIPTION;
-    private static final int MAGIC_NUMBER = 2;
+    private static final int MAGIC_NUMBER = 3;
 
     public Package() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, CardType.SKILL, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.NONE);

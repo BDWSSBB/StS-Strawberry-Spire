@@ -1,5 +1,6 @@
 package StrawberrySpireMod.cards.green;
 
+import StrawberrySpireMod.actions.unique.DreamfoilDartAction;
 import com.megacrit.cardcrawl.actions.animations.*;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
@@ -11,7 +12,6 @@ import com.megacrit.cardcrawl.monsters.*;
 import com.megacrit.cardcrawl.vfx.combat.*;
 
 import StrawberrySpireMod.cards.*;
-import StrawberrySpireMod.powers.*;
 
 public class DreamfoilDart extends AbstractStrawberrySpireCard {
 
@@ -23,14 +23,13 @@ public class DreamfoilDart extends AbstractStrawberrySpireCard {
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final int ATTACK_DAMAGE = 3;
     private static final int UPGRADE_PLUS_DAMAGE = 1;
-    private static final int MAGIC_NUMBER = 2;
-    private static final int UPGRADE_PLUS_MAGIC_NUMBER = 1;
+    private static final int MAGIC_NUMBER = 6;
+    private static final int UPGRADE_PLUS_MAGIC_NUMBER = -1;
 
     public DreamfoilDart() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.ATTACK, AbstractCard.CardColor.GREEN, CardRarity.UNCOMMON, AbstractCard.CardTarget.ENEMY);
         this.damage = this.baseDamage = ATTACK_DAMAGE;
         this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
-        this.exhaust = true;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -38,7 +37,7 @@ public class DreamfoilDart extends AbstractStrawberrySpireCard {
             AbstractDungeon.actionManager.addToBottom(new VFXAction(new ThrowDaggerEffect(m.hb.cX, m.hb.cY)));
         }
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new DreamfoilDartPower(m, this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new DreamfoilDartAction(m, this.magicNumber));
     }
 
     public AbstractCard makeCopy() {

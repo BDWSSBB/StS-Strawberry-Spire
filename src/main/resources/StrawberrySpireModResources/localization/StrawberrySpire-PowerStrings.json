@@ -55,9 +55,8 @@
   "strawberrySpire:Conflagrate": {
     "NAME": "Conflagrate",
     "DESCRIPTIONS": [
-      "Whenever you draw a #yBurn, gain ",
-	  "[E] ",
-	  "."
+      "Whenever you draw a #yBurn, deal #b",
+	  " damage to ALL enemies."
     ]
   },
   "strawberrySpire:Combustion": {
@@ -112,19 +111,16 @@
   "strawberrySpire:Harvest": {
     "NAME": "Harvest",
     "DESCRIPTIONS": [
-      "The next #yAttack you play heals HP equal to 60% of unblocked damage.",
+      "The next #yAttack you play heals HP equal to #b60% of unblocked damage.",
 	  "The next #b",
-	  " #yAttacks you play heal HP equal to 60% of unblocked damage."
+	  " #yAttacks you play heal HP equal to #b60% of unblocked damage."
     ]
   },
   "strawberrySpire:Hellbender": {
     "NAME": "Hellbender",
     "DESCRIPTIONS": [
-      "At the start of your turn, #yExhaust #b",
-	  " card and add #b",
-	  " cards and add #b",
-	  " random card into your hand.",
-	  " random cards into your hand."
+      "Whenever an #yAttack is #yExhausted, gain #b",
+	  " #yStrength."
     ]
   },
   "strawberrySpire:HotShot": {

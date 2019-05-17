@@ -22,8 +22,8 @@ public class Conflagrate extends AbstractStrawberrySpireCard {
     public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/red/conflagrate.png";
     private static final int COST = 1;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = CARD_STRINGS.UPGRADE_DESCRIPTION;
-    private static final int MAGIC_NUMBER = 2;
+    private static final int MAGIC_NUMBER = 7;
+    private static final int UPGRADE_PLUS_MAGIC_NUMBER = 3;
 
     public Conflagrate() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.POWER, AbstractCard.CardColor.RED, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
@@ -31,13 +31,8 @@ public class Conflagrate extends AbstractStrawberrySpireCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Burn(), this.magicNumber, true, true));
-        if (this.upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ConflagratePower(p, 2), 2));
-        }
-        else {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ConflagratePower(p, 1), 1));
-        }
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Burn(), 2, true, true));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ConflagratePower(p, this.magicNumber), this.magicNumber));
     }
 
     public AbstractCard makeCopy() {
@@ -51,8 +46,7 @@ public class Conflagrate extends AbstractStrawberrySpireCard {
                 this.name = UPGRADE_NAME;
                 initializeTitle();
             }
-            this.rawDescription = UPGRADE_DESCRIPTION;
-            initializeDescription();
+            this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC_NUMBER);
         }
     }
 }

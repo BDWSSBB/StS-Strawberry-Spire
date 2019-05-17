@@ -29,9 +29,12 @@ public class SearchEngineAction extends AbstractGameAction {
             }
             else if (this.player.hand.size() == 1) {
                 AbstractCard cardInHand = this.player.hand.getBottomCard();
+                this.player.hand.moveToDiscardPile(cardInHand);
+                cardInHand.triggerOnManualDiscard();
+                GameActionManager.incrementDiscard(false);
                 CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                 for (AbstractCard c : this.player.drawPile.group) {
-                    if (c.costForTurn == cardInHand.costForTurn || ((cardInHand.costForTurn == 0 || cardInHand.freeToPlayOnce) && (c.costForTurn == 0 || c.freeToPlayOnce))) {
+                    if (c.costForTurn == cardInHand.costForTurn || ((cardInHand.costForTurn == 0 || cardInHand.freeToPlayOnce) && (c.costForTurn == 0 || c.freeToPlayOnce)) || (cardInHand.costForTurn == -1 && c.costForTurn == EnergyPanel.getCurrentEnergy())) {
                         temp.addToTop(c);
                     }
                 }
@@ -65,6 +68,9 @@ public class SearchEngineAction extends AbstractGameAction {
         if (!AbstractDungeon.handCardSelectScreen.selectedCards.isEmpty()) {
             for (AbstractCard c : AbstractDungeon.handCardSelectScreen.selectedCards.group) {
                 this.player.hand.addToHand(c);
+                this.player.hand.moveToDiscardPile(c);
+                c.triggerOnManualDiscard();
+                GameActionManager.incrementDiscard(false);
                 CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                 for (AbstractCard ca : this.player.drawPile.group) {
                     if (ca.costForTurn == c.costForTurn || ((c.costForTurn == 0 || c.freeToPlayOnce) && (ca.costForTurn == 0 || ca.freeToPlayOnce) || (c.costForTurn == -1 && ca.costForTurn == EnergyPanel.getCurrentEnergy()))) {

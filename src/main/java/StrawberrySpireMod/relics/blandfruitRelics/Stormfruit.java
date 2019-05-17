@@ -14,8 +14,8 @@ import com.evacipated.cardcrawl.mod.stslib.relics.*;
 public class Stormfruit extends AbstractStrawberrySpireRelic implements OnChannelRelic {
 
     public static final String ID = "strawberrySpire:Stormfruit";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/blandfruits/stormfruit.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/blandfruit.png");
     private static final int DRAW_AMOUNT = 1;
 
     public Stormfruit() {

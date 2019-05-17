@@ -13,8 +13,8 @@ import StrawberrySpireMod.relics.*;
 public class Sorrowfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Sorrowfruit";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/blandfruits/sorrowfruit.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/blandfruit.png");
     private static final int POISON_AMOUNT = 2;
 
     public Sorrowfruit() {

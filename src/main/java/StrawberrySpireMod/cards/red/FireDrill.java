@@ -30,7 +30,7 @@ public class FireDrill extends AbstractStrawberrySpireCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Burn(), 1));
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Burn(), 1));
     }
 
     public AbstractCard makeCopy() {

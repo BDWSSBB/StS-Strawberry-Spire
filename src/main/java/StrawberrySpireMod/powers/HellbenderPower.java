@@ -1,6 +1,7 @@
 package StrawberrySpireMod.powers;
 
 import com.megacrit.cardcrawl.actions.common.*;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.*;
 import com.megacrit.cardcrawl.dungeons.*;
 import com.megacrit.cardcrawl.localization.*;
@@ -21,23 +22,16 @@ public class HellbenderPower extends AbstractStrawberrySpirePower {
         this.amount = amount;
         updateDescription();
         loadRegion("attackBurn");
-        this.priority = 25;
     }
 
     public void updateDescription() {
-        if (this.amount == 1) {
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[3];
-        }
-        else {
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[4];
-        }
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
-    public void atStartOfTurnPostDraw() {
-        flash();
-        AbstractDungeon.actionManager.addToBottom(new ExhaustAction(this.owner, this.owner, this.amount, false));
-        for (int i = 0; i < this.amount; i++) {
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(AbstractDungeon.returnTrulyRandomCardInCombat().makeCopy(), false));
+    public void onExhaust(AbstractCard card) {
+        if (card.type == AbstractCard.CardType.ATTACK) {
+            flash();
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, this.amount), this.amount));
         }
     }
 }

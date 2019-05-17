@@ -24,7 +24,7 @@ public class DeltaFlow extends AbstractStrawberrySpireCard {
     private static final int UPGRADE_PLUS_MAGIC_NUMBER = 1;
 
     public DeltaFlow() {
-        super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.GREEN, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.SELF);
+        super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.GREEN, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);
         this.magicNumber = this.baseMagicNumber = MAGIC_NUMBER;
     }
 

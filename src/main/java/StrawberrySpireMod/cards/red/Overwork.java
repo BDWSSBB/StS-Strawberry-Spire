@@ -19,6 +19,7 @@ public class Overwork extends AbstractStrawberrySpireCard {
     public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/red/overwork.png";
     private static final int COST = 0;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = CARD_STRINGS.UPGRADE_DESCRIPTION;
     private static final int MAGIC_NUMBER = 2;
     private static final int UPGRADE_PLUS_MAGIC_NUMBER = 1;
 
@@ -29,9 +30,14 @@ public class Overwork extends AbstractStrawberrySpireCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new WeakPower(p, 2, false), 2));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FrailPower(p, 2, false), 2));
-        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(2));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new WeakPower(p, 1, false), 1));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FrailPower(p, 1, false), 1));
+        if (this.upgraded) {
+            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(2));
+        }
+        else {
+            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(1));
+        }
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
     }
 
@@ -42,6 +48,8 @@ public class Overwork extends AbstractStrawberrySpireCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
 
             this.upgradeMagicNumber(UPGRADE_PLUS_MAGIC_NUMBER);
         }

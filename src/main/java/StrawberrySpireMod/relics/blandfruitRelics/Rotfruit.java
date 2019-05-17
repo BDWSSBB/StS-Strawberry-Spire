@@ -12,8 +12,8 @@ import StrawberrySpireMod.relics.*;
 public class Rotfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Rotfruit";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/blandfruits/rotfruit.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/blandfruit.png");
     private static final int STRENGTH_AMOUNT = 1;
 
     public Rotfruit() {

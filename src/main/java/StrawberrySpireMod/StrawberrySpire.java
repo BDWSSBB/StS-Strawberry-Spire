@@ -151,7 +151,7 @@ public class StrawberrySpire implements EditCardsSubscriber, EditStringsSubscrib
             BaseMod.addRelic(new GlyphStone(), RelicType.SHARED);
             BaseMod.addRelic(new InflatableHammer(), RelicType.SHARED);
             BaseMod.addRelic(new IronFlakes(), RelicType.RED);
-            BaseMod.addRelic(new JuiceKeg(), RelicType.RED);
+            BaseMod.addRelic(new JuiceKeg(), RelicType.SHARED);
             BaseMod.addRelic(new KineticCharger(), RelicType.SHARED);
             BaseMod.addRelic(new MawJerky(), RelicType.SHARED);
             BaseMod.addRelic(new PoopsieRoll(), RelicType.SHARED);

@@ -14,8 +14,8 @@ import StrawberrySpireMod.relics.*;
 public class Swiftfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Swiftfruit";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/blandfruits/swiftfruit.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/blandfruit.png");
     public boolean isActive = false;
 
     public Swiftfruit() {

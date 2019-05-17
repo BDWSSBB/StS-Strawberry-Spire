@@ -1,5 +1,7 @@
 package StrawberrySpireMod.monsters.elite;
 
+import com.badlogic.gdx.math.MathUtils;
+import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.actions.*;
 import com.megacrit.cardcrawl.actions.animations.*;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -18,10 +20,10 @@ public class Minicio extends AbstractMonster {
     private static final MonsterStrings MONSTER_STRINGS = CardCrawlGame.languagePack.getMonsterStrings(ID);
     public static final String NAME = MONSTER_STRINGS.NAME;
     public static final String[] MOVES = MONSTER_STRINGS.MOVES;
-    private static final float HB_X = 4.0F;
-    private static final float HB_Y = 68.0F;
-    private static final float HB_W = 160.0F;
-    private static final float HB_H = 120.0F;
+    private static final float HB_X = -8.0F;
+    private static final float HB_Y = -10.0F;
+    private static final float HB_W = 150.0F;
+    private static final float HB_H = 150.0F;
     private static final int HP_MIN = 32;
     private static final int HP_MAX = 34;
     private static final int ASC_HP_MIN = 36;
@@ -60,6 +62,10 @@ public class Minicio extends AbstractMonster {
             this.pulseDazeAmount = PULSE_DAZE_AMOUNT;
         }
         this.damage.add(new DamageInfo(this, pulseDamage));
+
+        loadAnimation("StrawberrySpireModResources/monsters/minicio/skeleton.atlas", "StrawberrySpireModResources/monsters/minicio/skeleton.json", 1f);
+        AnimationState.TrackEntry e = state.setAnimation(0, "idle", true);
+        e.setTime(e.getEndTime() * MathUtils.random());
     }
 
     public void usePreBattleAction() {

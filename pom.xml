@@ -4,7 +4,7 @@
     <!-- I'm dumb and I dunno how to use this thing without blowing stuff up. -->
     <groupId>StrawberrySpireMod</groupId>
     <artifactId>StrawberrySpire</artifactId>
-    <version>0.6.1</version>
+    <version>0.7.0</version>
     <packaging>jar</packaging>
 
     <dependencies>

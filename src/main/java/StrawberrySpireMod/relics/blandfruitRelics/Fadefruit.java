@@ -13,8 +13,8 @@ import StrawberrySpireMod.relics.*;
 public class Fadefruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Fadefruit";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/blandfruits/fadefruit.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/blandfruit.png");
     private static final int INITIAL_DRAW_REDUCTION = 1;
     private static final int CARD_TAKE_AMOUNT = 1;
 

@@ -13,8 +13,8 @@ import StrawberrySpireMod.relics.*;
 public class Icefruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Icefruit";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/blandfruits/icefruit.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/blandfruit.png");
     private static final int TURN_AMOUNT = 3;
     private static final int STRENGTH_LOSS_AMOUNT = 1;
 

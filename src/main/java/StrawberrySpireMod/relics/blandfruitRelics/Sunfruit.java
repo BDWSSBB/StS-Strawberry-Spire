@@ -11,8 +11,8 @@ import StrawberrySpireMod.relics.*;
 public class Sunfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Sunfruit";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/blandfruits/sunfruit.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/blandfruit.png");
     private static final int HEAL_AMOUNT = 3;
 
     public Sunfruit() {

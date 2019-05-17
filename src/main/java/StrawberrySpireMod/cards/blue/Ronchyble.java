@@ -29,9 +29,7 @@ public class Ronchyble extends AbstractStrawberrySpireCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractCard burnTemplate = new Burn();
-        burnTemplate.upgrade();
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(burnTemplate.makeStatEquivalentCopy(), 2, false));
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Burn(), 3, false));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new RonchyblePower(p, this.magicNumber), this.magicNumber));
     }
 

@@ -18,8 +18,8 @@ public class Compressor extends AbstractStrawberrySpireCard {
     public static final String IMAGE_PATH = "StrawberrySpireModResources/cards/blue/compressor.png";
     private static final int COST = 0;
     public static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
-    private static final int MAGIC_NUMBER = 4;
-    private static final int UPGRADE_MAGIC_NUMBER = 1;
+    private static final int MAGIC_NUMBER = 3;
+    private static final int UPGRADE_MAGIC_NUMBER = 2;
 
     public Compressor() {
         super(ID, NAME, IMAGE_PATH, COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.SELF);

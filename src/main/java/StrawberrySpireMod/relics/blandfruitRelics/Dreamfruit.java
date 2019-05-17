@@ -14,8 +14,8 @@ import java.util.ArrayList;
 public class Dreamfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Dreamfruit";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/blandfruits/dreamfruit.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/blandfruit.png");
     private ArrayList<String> powersToRemove = new ArrayList<>();
 
     public Dreamfruit() {

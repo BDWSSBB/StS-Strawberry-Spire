@@ -10,8 +10,8 @@ import StrawberrySpireMod.relics.*;
 public class Starfruit extends AbstractStrawberrySpireRelic { // The Future Max HP benefits are patched.
 
     public static final String ID = "strawberrySpire:Starfruit";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/blandfruits/starfruit.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/blandfruit.png");
     private static final int MAX_HP_AMOUNT = 8;
     private static final int FUTURE_MAX_HP_PERCENT_INCREASE_AMOUNT = 50;
 

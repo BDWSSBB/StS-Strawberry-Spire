@@ -36,7 +36,7 @@ public class DraftPunk extends AbstractStrawberrySpireCard {
         else if (MathUtils.randomBoolean(0.03F)) {
             AbstractDungeon.actionManager.addToBottom(new TalkAction(true, "Harder NL Better NL Faster NL Stronger", 0.1F, 2.0F));
         }
-        AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, this.magicNumber, true, false, false));
+        AbstractDungeon.actionManager.addToBottom(new ExhaustAction(p, p, this.magicNumber, false));
         AbstractDungeon.actionManager.addToBottom(new WaitAction(0.25F));
         for (int i = 0; i < this.magicNumber; i++) {
             AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(AbstractDungeon.returnTrulyRandomCardInCombat().makeCopy(), false));

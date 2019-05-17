@@ -1,5 +1,7 @@
 package StrawberrySpireMod.monsters.elite;
 
+import com.badlogic.gdx.math.MathUtils;
+import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.actions.*;
 import com.megacrit.cardcrawl.actions.animations.*;
 import com.megacrit.cardcrawl.actions.common.*;
@@ -17,10 +19,10 @@ public class Crucio extends AbstractMonster {
     private static final MonsterStrings MONSTER_STRINGS = CardCrawlGame.languagePack.getMonsterStrings(ID);
     public static final String NAME = MONSTER_STRINGS.NAME;
     public static final String[] MOVES = MONSTER_STRINGS.MOVES;
-    private static final float HB_X = 4.0F;
-    private static final float HB_Y = 68.0F;
-    private static final float HB_W = 160.0F;
-    private static final float HB_H = 120.0F;
+    private static final float HB_X = -8.0F;
+    private static final float HB_Y = -10.0F;
+    private static final float HB_W = 150.0F;
+    private static final float HB_H = 150.0F;
     private static final int HP_MIN = 45;
     private static final int HP_MAX = 47;
     private static final int ASC_HP_MIN = 49;
@@ -66,6 +68,10 @@ public class Crucio extends AbstractMonster {
             this.reboundHitAmount = REBOUND_HIT_AMOUNT;
         }
         this.damage.add(new DamageInfo(this, reboundDamage));
+
+        loadAnimation("StrawberrySpireModResources/monsters/crucio/skeleton.atlas", "StrawberrySpireModResources/monsters/crucio/skeleton.json", 1f);
+        AnimationState.TrackEntry e = state.setAnimation(0, "idle", true);
+        e.setTime(e.getEndTime() * MathUtils.random());
     }
 
     public void usePreBattleAction() {

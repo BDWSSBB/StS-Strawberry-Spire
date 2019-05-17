@@ -47,6 +47,9 @@ public class PackagePower extends AbstractStrawberrySpirePower implements NonSta
                 if (i == this.cardList.size() - 1) {
                     temp += DESCRIPTIONS[2] + FontHelper.colorString(this.cardList.get(i).name, "y");
                 }
+                else if (i == 0) {
+                    temp += FontHelper.colorString(this.cardList.get(i).name, "y");
+                }
                 else {
                     temp += DESCRIPTIONS[1] + FontHelper.colorString(this.cardList.get(i).name, "y");
                 }

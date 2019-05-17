@@ -1,5 +1,6 @@
 package StrawberrySpireMod.powers;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.*;
 import com.megacrit.cardcrawl.cards.status.*;
@@ -28,17 +29,13 @@ public class ConflagratePower extends AbstractStrawberrySpirePower implements On
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
-        for (int i = 0; i < this.amount; i++) {
-            this.description += DESCRIPTIONS[1];
-        }
-        this.description += DESCRIPTIONS[2];
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
     public void onCardDraw(AbstractCard card) {
         if (card instanceof Burn) {
             flash();
-            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.amount));
+            AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
         }
     }
 }

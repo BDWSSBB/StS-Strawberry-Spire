@@ -13,8 +13,8 @@ import StrawberrySpireMod.relics.*;
 public class Firefruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Firefruit";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/blandfruits/firefruit.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/blandfruit.png");
     private static final int DAMAGE_AMOUNT = 15;
 
     public Firefruit() {

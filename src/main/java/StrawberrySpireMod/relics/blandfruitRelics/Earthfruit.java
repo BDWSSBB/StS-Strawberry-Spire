@@ -12,8 +12,8 @@ import StrawberrySpireMod.relics.*;
 public class Earthfruit extends AbstractStrawberrySpireRelic {
 
     public static final String ID = "strawberrySpire:Earthfruit";
-    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/placeholder.png");
-    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/placeholderOutline.png");
+    public static final Texture IMAGE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/blandfruits/earthfruit.png");
+    public static final Texture IMAGE_OUTLINE_PATH = ImageMaster.loadImage("StrawberrySpireModResources/relics/outline/blandfruit.png");
     private static final int BARKSKIN_AMOUNT = 4;
 
     public Earthfruit() {
